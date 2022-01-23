@@ -237,6 +237,6 @@ Escribe un programa que muestra todos los números entre 1 y 100 con las siguien
 
 * Si el número es divisible entre 5 y no entre 3 muestra `"Buzz"` en su lugar.
 
-Cuando esté terminado, mejoralo para que el programa en cambio muestre `"FizzBuzz"` para números divisibles tsnto entre 3 y 5.
+Cuando esté terminado, mejoralo para que el programa en cambio muestre `"FizzBuzz"` para números divisibles tanto entre 3 y 5.
 
 > Este ejercicio tiene [muchas, muchas soluciones](http://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/). Es un [clásico de entrevista de trabajo](http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/) que un número significativo de candidatos fallan. ¡Haz tu mejor esfuerzo!
