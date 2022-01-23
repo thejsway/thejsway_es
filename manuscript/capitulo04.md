@@ -4,7 +4,7 @@ En este capítulo, veremos cómo ejecutar código de forma repetitiva.
 
 ## TL;DR
 
-* **Bucles** son usados para repetir una serie de declaraciones cada repetición es llamada una **iteración** el bloque de código asociado con un bucle es llamado su **cuerpo**.
+* Loa **bucles** son usados para repetir una serie de declaraciones cada repetición es llamada una **iteración** el bloque de código asociado con un bucle es llamado su **cuerpo**.
 
 * El bucle `while` repite declaraciones *mientras* cierta condición es verdadera. El bucle `for` da la habilidad de controlar lo que sucede justo antes de que el bucle comience y después de que cada iteración del bucle se ha ejecutado. 
 
