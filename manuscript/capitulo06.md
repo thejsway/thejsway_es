@@ -24,12 +24,12 @@ const miObjeto = {
   // ...
 };
 
-miObjeto.propiedad1 = valorNuevo; // Establecer el valor nuevo para propiedad1 de miObjeto
+miObjeto.propiedad1 = valorNuevo; // Establecer el valor nuevo para la propiedad1 de miObjeto
 console.log(miObjeto.propiedad1); // Mostrar el valor de propiedad1 de miObjeto
 miObjeto.metodo1(...);           // Invocar a metodo1 en miObjeto
 ```
 
-* Dentro de un método, la palabra clave `this` representa el objeto en el cual es invocado el método.
+* Dentro de un método, la palabra clave `this` representa el objeto en que es invocado el método.
 
 * El lenguaje javascript predefine muchos objetos útiles cómo `console` o `Math`.
 
