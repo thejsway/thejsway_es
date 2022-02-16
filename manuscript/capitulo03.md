@@ -162,7 +162,7 @@ else {
 
 Puedes traducir una declaración `if`/`else` de esta manera: "Si la condición es verdadera, entonces ejecuta este primer segmento de código; de lo contrario, ejecuta este siguiente segemento de código". Solo uno de los dos bloques de codigo sera ejecutado.
 
-### Anidando condiciones
+### Anidar condiciones
 
 Vayamos al siguiente nivel y mostremos un mensaje especifico si el número introducido es cero. Observa este ejemplo, que tiene un caso de prueba positivo, un caso de prueba negativo, y un último caso del número siendo cero.
 
