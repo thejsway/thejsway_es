@@ -51,7 +51,7 @@ La POO cambia la forma en que un programa es escrito y organizado. Hasta ahora h
 
 Como otros tantos lenguajes, JavaScript soporta la programación con objetos. Dispone de un número predefinido de objetos mientras te permite crear los propios.
 
-### Creando un objeto
+### Crear un objeto
 
 Aquí está la representación en JavaScript de un bolígrafo Bic azul de punta esférica.
 
@@ -69,7 +69,7 @@ W> El punto y coma `;` después de la llave de cierre es opcional, pero de todos
 
 El código anterior define una variable llamada `boligrafo` cuyo valor es un objeto: por lo tanto puedes decir que `boligrafo` es un objeto. Este objeto tiene tres propiedades: `tipo`, `color` y `marca`. Cada propiedad tiene un nombre y un valor y es seguido de una coma `,` (a excepción del último).
 
-### Accediendo a las propiedades de un objeto
+### Acceder a las propiedades de un objeto
 
 Después de crear un objeto puedes acceder al valor de sus propiedades usando la **notación de puntos** por ejemplo `miObjeto.miPropiedad`.
 
@@ -99,7 +99,7 @@ console.log(`Yo escribo con un bolígrafo ${boligrafo.marca} ${boligrafo.color} 
 
 ![Resultado de ejecución](images/chapter06-01.png)
 
-### Modificando un objeto
+### Modificar un objeto
 
 Una vez que un objeto es creado, puedes cambiar el valor de sus propiedades con la sintaxis `miObjeto.miPropiedad= valorNuevo`.
 
@@ -133,7 +133,7 @@ console.log(`Mí bolígrafo cuesta ${boligrafo.precio}`);
 
 ![Resultado de ejecución](images/chapter06-03.png)
 
-## Programando con objetos
+## Programar con objetos
 
 Muchos libros y cursos enseñan programación orientada a objetos a través de ejemplos relacionados con animales, carros o cuentas de banco. Hagamos algo más chido y creemos un mini juego de roles (JDR) usando objetos.
 
@@ -189,7 +189,7 @@ console.log(`${aurora.nombre} tiene ${aurora.salud} puntos de salud y ${aurora.f
 
 En el código de arriba, las dos veces tuvimos que escribir declaraciones `console.log` extensas para mostrar el estado de nuestro personaje. Hay una forma más limpia de realizar esto.
 
-#### Añadiendo un método a un objeto 
+#### Añadir un método a un objeto 
 
 Observa el siguiente ejemplo.
 
@@ -235,7 +235,7 @@ Ahora nuestro objeto tiene una nueva propiedad a su disposición: `describir()`.
 
 A la propiedad de un objeto cuyo valor es una función se le denomina **método**.  Los métodos son usados para definir **acciones** en un objeto. Un método añade algún **comportamiento** a un objeto.
 
-#### Invocando un método de un objeto
+#### Invocar un método de un objeto
 
 Analicemos la última línea de nuestro ejemplo previo.
 
