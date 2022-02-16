@@ -38,7 +38,7 @@ Una variable tiene tres propiedades principales:
 
 I> No tienes que definir un tipo de variable explícitamente en JavaScript. Su tipo es deducido del valor almacenado en la variable y podría cambiar mientras el problema se ejecuta. Es por eso que decimos que JavaScript es un lenguaje de *clasificación dinámica. Otros lenguajes, como C o Java, requieren que los tipos de variables siempre sean definidos. Esto se denomina **clasificación estática*.
 
-### Declarando una variable
+### Declarar una variable
 
 Antes de que puedas almacenar información en una variable, ¡tienes que crearla! A esto se le llama declarar una variable. *Declarar* una variable significa que la computadora reserva memoria en la cual almacenar la variable. Luego entonces el programa puede leer o escribir datos en esta área de memoria al manipular la variable.
 
@@ -83,7 +83,7 @@ let a = 3.14;
 console.log(a);
 ```
 
-### Declarando una variable constante
+### Declarar una variable constante
 
 Sí el valor inicial de una variable no cambiará jamás durante la ejecución del resto del programa, está variable es llamada una *constante*. Esta constancia puede ser aplicada usando la palabra clave `const` en lugar de `let` para declararla. Así, el programa es más expresivo y posteriores intentos para modificar la variable pueden ser detectados como errores.
 
