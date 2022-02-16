@@ -1,8 +1,6 @@
-***** Li or li? p.144 of 288/pdf 118 chapter 14
-***** 
 # 3, 2, 1... ¡Arranca!
 
-¡Comencemos! Este capítulo te introducirá a los fundamentos de la programación incluyendo valores, *****tipos de valores y la estructura de un programa.
+¡Comencemos! Este capítulo te introducirá a los fundamentos de la programación incluyendo valores, tipos de valores y la estructura de un programa.
 
 ## TL;DR
 
@@ -34,7 +32,7 @@ Para lograr esto, usa un comando JavaScript llamado `console.log()`, cuyo rol es
 
 Mostrar un texto en la pantalla (el famoso [Hola mundo](https://es.m.wikipedia.org/wiki/Hola_mundo) que todos los programadores conocen) a menudo es la primera cosa que harás cuando aprendes un lenguaje de programación nuevo. Es el ejemplo clásico. ¡Ya has dado ese primer paso!
 
-## Valores y *****tipos de valores
+## Valores y tipos de valores
 
 Un **valor** es información usada en un programa de computación. Los valores existen en diferentes formas llamados tipos. El **tipo** de un valor determina su rol y operaciones disponibles para si mismo.
 
@@ -42,7 +40,7 @@ Cada lenguaje de cómputo tiene sus propios valores y tipos de valores. Veamos d
 
 ### Número
 
-Un **número** es un valor numérico (gracias Capitan Obvio). ¡Pero vayamos las allá de eso! Como en matemáticas, puedes usar números enteros (***** whole number) tales como 0, 1, 2, 3, etc, o números con décimales para una mayor exactitud.
+Un **número** es un valor numérico (gracias Capitan Obvio). ¡Pero vayamos las allá de eso! Como en matemáticas, puedes usar números enteros tales como 0, 1, 2, 3, etc, o números con décimales para una mayor exactitud.
 
 Los números son usados principalmente para contar. Las principales operaciones que verás estén resumidas en la siguiente tabla. Todas ellas producen un resultado numérico.
 
