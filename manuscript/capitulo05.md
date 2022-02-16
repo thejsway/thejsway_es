@@ -112,7 +112,7 @@ console.log("Fin del programa");
 
 Examinemos lo que acaba de suceder.
 
-### Declarando una función
+### Declarar una función
 
 Revisa las primeras líneas del ejemplo anterior.
 
@@ -135,7 +135,7 @@ function miFuncion () {
 
 La declaración de una función es realizada usando la palabra clave de JavaScript `función`, seguida del nombre de la función y un par de paréntesis. Las declaraciones que componen la función constituyen el **cuerpo** de la función. Estás declaraciones son encerradas entre llaves e indentadas.
 
-### Invocando una función
+### Invocar una función
 
 Las funciones deben ser invocadas para que se ejecuten de hecho. Aquí está la segunda parte de nuestro programa ejemplo.
 
@@ -167,7 +167,7 @@ Crear funciones también puede ser una solución al problema de [duplicación de
 
 ## Contenidos de una función
 
-### valor de retorno
+### Valor de retorno
 
 Aquí hay una variación de nuestro programa ejemplo.
 
