@@ -1,6 +1,6 @@
 # Almacena información en matrices
 
-Este capítulo te introducirá a las [matrices] ( https://es.wikipedia.org/wiki/Vector_(inform%C3%A1tica) ), un tipo de variable usado en muchos programas informáticos para almacenar información. 
+Este capítulo te introducirá a las <a href="https://es.wikipedia.org/wiki/Vector_(inform%C3%A1tica)"> matrices </a>, un tipo de variable usado en muchos programas informáticos para almacenar información. 
 
 ## TL;DR
 
