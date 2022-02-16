@@ -145,7 +145,7 @@ while (numero <= 5) {
 
 Para protegerte de bucles infinitos, tienes que asegurarte de que la condición del bucle al final se volverá falsa. 
 
-### Manejando un contador de bucle `for`
+### Manejar un contador de bucle `for`
 
 Imagina que accidentalmente modificas el contador del bucle en el cuerpo del bucle, tal como en el ejemplo siguiente. 
 
