@@ -172,7 +172,7 @@ const aurora = {
   fuerza: 25
 };
 
-console.log(`${aurora.nombre} tiene ${aurora.salud} puntos de salud y ${aurora.fuerza} de fuerza`);
+console.log(`${aurora.nombre} tiene ${aurora.salud} puntos de vida y ${aurora.fuerza} de fuerza`);
 
 // Aurora es herida por una flecha
 aurora.salud -= 20;
@@ -180,7 +180,7 @@ aurora.salud -= 20;
 // Aurora se equipa de un collar de fuerza
 aurora.fuerza += 10;
 
-console.log(`${aurora.nombre} tiene ${aurora.salud} puntos de salud y ${aurora.fuerza} de fuerza`);
+console.log(`${aurora.nombre} tiene ${aurora.salud} puntos de vida y ${aurora.fuerza} de fuerza`);
 ```
 
 ![Resultado de ejecución](images/chapter06-05.png)
@@ -202,7 +202,7 @@ const aurora = {
 
 // Devuelve la descripción del personaje
 function describir(personaje) {
-  return `${personaje.nombre} tiene ${personaje.salud} puntos de salud y ${personaje.fuerza} de fuerza`;
+  return `${personaje.nombre} tiene ${personaje.salud} puntos de vida y ${personaje.fuerza} de fuerza`;
 }
 
 console.log(describir(aurora));
@@ -222,7 +222,7 @@ const aurora = {
 
   // Devuelve la descripción del personaje
   describir() {
-    return `${this.nombre} tiene ${this.salud} puntos de salud y ${this.fuerza} de fuerza`;
+    return `${this.nombre} tiene ${this.salud} puntos de vida y ${this.fuerza} de fuerza`;
   }
 };
 
@@ -266,7 +266,7 @@ const aurora = {
 
   // Devuelve la descripción del personaje
   describir() {
-    return `${this.nombre} tiene ${this.salud} puntos de salud y ${this.fuerza} de fuerza`;
+    return `${this.nombre} tiene ${this.salud} puntos de vida y ${this.fuerza} de fuerza`;
   }
 };
 ```
