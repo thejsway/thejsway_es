@@ -339,7 +339,7 @@ Escribe un programa que crea un objeto `cuenta` con las siguientes característi
 
 * Una propiedad `nombre` establecida como "Alejandro".
 * Una propiedad `saldo` establecida en 0.
-* Un método `abonar` que agrega el valor (positivo o negativo) pasado como un argumento al saldo de la cuenta.
+* Un método `abonar` que agrega el valor (positivo o negativo) pasado como argumento al saldo de la cuenta.
 * Un método `describir` que devuelve la descripción de la cuenta.
 
 Usa este objeto para mostrar su descripción, abonale 250, retirale 80, después muestra de nuevo su descripción.
