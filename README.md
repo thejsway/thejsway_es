@@ -4,4 +4,7 @@
 
 Una introducción gentil a un lenguaje esencial.
 
+
+Nota para el traductor: agregar una nota sobre el uso del español y caracteres especiales en programación.
+
 Copyright © 2017-2021 [Baptiste Pesquet](http://bpesquet.fr).
