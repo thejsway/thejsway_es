@@ -20,7 +20,7 @@ Sabes como usar JavaScript para mostrar valores. Sin embargo, para que un progra
 
 * Los comandos `prompt()` y `alert()` se ocupan de la entrada y visualización de información mediante cuadros de diálogo.
 
-* El nombrado de las variables es escencial para la claridad de un programa. Seguir una convención para el nombrado [camelCase](https://en.wikipedia.org/wiki/Camel_case) es una buena práctica.
+* El nombrado de las variables es escencial para la claridad de un programa. Seguir una convención para el nombrado como [camelCase](https://en.wikipedia.org/wiki/Camel_case) es una buena práctica.
 
 ## Variables
 
