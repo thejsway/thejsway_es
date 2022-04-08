@@ -206,4 +206,4 @@ mostrarHijo(document.body, 8);
 mostrarHijo(document.body.childNodes[0], 0);
 ```
 
-> Usa `console.error()` en lugar de `console.log()` para mostrar un mensajes de error en la consola.
+> Usa `console.error()` en lugar de `console.log()` para mostrar mensajes de error en la consola.
