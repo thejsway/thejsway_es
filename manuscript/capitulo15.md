@@ -260,13 +260,13 @@ Este es el ejemplo de contenido HTML usado en los siguientes párrafos.
 ```html
 <p>Primero</p>
 <p style="color: green;">Segundo</p>
-<p id="para">Tercero</p>
+<p id="parra">Tercero</p>
 ```
 
 Y aquí está la **hoja de estilos** CSS asociada. Las reglas en una hoja de estilos determinan la apariencia de los elementos de una página. Aquí, el único elemento que estamos ajustando a través de CSS es el elemento con el ID `para`. Su texto estará en azul y cursivas.
 
 ```css
-#para {
+#parra {
     font-style: italic;
     color: blue;
 }
