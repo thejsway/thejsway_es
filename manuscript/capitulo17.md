@@ -8,7 +8,7 @@ JavaScript te permite administrar formularios definidos dentro de tu página web
 
 * Cada zona de texto (`input type="text">` o `<textarea>`) tiene una propiedad `value` para acceder al valor introducido.
 
-* Cuando un campo de texto se vuelve el campo de introducción activo, este campo tiene el **enfoque**. Los eventos `focus` y `blur` se activan cuando un campo obtiene o pierde el enfoque, respectivamente. Los métodos `focus()` y `blur()` pueden actualizar el objetivo de enfoque de manera programada.
+* Cuando un campo de texto se vuelve el campo de introducción activo, este campo tiene el **enfoque**. Los eventos `focus` y `blur` se activan cuando un campo obtiene o pierde el enfoque, respectivamente. Los métodos `focus()` y `blur()` pueden actualizar el objetivo de enfoque mediante programación.
 
 * Las casillas, botones de selección y listas desplegables generan eventos `change` cada vez que un usuario modifica su elección.
 
