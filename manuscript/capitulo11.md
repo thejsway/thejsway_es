@@ -10,7 +10,7 @@ La meta de este proyecto es crear un programa simple de noticias sociales. Sus u
 
 ## Normas operativas
 
-* Un enlace es definido por su título su URL y su autor (remitente).
+* Un enlace es definido por su título, su URL y su autor (remitente).
 * Si la URL de un nuevo enlace no empieza con `"http://"` o `"https://"`, se le agrega `"http://"` automáticamente al inicio.
 * Al arranque el programa muestra un menú de inicio con las posibles acciones en una ventana de alerta y le solicita al usuario su elección. Las posibles acciones son:
   * Mostrar la lista de enlaces.
