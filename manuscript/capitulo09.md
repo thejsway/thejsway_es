@@ -178,7 +178,7 @@ miObjeto.metodo1(/* ... */);
 // ...
 ```
 
-## El detrás de cámaras: objetos y prototipos
+## Más allá de lo aparente: objetos y prototipos
 
 Si tienes experiencia previa en programación, es posible que ya te hayas topado con las clases y estés familiarizado con ellas. Pero como descubrirás pronto, las clases en javascript no son tanto como sus equivalentes en C++, Java o C#.
 
