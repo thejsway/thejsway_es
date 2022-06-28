@@ -4,7 +4,7 @@ Este capítulo te ayudará a descubrir cómo se muestra una página web en un na
 
 ## TL;DR
 
-* Una **página web** es un documento estructurado que contiene tanto texto como etiquetas HTML. El **DOM**, o *Document Object Model*, es una manera estandarizada para definir la estructura de una página web.
+* Una **página web** es un documento estructurado que contiene tanto texto como etiquetas HTML. El **DOM**, o *modelo de documento por objetos*, es una manera estandarizada para definir la estructura de una página web.
 
 * El DOM también es una **API** que permite interacciones programadas con la página web. Con JavaScript, puedes acceder a la estructura de una página mostrada en un navegador y modificarla.
 
@@ -44,7 +44,7 @@ Para crear este resultado, el navegador primero toma el código HTML y construye
 
 El navegador también ofrece acceso **programado** a la representación estructurada de una página web que se visualiza. Usando está interfaz, puedes actualizar dinámicamente la página añadiendo o eliminando elementos, cambiando estilos, etc. Así es como creas páginas web **interactivas**.
 
-A la representación estructurada de una página web se le llama **DOM**, abreviación de *Document Object Model*. El DOM define la estructura de una página y una manera de interactuar con ella. Esto quiere decir que es una interfaz de programación, o **API** (*Application Programming Interface*). JavaScript es el lenguaje por excelencia para interactuar con el DOM.
+A la representación estructurada de una página web se le llama **DOM**, abreviación del inglés Document Object Model, y traducido al español como *modelo de documento por objetos*. El DOM define la estructura de una página y una manera de interactuar con ella. Esto quiere decir que es una interfaz de programación, o **API** (*Application Programming Interface*). JavaScript es el lenguaje por excelencia para interactuar con el DOM.
 
 > En los albores de la web, cada navegador usaba su propio DOM, provocando dolores de cabeza a los desarrolladores JavaScript al intentar programar páginas web. Estos tiempos duros han terminado. A través de un esfuerzo del [Consorcio World Wide Web](https://w3c.org) (W3C) la primera versión de un DOM unificado fue creado en 1998. Actualmente, todos los navegadores recientes usan un DOM estandarizado.
 
