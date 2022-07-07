@@ -4,7 +4,7 @@
 
 ## TL;DR
 
-* El comando `console.log()` de JavaScript muestra un mensaje en la **consola**, una zona de información disponible en la mayoría de entornos JavaScript..
+* El comando `console.log()` de JavaScript muestra un mensaje en la **consola**, una zona de información disponible en la mayoría de entornos JavaScript.
 
 * Un **valor** es una pieza de información. El **tipo** de un valor define su rol y las operaciones aplicables al mismo.
 
