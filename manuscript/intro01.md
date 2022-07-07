@@ -1,6 +1,6 @@
 # Acerca de este libro
 
-Primero lo primero gracias por haber elegido este libro espero que leerlo sea tanto benéfico como placentero para ti
+Primero lo primero: gracias por haber elegido este libro espero que leerlo sea tanto benéfico como placentero para ti
 
 ## Para quién es este libro
 
