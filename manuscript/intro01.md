@@ -20,7 +20,7 @@ Al final de cada capítulo, una serie de ejercicios cortos y focalizados te har�
 
 Tienes dos opciones para seguir el hilo, dependiendo de qué tantas ganas tengas de entrar en acción y qué tan agusto te sientas configurando tu máquina local:
 
-* Escribir código en línea, usando entornos cargados de funcionalidades JavaScript  cómo [CodePen](https://codepen.io) y [Glitch](https://glitch.com).
+* Escribir código en línea, usando entornos cargados de funcionalidades JavaScript como [CodePen](https://codepen.io) y [Glitch](https://glitch.com).
 * Construir un entorno de desarrollo local.
 
 La primera opción es la más fácil y rápida; la segunda es más eficaz y probablemente se vuelva necesaria a medida que resuelvas desafíos de programación más grandes en un futuro no muy distante. Consulta el capítulo "Configuración de entorno" para más detalles sobre ambos.
