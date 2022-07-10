@@ -59,8 +59,8 @@ Para comprender porque las funciones son importantes, checa nuestra ejemplo de u
 ```text
 Inicio
   Saca la arrocera
-  Llenala con arroz
-  Llenala con agua
+  Llénala con arroz
+  Llénala con agua
   Cuece el arroz
   Pica las verduras
   Saltea las verduras
