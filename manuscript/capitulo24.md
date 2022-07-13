@@ -224,7 +224,7 @@ A continuación un ejemplo de un archivo `package.json`  típico.
 {
   "name": "ejemplo-node-alamanerajs",
   "version": "1.0.0",
-  "description": "Ejemplo de Node para el libro \"Modo JavaScript\"",
+  "description": "Ejemplo de Node para el libro \"El modo JavaScript\"",
   "scripts": {
     "start": "node index.js"
   },
