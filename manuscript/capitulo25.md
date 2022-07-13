@@ -278,7 +278,7 @@ app.get("/hello", (request, response) => {
 
 Sin embargo, las cosas se nos saldrían rápidamente de las manos a medida que la complejidad de la página web crezca. Una mejor solución es definir el contenido HTML en un archivo externo almacenado en una subcarpeta especifica, y devolver ese archivo como resultado de la solicitud.
 
-Por ejemplo, crea una subcarpeta llamada `visitas` y adentro  un archivo llamado `saludo.html`. Inserta el siguiente contenido en el archivo HTML. 
+Por ejemplo, crea una subcarpeta llamada `views` y adentro  un archivo llamado `saludo.html`. Inserta el siguiente contenido en el archivo HTML. 
 
 ```html
 <!doctype html>
@@ -312,7 +312,7 @@ Al apuntar al dirigir tu navegador hacia la URL `"/hello"` (<http://localhost:30
 
 La mayoría de las páginas web necesitarán cargar recursos del lado del cliente tales como imágenes, archivos CSS y JavaScript. Una práctica común es poner estos recursos en una carpeta especifica.
 
-Por ejemplo crea la subcarpeta `publico` y adentro el archivo JavaScript `hello.js` con el siguiente contenido.
+Por ejemplo crea la subcarpeta `public` y adentro el archivo JavaScript `hello.js` con el siguiente contenido.
 
 ```js
 // Actualiza el elemento DOM "contenido"
