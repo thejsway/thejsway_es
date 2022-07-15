@@ -10,7 +10,7 @@ Este libro cubre mucho terreno. Estas son algunas conclusiones fundamentales.
 
 * JavaScript ha sido estandarizado bajo el nombre de **ECMAScript** y es mejorado continuamente. Su última gran versión es **ES2015**, también conocida cómo ES6.
 
-* JavaScript es **clasificado dinámicamente**: el tipo de variable se deduce del valor que almacena.
+* JavaScript es de **clasificado dinámico**: el tipo de variable se deduce del valor que almacena.
 
 * JavaScript es un lenguaje **multiparadigma**: puedes escribir programas usando un estilo de programación imperativo, orientado a objetos o funcional.
 
