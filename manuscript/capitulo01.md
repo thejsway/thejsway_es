@@ -12,7 +12,7 @@
 
 * Un valor de tipo cadena se encierra por un par de comillas simples (`'...'`) o un par de comillas dobles (`"..."`).
 
-* Las operaciones aritméticas entre numéros están a cargo de los operadores  `+`, `-`, `*` y `/`. Aplicados a dos cadenas, el operador + las une. Está operación se denomina **concatenación**.
+* Las operaciones aritméticas entre números están a cargo de los operadores  `+`, `-`, `*` y `/`. Aplicados a dos cadenas, el operador + las une. Está operación se denomina **concatenación**.
 
 * Un programa de computadora está hecho de varias **líneas de código** leído secuencialmente durante la ejecución.
 
@@ -34,13 +34,13 @@ Mostrar un texto en la pantalla (el famoso [Hola mundo](https://es.m.wikipedia.o
 
 ## Valores y tipos de valores
 
-Un **valor** es información usada en un programa de computación. Los valores existen en diferentes formas llamados tipos. El **tipo** de un valor determina su rol y operaciones disponibles para si mismo.
+Un **valor** es información usada en un programa de computación. Los valores existen en diferentes formas llamados tipos. El **tipo** de un valor determina su rol y operaciones disponibles para sí mismo.
 
 Cada lenguaje de cómputo tiene sus propios valores y tipos de valores. Veamos dos tipos de valores disponibles en JavaScript.
 
 ### Número
 
-Un **número** es un valor numérico (gracias Capitan Obvio). ¡Pero vayamos las allá de eso! Como en matemáticas, puedes usar números enteros tales como 0, 1, 2, 3, etc, o números con décimales para una mayor exactitud.
+Un **número** es un valor numérico (gracias Capitan Obvio). ¡Pero vayamos más allá de eso! Como en matemáticas, puedes usar números enteros tales como 0, 1, 2, 3, etc., o números con decimales para una mayor exactitud.
 
 Los números son usados principalmente para contar. Las principales operaciones que verás estén resumidas en la siguiente tabla. Todas ellas producen un resultado numérico.
 
@@ -60,8 +60,8 @@ También puedes establecer cadenas con un par de comillas simples: `'Está es ot
 
 W> Recuerda siempre cerrar una cadena con el mismo tipo de comillas con las que la iniciaste.
 
-Para incluir carácteres especiales en una cadena, usa el carácter `\` (*diagonal invertida*) antes del carácter. Por ejemplo, escribe `\n` para añadir una nueva línea dentro de una cadena:
-`"Esto es\nuna cadena multilinea"`.
+Para incluir caracteres especiales en una cadena, usa el carácter `\` (*diagonal invertida*) antes del carácter. Por ejemplo, escribe `\n` para añadir una nueva línea dentro de una cadena:
+`"Esto es\nuna cadena multilínea"`.
 
 No puedes sumar o restar valores de tipo cadena como lo harías con números. Sin embargo, el operador `+` tiene un significado especial cuando se aplica a dos valores de tipo cadena. Unirá las dos cadenas y esta operación es denominada **concatenación**. Por ejemplo, `"Ho" + "la"` produce el resultado `"Hola"`.
 
@@ -73,7 +73,7 @@ El código fuente podría incluir líneas vacías: estás serán ignoradas cuand
 
 ### Declaraciones
 
-cada instrucción dentro de un programa es llamada una **declaración**. Una declaración en javascript generalmente termina con un **punto y coma** (aunque no es estrictamente obligatorio). Tu programa estará conformado de varias de estas declaraciones.
+cada instrucción dentro de un programa es llamada una **declaración**. Una declaración en JavaScript generalmente termina con un **punto y coma** (aunque no es estrictamente obligatorio). Tu programa estará conformado de varias de estas declaraciones.
 
 I> Generalmente sólo escribes una declaración por línea.
 
@@ -81,7 +81,7 @@ I> Generalmente sólo escribes una declaración por línea.
 
 Cuando un programa es ejecutado, las declaraciones dentro de él son "leídas" una después de otra. Es la combinación de estos resultados individuales lo que produce el resultado final de un programa.
 
-Aquí está un ejemplo de un programa javascript que incluye varias declaraciones, seguidas del resultado de su ejecución.
+Aquí está un ejemplo de un programa JavaScript que incluye varias declaraciones, seguidas del resultado de su ejecución.
 
 ```js
 console.log("¡Hola desde JavaScript!");
@@ -97,7 +97,7 @@ Dependiendo de tu entorno de desarrollo, el resultado de ejecución podría no i
 
 ![Resultado de ejecución en consola de navegador](images/chapter01-04.png)
 
-I> como era de esperar, una división entre cero  l (`12/0`) resulta en un valor `Infinito`.
+I> como era de esperar, una división entre cero l (`12/0`) resulta en un valor `Infinito`.
 
 ### Comentarios
 
@@ -111,31 +111,31 @@ console.log(4 + 7);
 console.log("¡Adiós!");
 ```
 
-Durante la ejecución, las líneas puestas como comentarios ya no producen resultados.  Como esperábamos, no fueron ejecutadas. 
+Durante la ejecución, las líneas puestas como comentarios ya no producen resultados.  Como esperábamos, no fueron ejecutadas.
 
 ![Resultado de ejecución](images/chapter01-02.png)
 
-Los comentarios son excelentes para los desarrolladores, así que puedes escribir comentarios para ti mismo, explicaciones sobre tu código y más, sin que la computadora ejecute nada de eso. 
+Los comentarios son excelentes para los desarrolladores, así que puedes escribir comentarios para ti mismo, explicaciones sobre tu código y más, sin que la computadora ejecute nada de eso.
 
-También puedes escribir comentarios  tecleando `/*  */` alrrededor del código que quieres poner como comentario.
+También puedes escribir comentarios tecleando `/*  */` alrededor del código que quieres poner como comentario.
 
 ```js
-/* Un comentario 
-escrito en 
-varias líneas 
+/* Un comentario
+escrito en
+varias líneas
 */
 
-// Un comentario de una línea 
+// Un comentario de una línea
 ```
-Los comentarios son una gran fuente de información acerca del propósito o estructura de un programa. Agregar comentarios a secciones complicadas o críticas es un buen hábito que ¡deberías desarrollar ahora mismo! 
+Los comentarios son una gran fuente de información acerca del propósito o estructura de un programa. Agregar comentarios a secciones complicadas o críticas es un buen hábito que ¡deberías desarrollar ahora mismo!
 
-## ¡Hora de programar! 
+## ¡Hora de programar!
 
 Pongamos tus habilidades de programación recién adquiridas en práctica.
 
-### Presentación 
+### Presentación
 
-Escribe un programa que muestra tu nombre y edad. Aquí está el resultado del mío. 
+Escribe un programa que muestra tu nombre y edad. Aquí está el resultado del mío.
 
 ![](images/chapter01-03.png)
 
@@ -143,9 +143,9 @@ Escribe un programa que muestra tu nombre y edad. Aquí está el resultado del m
 
 Escribe un programa que muestra los resultados de sumar, restar, multiplicar y dividir 6 entre 3.
 
-### Predicción de valores 
+### Predicción de valores
 
-Observa el siguiente programa e intenta predecir los valores que muestra. 
+Observa el siguiente programa e intenta predecir los valores que muestra.
 
 ```js
 console.log(4 + 5);
@@ -153,4 +153,4 @@ console.log("4 + 5");
 console.log("4" + "5");
 ```
 
-Revisa tu predicción ejecutandolo. 
+Revisa tu predicción ejecutándolo.
