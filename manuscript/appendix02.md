@@ -31,7 +31,7 @@ Adicionalmente, este libro usa las siguientes reglas de nomenclatura:
 * Para ser consecuentes con otros lenguajes de programación, los nombres de clases comienzan con una letra **mayúscula**: `Usuario` en lugar de `usuario`.
 
 * Puesto que podrían contener múltiples elementos, las matrices son nombradas en **plural** o se les agrega el prefijo `lista`: `peliculas` o `listaPeliculas`, pero no `pelicula`.
-* Para distinguirlos de otras variables, a los elementos DOM  se les agrega el prefijo `element` (o `elementos` para variables de tipo matriz): `elementoDiv` en lugar de simplemente `div`.
+* Para distinguirlos de otras variables, a los elementos DOM se les agrega el prefijo `element` (o `elementos` para variables de tipo matriz): `elementoDiv` en lugar de simplemente `div`.
 
 W> Como muchos otros lenguajes, JavaScript distingue entre mayúsculas y minúsculas. Por ejemplo, `miVariable` y `mivariable` son dos nombres de variable diferentes. ¡Ten cuidado!
 
@@ -43,7 +43,7 @@ Una solución sencilla y eficiente es contar con una herramienta para automatiza
 
 ## Calidad del código 
 
-Puesto que JavaScript  es un lenguaje de clasificación dinámica, varios errores no aparecen hasta la ejecución: nombrar erróneamente una función, cargar un módulo inexistente, etc. Además, muchas otras equivocaciones como declarar una variable sin siquiera usarla no afectarán el resultado de ejecución, pero hacen tu código más difícil de leer y reducen su calidad general.
+Puesto que JavaScript es un lenguaje de clasificación dinámica, varios errores no aparecen hasta la ejecución: nombrar erróneamente una función, cargar un módulo inexistente, etc. Además, muchas otras equivocaciones como declarar una variable sin siquiera usarla no afectarán el resultado de ejecución, pero hacen tu código más difícil de leer y reducen su calidad general.
 
 Por suerte, herramientas especializadas llamadas **linters** pueden verificar el cumplimiento de las reglas en tu código durante la edición y advertir sobre defectos potenciales. Los linters aumentan considerablemente la productividad del desarrollador, permitiendo arreglar muchas fallas antes de que sucedan.
 
