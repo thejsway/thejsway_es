@@ -8,7 +8,7 @@ En este capítulo, aprenderás cómo dividir un programa en subpartes llamadas f
 
 * Escrito como una combinación de distintas funciones breves y precisas, un programa generalmente será más fácil de entender y más **modular** que uno monolítico.
 
-* Una **invocación de función** desencadena la ejecución del código de una función. Cuando esto termina, la ejecución  se reanuda en el lugar donde La invocación fue realizada.
+* Una **invocación de función** desencadena la ejecución del código de una función. Cuando esto termina, la ejecución se reanuda en el lugar donde La invocación fue realizada.
 
 * Las variables declaradas dentro de una función son limitadas en alcance al cuerpo de la función. Estas son llamadas **variables locales**.
 
@@ -19,7 +19,7 @@ En este capítulo, aprenderás cómo dividir un programa en subpartes llamadas f
 ```js
 // Declaración de función
 function miFuncion(param1, param2, ...) {
-  //  Código de la función usando param1, param2, ...
+  // Código de la función usando param1, param2, ...
 }
 
 // Invocación de función
@@ -54,7 +54,7 @@ miFunc(arg1, arg2, ...);
 
 ## Introducción: el rol de las funciones
 
-Para comprender porque las funciones son importantes, checa nuestra ejemplo de un capítulo previo: el algoritmo del burrito :)
+Para comprender porque las funciones son importantes, checa nuestro ejemplo de un capítulo previo: el algoritmo del burrito :)
 
 ```text
 Inicio
@@ -88,13 +88,13 @@ Inicio
 Fin
 ```
 
-La primera versión detalla todos las acciones individuales que integran el proceso de preparación. La segunda desglosa la receta en **etapas más generales** e introduce conceptos que pueden ser reusados para otros platillos también cómo *coser*, *saltear*, *añadir* y *enrollar*.
+La primera versión detalla todas las acciones individuales que integran el proceso de preparación. La segunda desglosa la receta en **etapas más generales** e introduce conceptos que pueden ser reusados para otros platillos también cómo *coser*, *saltear*, *añadir* y *enrollar*.
 
 Nuestros programas hasta ahora han invitado al primer ejemplo, pero es tiempo de empezar a modularizar nuestro código en subetapas para que podamos reusar fragmentos y piezas cuando sea necesario. En JavaScript, ¡estás subetapas son llamadas **funciones**!
 
 ## Descubriendo las funciones
 
-Una **función** son  un grupo de declaraciones que realizan una tarea en particular.
+Una **función** son un grupo de declaraciones que realizan una tarea en particular.
 
 Aquí está un ejemplo básico de una función.
 
@@ -220,7 +220,7 @@ console.log(resultado); // undefined
 
 W> Una función deja de correr inmediatamente después de que la declaración `return` es ejecutada. Declaraciones posteriores nunca son ejecutadas. 
 
-Simplifiquemos un poco nuestra ejemplo deshaciendonos de la variable que almacena el valor de retorno de la función.
+Simplifiquemos un poco nuestro ejemplo deshaciéndonos de la variable que almacena el valor de retorno de la función.
 
 ```js
 function diHola() {
@@ -318,7 +318,7 @@ nombre = "Luis";
 console.log(diHola(nombre)); // "¡Hola, Luis!"
 ```
 
-Cuándo se invoca una función, respetar el número y orden de los parámetros ¡es fundamental! Revisa el siguiente ejemplo.
+Cuando se invoca una función, respetar el número y orden de los parámetros ¡es fundamental! Revisa el siguiente ejemplo.
 
 ```js
 function presentacion(nombre, edad) {
@@ -385,7 +385,7 @@ const miFunc = (param1, param2, ...) => {
 miFunc(arg1, arg2, ...);
 ```
 
-La sintaxis de las funciones de flecha gruesa pueden simplificarse aún más en algunos casos particulares:
+La sintaxis de las funciones de flecha gruesa puede simplificarse aún más en algunos casos particulares:
 
 * Cuando solo hay una declaración en el cuerpo de la función, todo puede ser escrito en la misma línea sin llaves. La declaración `return` es omitida e implícita.
 * Cuando la función solo acepta un parámetro los paréntesis alrededor, pueden ser omitidos.
@@ -501,10 +501,10 @@ Completa el siguiente programa para que disponga de las cuatro operaciones aritm
 ```js
 // PENDIENTE: completar el programa
 
-console.log(calculate(4, "+", 6));  // Debe mostrar 10
-console.log(calculate(4, "-", 6));  // Debe mostrar -2
-console.log(calculate(2, "*", 0));  // Debe mostrar 0
-console.log(calculate(12, "/", 0)); // Debe mostrar Infinity
+console.log(calcular(4, "+", 6));  // Debe mostrar 10
+console.log(calcular(4, "-", 6));  // Debe mostrar -2
+console.log(calcular(2, "*", 0));  // Debe mostrar 0
+console.log(calcular(12, "/", 0)); // Debe mostrar Infinity
 ```
 
 ### Circunferencia y área de un círculo
