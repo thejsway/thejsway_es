@@ -16,9 +16,9 @@
 
 Desde su invención en los años 50, las **computadoras** han revolucionado nuestras vidas diarias. Calculando una ruta desde un sitio web o un GPS, reservando un boleto de tren o avión, o viendo y platicando con nuestros amigos al otro lado del mundo: todas estas acciones son posibles gracias a las computadoras.
 
-I> Tomemos el término "computadora" en su sentido más amplió, es decir, una máquina que puede realizar operaciones aritméticas y lógicas. Podría referirse tanto a una computadora de escritorio o laptop (PC, Mac), a un servidor, o a un dispositivo móvil como una tableta o un teléfono inteligente.
+I> Tomemos el término "computadora" en su sentido más amplio, es decir, una máquina que puede realizar operaciones aritméticas y lógicas. Podría referirse tanto a una computadora de escritorio o laptop (PC, Mac), a un servidor, o a un dispositivo móvil como una tableta o un teléfono inteligente.
 
-No obstante, una computadora solo puede realizar una serie de operaciones simples cuando se le instruye hacerlo. Normalmente no tienen habilidades para aprender, juzgar o improvisar. ¡Simplemente hacen lo que se les pide! Su valor está en como pueden lidiar y procesar rápidamente enormes cantidades de información.
+No obstante, una computadora solo puede realizar una serie de operaciones simples cuando se le instruye hacerlo. Normalmente no tienen habilidades para aprender, juzgar o improvisar. ¡Simplemente hacen lo que se les pide! Su valor está en cómo pueden lidiar y procesar rápidamente enormes cantidades de información.
 
 Con frecuencia una computadora requiere de la intervención humana. ¡Es ahí donde entran los programadores y desarrolladores! Ellos escriben programas que se traducen en instrucciones para una computadora.
 
@@ -100,7 +100,7 @@ Con algunos lenguajes, la traducción a código ensamblador sucede línea por l�
 
 Otra posibilidad es leer y buscar errores a través de todo el código fuente antes de la ejecución. Si no se detectan errores, se genera un ejecutable dirigido a una plataforma de hardware específica. El paso intermedio se llama **compilación** y se dice que los lenguajes de programación que lo usan son **compilados**.
 
-Finalmente, algunos lenguajes son pseudo compilados para poder ser ejecutados en distintas plataformas de hardware. Este es el caso para el lenguaje Java y también para los que pertenecen a la familia Microsoft .NET (VB.NET, C#, etc).
+Finalmente, algunos lenguajes son pseudo compilados para poder ser ejecutados en distintas plataformas de hardware. Este es el caso para el lenguaje Java y también para los que pertenecen a la familia Microsoft .NET (VB.NET, C#, etc.).
 
 ## Aprende a programar
 
@@ -140,7 +140,7 @@ Alcanzas tu meta combinando una serie de acciones en un orden específico. Hay d
 * Acciones condicionales ("si las verduras están buenas") 
 * Acciones que se repiten ("sigue salteando las verduras")
 
-Usamos un estilo de escritura simple, no un lenguaje de programación en específico. De hecho solo escribimos lo que se llama un **algoritmo**. Podemos definir un algoritmo como una secuencia ordenada de operaciones para resolver un problema dado. Un algoritmo descompone un problema complejo en una serie de operaciones simples.
+Usamos un estilo de escritura simple, no un lenguaje de programación en específico. De hecho, solo escribimos lo que se llama un **algoritmo**. Podemos definir un algoritmo como una secuencia ordenada de operaciones para resolver un problema dado. Un algoritmo descompone un problema complejo en una serie de operaciones simples.
 
 ### El rol del programador
 
