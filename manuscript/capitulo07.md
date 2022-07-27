@@ -10,7 +10,7 @@ Este capítulo te introducirá a las <a href="https://es.wikipedia.org/wiki/Vect
 
 * Puedes acceder a un elemento en particular pasando su posición entre **corchetes** `[]`.
 
-* Para iterar en una matriz recorriendola elemento por elemento puedes usar él bucle `for`, el método `forEach()` o el bucle más reciente `for-of`.
+* Para iterar en una matriz recorriéndola elemento por elemento puedes usar él bucle `for`, el método `forEach()` o el bucle más reciente `for-of`.
 
 ```js
 for (let i = 0; i < miMatriz.length; i++) {
@@ -142,7 +142,7 @@ for (let i = 0; i < peliculas.length; i++) {
 
 El bucle atraviesa cada elemento en la matriz empezando con la posición 0 hasta la longitud de la matriz menos 1, que es su último elemento.
 
-Otra forma es invocar el método `forEach()` en la matriz. Este toma como parámetro una **función** que sera aplicada a cada elemento de la matriz.
+Otra forma es invocar el método `forEach()` en la matriz. Este toma como parámetro una **función** que será aplicada a cada elemento de la matriz.
 
 ```js
 miMatriz.forEach(miElemento => {
@@ -182,7 +182,7 @@ for (const pelicula of peliculas) {
 
 ### Agregar un elemento a una matriz
 
-No mientas: acabas de ver Ghostbusters *otra vez*. Agreguemosla a la lista. Así es como lo harías.
+No mientas: acabas de ver Ghostbusters *otra vez*. Agreguémosla a la lista. Así es como lo harías.
 
 ```js
 const peliculas = ["The Wolf of Wall Street", "Zootopia", "Babysitting"];
