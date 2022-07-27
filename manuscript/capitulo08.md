@@ -8,7 +8,7 @@ Mucho del código que escribas implicará modificar cadenas de caracteres de tex
 
 * La propiedad `length` devuelve el número de caracteres de la cadena de caracteres.
 
-* Las cadenas de caracteres en JavaScript son **[inmutables]( https://es.wikipedia.org/wiki/Objeto_inmutable )**: una vez creado, el valor de una cadena de caracteres nunca cambia. Los métodos de las cadenas de caracteres nunca afectan el valor inicial y siempre devuelven una cadena de caracteres nueva. 
+* Las cadenas de caracteres en JavaScript son **[inmutables](https://es.wikipedia.org/wiki/Objeto_inmutable )**: una vez creado, el valor de una cadena de caracteres nunca cambia. Los métodos de las cadenas de caracteres nunca afectan el valor inicial y siempre devuelven una cadena de caracteres nueva. 
 
 * Los métodos `toLowerCase()` y `toUpperCase()` devuelven nuevas cadenas de caracteres convertidas en minúsculas y mayúsculas respectivamente.
 
@@ -33,7 +33,7 @@ Recapitulemos lo que ya sabemos sobre las cadenas de caracteres un valor de tipo
 
 * En JavaScript, una cadena de caracteres se definida poniendo texto entre comillas simples (`'Soy una cadena de caracteres'`) o dobles (`"Soy una cadena de caracteres"`).
 
-* Puedes utilizar caracteres especiales dentro de una cadena de caracteres introduciendo los con `\` ("diagonal invertida)" seguida de otro caracter. Por ejemplo, usa `\n` para agregar un salto de línea.
+* Puedes utilizar caracteres especiales dentro de una cadena de caracteres introduciendo los con `\` ("diagonal invertida)" seguida de otro carácter. Por ejemplo, usa `\n` para agregar un salto de línea.
 
 * El operador `+` concatena (combina o suma) dos o más caracteres.
 
@@ -41,7 +41,7 @@ Más allá de estos usos básicos, las cadenas de caracteres tienen aún más ve
 
 ## Obtener el tamaño de una cadena de caracteres
 
-Para obtener el **tamaño** de una cadena de caracteres (el número de caracteres) que contiene, agregale `.length`. El tamaño será devuelto como un número entero.
+Para obtener el **tamaño** de una cadena de caracteres (el número de caracteres) que contiene, agrégale `.length`. El tamaño será devuelto como un número entero.
 
 ```js
 console.log("ABC".length); // 3
@@ -56,7 +56,7 @@ Aunque los valores de las cadenas de texto son de tipo primitivo en JavaScript, 
 ## Convertir caracteres a mayúsculas o minúsculas
 
 Puedes convertir el texto de una cadena de caracteres a **minúsculas** invocando el método `toLowerCase()`. Alternativamente, puedes hacer lo mismo con `toUpperCase()` para convertir una cadena de caracteres a minúsculas.
-palabraMinuscula palabraMayuscula
+
 ```js
 const palabraOriginal = "Bora-Bora";
 
@@ -78,7 +78,7 @@ Puedes comparar dos cadenas de caracteres con el operador `===`. La operación d
 ```js
 const palabra = "koala";
 console.log(palabra === "koala");    // true
-console.log(palabra === "kangaroo"); // false
+console.log(palabra === "canguro"); // false
 ```
 
 W> La comparación de cadenas de caracteres distingue entre minúsculas y mayúsculas. ¡Así que pon atención a las letras!
@@ -99,7 +99,7 @@ Puedes ver a una cadena de caracteres como una matriz de caracteres. Cada carác
 
 ### Acceder a un carácter en particular
 
-Sabes como identificar un carácter por su posición. Para acceder a él, usas la **notación de corchetes** `[]` con el carácter colocado entre los corchetes.
+Sabes cómo identificar un carácter por su posición. Para acceder a él, usas la **notación de corchetes** `[]` con el carácter colocado entre los corchetes.
 
 W> Tratar de acceder a un carácter más allá del tamaño de la cadena de caracteres produce el resultado `undefined`.
 
@@ -114,10 +114,10 @@ console.log(deporte[10]); // undefined: el último carácter está en la posici�
 
 ### Iterar en una cadena de caracteres
 
-Ahora ¿que tal si quieres acceder a todos las letras de una cadena de caracteres uno por uno? Puedes acceder a cada letra individualmente, como se mostró antes:
+Ahora ¿qué tal si quieres acceder a todos las letras de una cadena de caracteres uno por uno? Puedes acceder a cada letra individualmente, como se mostró antes:
 
 ```js
-const nombre = "Sarah"; // 5 caracteres 
+const nombre = "Sarah"; // 5 caractères 
 console.log(nombre[0]); // "S"
 console.log(nombre[1]); // "a"
 console.log(nombre[2]); // "r"
@@ -181,7 +181,7 @@ console.log(cancion.indexOf("onk")); // 1
 console.log(cancion.indexOf("Onk")); // -1 debido a diferencia entre mayúsculas y minúsculas
 ```
 
-Cuando se busca un valor al inicio o final de una cadena de caracteres, también se pueden usar los métodos `startsWith()`  y `endsWith()`. Ambos devuelven ya sea  `true` o `false`, dependiendo si el valor es hallado o no. Ten cuidado: estos métodos distinguen entre mayúsculas y minúsculas.
+Cuando se busca un valor al inicio o final de una cadena de caracteres, también se pueden usar los métodos `startsWith()`  y `endsWith()`. Ambos devuelven ya sea `true` o `false`, dependiendo si el valor es hallado o no. Ten cuidado: estos métodos distinguen entre mayúsculas y minúsculas.
 
 
 ```js
@@ -224,6 +224,6 @@ Mejor el programa anterior para que muestre la palabra escrita al revés.
 
 ### Palíndromo
 
-Mejor al programa anterior para checar si la palabra es un palíndromo. Un palíndromo es una palabra u oración que se escribe de la misma forma ya sea derecho o al revés, ignorándo signos de puntuación, mayúsculas y minúsculas y espacios.
+Mejor al programa anterior para checar si la palabra es un palíndromo. Un palíndromo es una palabra u oración que se escribe de la misma forma ya sea derecho o al revés, ignorando signos de puntuación, mayúsculas y minúsculas y espacios.
 
 > `"radar"` debe ser detectada como un palíndromo, `"Radar"` también.
