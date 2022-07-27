@@ -23,7 +23,7 @@ Para seguir el hilo de estos capítulos, necesitarás un entorno de programació
 Sí eliges usar CodePen, realmente deberías comenzar visitando [Welcome to CodePen](https://codepen.io/hello/). Te introduce a la plataforma de una forma muy amigable y te proporciona todo lo que necesitas para iniciar.
 
 
-Adicionalmente hay algunos artículos útiles en la documentación de CodePen sobre [auto completado](https://blog.codepen.io/documentation/editor/autocomplete/), la [consola ](https://blog.codepen.io/documentation/editor/console/), [ autoguardado de proyecto](https://blog.codepen.io/documentation/editor/autosave/), [atajos de teclado](https://blog.codepen.io/documentation/editor/key-bindings/) y [actualización automática](https://blog.codepen.io/documentation/editor/auto-updating-previews/). Aunque no es obligatorio, dominar CodePen te hará mucho más productivo mientras estudias este libro.
+Adicionalmente hay algunos artículos útiles en la documentación de CodePen sobre [auto completado](https://blog.codepen.io/documentation/editor/autocomplete/), la [consola](https://blog.codepen.io/documentation/editor/console/), [ autoguardado de proyecto](https://blog.codepen.io/documentation/editor/autosave/), [atajos de teclado](https://blog.codepen.io/documentation/editor/key-bindings/) y [actualización automática](https://blog.codepen.io/documentation/editor/auto-updating-previews/). Aunque no es obligatorio, dominar CodePen te hará mucho más productivo mientras estudias este libro.
 
 T> Te recomiendo activar el autoguardado y desactivar la actualización automática para todos tus Pens (nombre que asigna la plataforma CodePen a tus proyectos) relacionados con el libro. A menudo será necesario visualizar la consola de CodePen para ver los resultados producidos por el código.
 
@@ -37,7 +37,7 @@ A partir del capítulo 24, será necesario un entorno virtual del **lado del ser
 
 ![El logo de Glitch](images/appendix01-02.png)
 
-Puedes aprender más acerca de glitch [aquí ](https://glitch.com/about/) y comenzar remezclando [este  proyecto](https://glitch.com/edit/#!/thejsway-starterapp).
+Puedes aprender más acerca de glitch [aquí](https://glitch.com/about/) y comenzar remezclando [este proyecto](https://glitch.com/edit/#!/thejsway-starterapp).
 
 ## Solución B: construir un entorno de desarrollo local
 
@@ -134,7 +134,7 @@ En estos capítulos, crearas aplicaciones Node.js para ejecutar tu código JavaS
 
 ### Usa las herramientas del desarrollador de tu navegador
 
-Los navegadores modernos incluyen **herramientas del desarrollador** para ayudar con el desarrollo web. Cada navegador difiere en qué heramientas exactamente proveer, pero hay más similitudes que diferencias entre ellas.
+Los navegadores modernos incluyen **herramientas del desarrollador** para ayudar con el desarrollo web. Cada navegador difiere en qué herramientas exactamente proveer, pero hay más similitudes que diferencias entre ellas.
 
 Estas herramientas regularmente incluyen una **consola JavaScript** (para mostrar resultados JS y escribir comandos), un **inspector de página** (para examinar la estructura de una página) ¡y muchas más!
 
