@@ -180,7 +180,7 @@ miObjeto.metodo1(/* ... */);
 
 ## Más allá de lo aparente: objetos y prototipos
 
-Si tienes experiencia previa en programación, es posible que ya te hayas topado con las clases y estés familiarizado con ellas. Pero como descubrirás pronto, las clases en javascript no son tanto como sus equivalentes en C++, Java o C#.
+Si tienes experiencia previa en programación, es posible que ya te hayas topado con las clases y estés familiarizado con ellas. Pero como descubrirás pronto, las clases en JavaScript no son tanto como sus equivalentes en C++, Java o C#.
 
 ### El modelo orientado a objetos de JavaScript
 
@@ -191,43 +191,43 @@ Adicionalmente a sus propias propiedades particulares, cualquier objeto JavaScri
 Aquí hay un ejemplo (tomado de la excelente colección de libros de Kyle Simpson [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch5.md)).
 
 ```js
-const anObject = {
-  myProp: 2
+const unObjeto = {
+  miProt: 2
 };
 
-// Crear anotherObject usando anObject como prototipo
-const anotherObject = Object.create(anObject);
+// Crear otroObjeto usando unObjeto como prototipo
+const otroObjeto = Object.create(unObjeto);
 
-console.log(anotherObject.myProp); // 2
+console.log(otroObjeto.miProt); // 2
 ```
 
-En este ejemplo, la declaración JavaScript `Object.create()` es usada para crear el objeto `anotherObject` con el objeto `anObject` como su prototipo.
+En este ejemplo, la declaración JavaScript `Object.create()` es usada para crear el objeto `otroObjeto` con el objeto `unObjeto` como su prototipo.
 
 ```js
 // Crear un objeto vinculado a miObjetoPrototipo
 const miObjeto = Object.create(miObjetoPrototipo);
 ```
 
-Cuando la declaración `anotherObject.myProp` se ejecuta, la propiedad `myProp` de `anObject` es usada dado que `myProp` no existe en `anotherObject`.
+Cuando la declaración `otroObjeto.myProp` se ejecuta, la propiedad `miProt` de `unObjeto` es usada dado que `miProt` no existe en `otroObjeto`.
 
 Si el prototipo de un objeto no tiene la propiedad deseada, entonces la búsqueda continúa el prototipo propio del objeto hasta llegar al final de la **cadena del prototipo**. Si el final de la cadena es alcanzado sin haber hallado la propiedad, el intento de acceso a la propiedad devuelve el valor `undefined`.
 
 ```js
-const anObject = {
-  myProp: 2
+const unObjeto = {
+  miProt: 2
 };
 
-// Crear anotherObject usando anObject como prototipo
-const anotherObject = Object.create(anObject);
+// Crear otroObjeto usando unObjeto como prototipo
+const otroObjeto = Object.create(unObjeto);
 
-// Crear yetAnotherObject  usando anotherObject como prototipo
-const yetAnotherObject = Object.create(anotherObject);
+// Crear otroObjetoMas usando otroObjeto como prototipo
+const otroObjetoMas = Object.create(otroObjeto);
 
-// myProp es encontrado en la cadena del prototipo de yetAnotherObject (en anObject)
-console.log(yetAnotherObject.myProp); // 2
+// miProt es encontrado en la cadena del prototipo de otroObjetoMas (en unObjeto)
+console.log(otroObjetoMas.miProt); // 2
 
-// myOtherProp no puede ser hallado en la cadena del prototipo de yetAnotherObject
-console.log(yetAnotherObject.myOtherProp); // undefined
+// miOtroProt no puede ser hallado en la cadena del prototipo de otroObjetoMas
+console.log(otroObjetoMas.miOtroProt); // undefined
 ```
 
 Este tipo de relación entre los objetos JavaScript es denominada **delegación**: un objeto delega parte de su operación a su prototipo.
@@ -240,7 +240,7 @@ El modelo orientado a objetos de JavaScript está basado en prototipos, **no** c
 
 La sintaxis `class` de JavaScript es una forma meramente más práctica de crear relaciones entre objetos a través de prototipos. Las clases fueron introducidas para imitar el modelo de POO basado en clases encima del modelo propio de JavaScript basado en prototipos. Es un ejemplo de lo que los programadores llaman [simplificación sintáctica](https://es.wikipedia.org/wiki/Az%C3%BAcar_sint%C3%A1ctico).
 
-> La utilidad de la sintaxis`class` es un debate bastante acalorado en la comunidad JavaScript.
+> La utilidad de la sintaxis `class` es un debate bastante acalorado en la comunidad JavaScript.
 
 ## Programación orientada a objetos
 
