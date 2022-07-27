@@ -24,7 +24,7 @@ for (inicialización; condición; expresión final) {
 
 * ¡Cuidado! La condición de un bucle `while` tiene que convertirse en falsa en algún momento para evitar el riesgo de un **bucle infinito**. Asimismo, actualizar el contador de un bucle `for` dentro de su cuerpo es una mala idea.
 
-Todos los bukles pueden escribirse con `while`, pero sí sabes de antemano cuántas veces quieres que se ejecute el bucle, `for` es la mejor opción.
+Todos los bucles pueden escribirse con `while`, pero sí sabes de antemano cuántas veces quieres que se ejecute el bucle, `for` es la mejor opción.
 
 ## Introducción
 
@@ -38,14 +38,14 @@ console.log(4);
 console.log(5);
 ```
 
-Aunque esto es bastante tedioso y podría ser mucho más complejo por ejemplo, para listas de números entre 1 y 100. ¿Cómo puedes conseguir lo mismo de forma más simple?#|¢¢
+Aunque esto es bastante tedioso y podría ser mucho más complejo, por ejemplo, para listas de números entre 1 y 100. ¿Cómo puedes conseguir lo mismo de forma más simple?
 
-Javascript te permite escribir código dentro de un **bucle** que se ejecuta repetidamente hasta que se le dice que se detenga. A cada vez que el código se ejecuta, se le llama **iteración**.
+JavaScript te permite escribir código dentro de un **bucle** que se ejecuta repetidamente hasta que se le dice que se detenga. A cada vez que el código se ejecuta, se le llama **iteración**.
 
 
 ![](images/chapter04-01.png)
 
-## Él bucle `while` 
+## El bucle `while` 
 
 Un bucle `while` te deja repetir código mientras cierta condición sea verdadera. 
 
@@ -85,7 +85,7 @@ I> El cuerpo del bucle debe colocarse entre llaves, a menos que sea de una sola 
 
 ## Él bucle `for`
 
-A menudo necesitarás escribir bucles con condiciones que esten basadas en el valor de una variable actualizada en el cuerpo del bucle, como en nuestro ejemplo. JavaScript ofrece otro tipo de bucle para dar cuenta de esto: el bucle `for`. 
+A menudo necesitarás escribir bucles con condiciones que estén basadas en el valor de una variable actualizada en el cuerpo del bucle, como en nuestro ejemplo. JavaScript ofrece otro tipo de bucle para dar cuenta de esto: el bucle `for`. 
 
 ### Ejemplo
 
@@ -133,7 +133,7 @@ console.log(i); // Error: la variable i no es visible aquí
 
 ### Bucle infinito `while`
 
-El principal riesgo con los bucles `while` es producir un **bucle infinito**, lo que significa que la condición siempre es verdadera y el código se ejecuta siempre. ¡ Esto bloqueará tu programa! Por ejemplo, digamos que olvidas una línea de código que incremente la variable `numero`.
+El principal riesgo con los bucles `while` es producir un **bucle infinito**, lo que significa que la condición siempre es verdadera y el código se ejecuta siempre. ¡Esto bloqueará tu programa! Por ejemplo, digamos que olvidas una línea de código que incremente la variable `numero`.
 
 ```js
 let numero= 1;
@@ -185,7 +185,7 @@ Intenta programar cada ejercicio dos veces, una vez con un bucle `while` y la ot
 
 Escribe un programa que ponga en marcha un carrusel de 10 turnos, mostrando el número de turno cada vez.
 
-Cuando esté terminado, mejoralo para que el número de turnos sea proporcionado por el usuario.
+Cuando esté terminado, mejóralo para que el número de turnos sea proporcionado por el usuario.
 
 ### Paridad
 
@@ -209,7 +209,7 @@ console.log(19 % 3); // 1 porque 19 = 3 * 6 + 1
 console.log(20 % 3); // 2 porque 20 = 3 * 6 + 2
 ```
 
-Mejora el programa para que también muestre números impares.  Mejoralo de nuevo para reemplazar el número inicial  `1` por un número proporcionado por el usuario.
+Mejora el programa para que también muestre números impares. Mejóralo de nuevo para reemplazar el número inicial `1` por un número proporcionado por el usuario.
 
 > Este programa debe mostrar exactamente 10 números incluyendo el primero, ¡no 11 números!
 
@@ -237,6 +237,6 @@ Escribe un programa que muestra todos los números entre 1 y 100 con las siguien
 
 * Si el número es divisible entre 5 y no entre 3 muestra `"Buzz"` en su lugar.
 
-Cuando esté terminado, mejoralo para que el programa en cambio muestre `"FizzBuzz"` para números divisibles tanto entre 3 y 5.
+Cuando esté terminado, mejóralo para que el programa en cambio muestre `"FizzBuzz"` para números divisibles tanto entre 3 y 5.
 
 > Este ejercicio tiene [muchas, muchas soluciones](http://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/). Es un [clásico de entrevista de trabajo](http://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/) que un número significativo de candidatos fallan. ¡Haz tu mejor esfuerzo!
