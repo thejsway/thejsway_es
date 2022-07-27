@@ -6,7 +6,7 @@ La programación orientada a objetos, aunque bastante popular, no es la única f
 
 * **La programación funcional** se trata de escribir programas combinando funciones que expresen *qué* debería hacer un programa, en lugar de *cómo* hacerlo (que es la forma imperativa).
 
-* El **estado** de un programa es el valor de sus **variables globales** en un momento dado. Un objetivo de la programación funcional es minimizar las **mutaciones** (cambios ) de estado que hacen más difícil comprender el código. Algunas posibles soluciones son declarar variables con `const` en lugar de `let`, dividir el código en funciones, y favorecer las variables locales sobre las globales.
+* El **estado** de un programa es el valor de sus **variables globales** en un momento dado. Un objetivo de la programación funcional es minimizar las **mutaciones** (cambios) de estado que hacen más difícil comprender el código. Algunas posibles soluciones son declarar variables con `const` en lugar de `let`, dividir el código en funciones, y favorecer las variables locales sobre las globales.
 
 * Una **función pura** depende únicamente de sus parámetros de entrada para calcular sus valores de retorno y no tiene **efectos secundarios**. Las funciones puras son más fáciles de comprender, combinar entre sí y depurar. La programación funcional favorece el uso de funciones puras siempre que sea posible.
   
@@ -69,7 +69,7 @@ const listaPeliculas = [
 ];
 ```
 
-Y aquí está el resto del programa que usa esta información para mostrar algunos resultados sobre las películas. Chécalo, debe ser bastante autoexplicativo.
+Y aquí está el resto del programa que usa esta información para mostrar algunos resultados sobre las películas. Revísalo, debe ser bastante auto explicativo.
 
 ```js
 // Obtener los títulos de las películas
@@ -208,9 +208,9 @@ Una **función pura** es una función que tiene las siguientes características:
 
 Un **efecto secundario** es un cambio en el estado del programa o una interacción con el mundo externo. Acceder a una base de datos o una declaración `console.log()` son ejemplos de efectos secundarios.
 
-Ante la misma información, una función pura siempre producirá el mismo resultado. Por diseño, una función pura es independiente al estado del programa y no debe acceder a el.  Tal función debe aceptar **parámetros** para hacer algo útil. La única forma en que una función sin parámetros sea pura es que devuelva un valor constante.
+Ante la misma información, una función pura siempre producirá el mismo resultado. Por diseño, una función pura es independiente al estado del programa y no debe acceder a él.  Tal función debe aceptar **parámetros** para hacer algo útil. La única forma en que una función sin parámetros sea pura es que devuelva un valor constante.
 
-Las funciones puras son más fáciles de comprender, combinar y depurar: contrario a sus contrapartes *impuras*, no hay necesidad de buscar afuera del cuerpo de la función para entenderlas. Aún así, en cualquier programa son necesarios varios efectos secundarios como mostrar un resultado al usuario o actualizar una base de datos. En programación funcional, lo importante es crear esos efectos secundarios solo en algunas partes del programa específicas y claramente identificadas. El resto del código debe ser escrito como funciones puras.
+Las funciones puras son más fáciles de comprender, combinar y depurar: contrario a sus contrapartes *impuras*, no hay necesidad de buscar afuera del cuerpo de la función para entenderlas. Aun así, en cualquier programa son necesarios varios efectos secundarios como mostrar un resultado al usuario o actualizar una base de datos. En programación funcional, lo importante es crear esos efectos secundarios solo en algunas partes del programa específicas y claramente identificadas. El resto del código debe ser escrito como funciones puras.
 
 Optimicemos nuestro código ejemplo para introducir funciones puras.
 
@@ -377,7 +377,7 @@ console.log(suma);     // 31
 
 El método `reduce()` puede tomar varios parámetros:
 
-* El primero es la función asociada a `reduce()` e invocado para cada elemento de la matriz. Este toma dos parámetros: el primero es un **acumulador** que contiene el valor acumulado qué fue devuelto previamente en la última invocación de la función. El otro parámetro de la función es el elemento de la matriz.
+* El primero es la función asociada a `reduce()` e invocado para cada elemento de la matriz. Esta toma dos parámetros: el primero es un **acumulador** que contiene el valor acumulado qué fue devuelto previamente en la última invocación de la función. El otro parámetro de la función es el elemento de la matriz.
 
 * El segundo es el valor inicial del acumulador (a menudo 0).
 
@@ -436,15 +436,15 @@ Hemos definido funciones auxiliares que combinamos para lograr el comportamiento
 
 ## JavaScript: un lenguaje multiparadigma
 
-El lenguaje javascript está lleno de paradojas. Ha sido célebremente [inventado en 10 días](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript), y ahora disfruta de una popularidad casi única en la historia de la programación. Su sintaxis se inspira en gran medida de lenguajes imperativos convencionales como C o Java, pero sus principios de diseño son más parecidos a lenguajes funcionales como [Scheme](https://es.wikipedia.org/wiki/Scheme).
+El lenguaje JavaScript está lleno de paradojas. Ha sido célebremente [inventado en 10 días](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript), y ahora disfruta de una popularidad casi única en la historia de la programación. Su sintaxis se inspira en gran medida de lenguajes imperativos convencionales como C o Java, pero sus principios de diseño son más parecidos a lenguajes funcionales como [Scheme](https://es.wikipedia.org/wiki/Scheme).
 
-La naturaleza multiparadigmática de JavaScript significa que puedes escribir código imperativo, orientado a objetos o funcional, elegir la herramienta correcta para el trabajo y aprovechar tu experiencia previa en programacion. Como siempre, la diversidad es una fuente de flexibilidad y una fortaleza en última instancia.
+La naturaleza multi paradigmática de JavaScript significa que puedes escribir código imperativo, orientado a objetos o funcional, elegir la herramienta correcta para el trabajo y aprovechar tu experiencia previa en programación. Como siempre, la diversidad es una fuente de flexibilidad y una fortaleza en última instancia.
 
 ## ¡Hora de programar!
 
 ### Películas más antiguas
 
-Mejora el ejemplo del programa de películas de arriba para que muestre los títulos de películas lanzadas antes del año 2000, usando programacion funcional.
+Mejora el ejemplo del programa de películas de arriba para que muestre los títulos de películas lanzadas antes del año 2000, usando programación funcional.
 
 ```js
 const listaPeliculas = [
@@ -511,7 +511,7 @@ const formasGobierno = [
   },
   {
     name: "Oligarquía",
-    definition: "Gobierno de un cantidad reducidad de personas"
+    definition: "Gobierno de una cantidad reducida de personas"
   },
   {
     name: "Cleptocracia",
