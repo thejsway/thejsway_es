@@ -1,6 +1,6 @@
 # Juega con variables
 
-Sabes como usar JavaScript para mostrar valores. Sin embargo, para que un programa sea realmente útil, debe ser capaz de almacenar datos, como información introducida por un usuario. Vamos a comprobarlo.
+Sabes cómo usar JavaScript para mostrar valores. Sin embargo, para que un programa sea realmente útil, debe ser capaz de almacenar datos, como información introducida por un usuario. Vamos a comprobarlo.
 
 ## TL;DR
 
@@ -20,7 +20,7 @@ Sabes como usar JavaScript para mostrar valores. Sin embargo, para que un progra
 
 * Los comandos `prompt()` y `alert()` se ocupan de la entrada y visualización de información mediante cuadros de diálogo.
 
-* El nombrado de las variables es escencial para la claridad de un programa. Seguir una convención para el nombrado como [camelCase](https://en.wikipedia.org/wiki/Camel_case) es una buena práctica.
+* El nombrado de las variables es esencial para la claridad de un programa. Seguir una convención para el nombrado como [camelCase](https://en.wikipedia.org/wiki/Camel_case) es una buena práctica.
 
 ## Variables
 
@@ -32,7 +32,7 @@ Un programa de computadora alacena datos usando variables. Una *variable* es un 
 
 Una variable tiene tres propiedades principales:
 
-* Su *nombre* que lo identifica. El nombre de una variable puede contener letras mayúsculas y minúsculas, números (no en la primera posición) y caracteres como signo de dólares (`$`) o un guión bajo (`_`).
+* Su *nombre* que lo identifica. El nombre de una variable puede contener letras mayúsculas y minúsculas, números (no en la primera posición) y caracteres como signo de dólares (`$`) o un guion bajo (`_`).
 * Su *valor*, which is the data stored in the variable.
 * Su *tipo*, que determina el rol y acciones disponibles para la variable.
 
@@ -57,11 +57,11 @@ He aquí el resultado de ejecución para este programa.
 
 ![Execution result](images/chapter02-01.png)
 
-Observa que el resultado es `undefined`. Este es un tipo especial de valor en JavaScript indicando que no hay valor. Declaré la variable, llamándola `a`, ¡pero no le dí un valor!
+Observa que el resultado es `undefined`. Este es un tipo especial de valor en JavaScript indicando que no hay valor. Declaré la variable, llamándola `a`, ¡pero no le di un valor!
 
 ### Asignar valores a variables
 
-Mientras un programa se esta ejecutando el valor almacenado en una variable puede cambiar. Para darle un nuevo valor a una variable, usa el operador `=` llamado *operador de asignación*.
+Mientras un programa se está ejecutando el valor almacenado en una variable puede cambiar. Para darle un nuevo valor a una variable, usa el operador `=` llamado *operador de asignación*.
 
 Checa el siguiente ejemplo:
 
@@ -76,7 +76,7 @@ Modificamos la variable asignándole un valor. `a = 3.14` se lee como " a recibe
 
 E> ¡Ten cuidado de no confundir al operador de asignación con igualdad matemática! Pronto verás cómo expresar igualdad en JavaScript.
 
-También puedes combinar declarar una variable y asignarle un valor en una línea. Solo recuerda que, dentro de este línea, estás haciendo dos cosas diferentes a la vez:
+También puedes combinar declarar una variable y asignarle un valor en una línea. Solo recuerda que, dentro de esta línea, estás haciendo dos cosas diferentes a la vez:
 
 ```js
 let a = 3.14;
@@ -96,7 +96,7 @@ a = 6.28;       // ¡Imposible!
 
 ### Incrementar una variable numérica
 
-También puedes aumentar el valor de un número con `+=` y `++`. Esté último es llamado *operador de incremento*, dado que permite el incremento (un incremento de 1) del valor de una variable.
+También puedes aumentar el valor de un número con `+=` y `++`. Este último es llamado *operador de incremento*, dado que permite el incremento (un incremento de 1) del valor de una variable.
 
 En el siguiente ejemplo, cada una de las líneas 2 y 3 incrementan el valor de la variable b en 1.
 
@@ -109,27 +109,25 @@ console.log(b); // Muestra 2
 
 ### Alcance de una variable
 
-El *alcance* de una variable es la parte del programa donde la variable es visible y usable. Las variables declaradas con `let` o `const` son de *alcance limitado: su visibilidad es limitada al bloque donde son declaradas (y en cada sub-bloque, si los hubiere). En JavaScript y varios otros lenguajes de programación, un **bloque de codigo* es una porción de un programa delimitada por una de llave de apertura y otra de cierre. Por defecto, un programa JavaScript forma un bloque de codigo.  
+El *alcance* de una variable es la parte del programa donde la variable es visible y usable. Las variables declaradas con `let` o `const` son de *alcance limitado: su visibilidad es limitada al bloque donde son declaradas (y en cada sub-bloque, si los hubiere). En JavaScript y varios otros lenguajes de programación, un **bloque de código* es una porción de un programa delimitada por una de llave de apertura y otra de cierre. Por defecto, un programa JavaScript forma un bloque de código.  
 
 
 ```js
 let num1 = 0;
 {
-  num1 = 1; // OK : num1 es declarado en el bloque principal
+  num1 = 1; // Bien: num1 es declarado en el bloque principal
   const num2 = 0;
 }
-console.log(num1); // OK : num1 es declarado en el bloque actual
-
-is declared in the current block
-console.log(num2); // Error! num2 no es visible aqui
+console.log(num1); // Bien: num1 es declarado en el bloque actual
+console.log(num2); // Error! num2 no es visible aquí
 ```
 
 ## Expresiones
 
-Una *expresión* es un fragmento de codigo que produce un valor. Una expresión es creada combinando variables, valores y operadores. Cada expresión tiene un valor y por lo tanto un tipo de valor. El calcular el valor de una expresión se denomina *evaluacion*. Durante la evaluación, las variables son reemplazadas por sus valores.
+Una *expresión* es un fragmento de código que produce un valor. Una expresión es creada combinando variables, valores y operadores. Cada expresión tiene un valor y por lo tanto un tipo de valor. El calcular el valor de una expresión se denomina *evaluación*. Durante la evaluación, las variables son reemplazadas por sus valores.
 
 ```js
-// 3 es una expresíón cuyo valor es 3 
+// 3 es una expresión cuyo valor es 3 
 const c = 3;
 // c es una expresión cuyo valor es el valor de c (3 aquí) 
 let d = c;
@@ -138,20 +136,20 @@ d = d + 1; // d ahora contiene el valor 4
 console.log(d); // muestra 4
 ```
 
-La prioridad de operadores dentro de una expresión es la misma que en las matematicas. Sin embargo, una expresión puede incluir *parentesis* que modifiquen estas prioridades.
+La prioridad de operadores dentro de una expresión es la misma que en las matemáticas. Sin embargo, una expresión puede incluir *paréntesis* que modifiquen estas prioridades.
 
 ```js
-let e = 3 + 2 * 4; // e contains 11 (3 + 8)
-e = (3 + 2) * 4;   // e contains 20 (5 * 4)
+let e = 3 + 2 * 4; // e contiene 11 (3 + 8)
+e = (3 + 2) * 4;   // e contiene 20 (5 * 4)
 ```
 
-Es posible incluir expresiones en una cadena usando *comillas invertidas* (\`) para delimitar la cadena de caractereres. A dicha cadena se le llama *patrón literal*. Dentro de un patrón literal, las expresiones se identifican con la sintaxis `${expresión}`.
+Es posible incluir expresiones en una cadena usando *comillas invertidas* (\`) para delimitar la cadena de caracteres. A dicha cadena se le llama *patrón literal*. Dentro de un patrón literal, las expresiones se identifican con la sintaxis `${expresión}`.
 
 Esto es usado frecuentemente para crear cadenas de caracteres que contienen valores de algunas variables. 
 
 ```js
 const pais = "Francia";
-console.log(`Vivo en ${country}`); // Muestra "Vivo en Frnacia"
+console.log(`Vivo en ${country}`); // Muestra "Vivo en Francia"
 const x = 3;
 const y = 7;
 console.log(`${x} + ${y} = ${x + y}`); // Muestra "3 + 7 = 10"
@@ -159,7 +157,7 @@ console.log(`${x} + ${y} = ${x + y}`); // Muestra "3 + 7 = 10"
 
 ## Conversiones de tipo de valor
 
-La evaluación de una expresión puede resultar en conversiones de tipo de valor. Estas son llamadas conversiones *implicitas* dado que ocurren automaticamente sin la intervención del programador. Por ejemplo, usar el operador `+` entre un caracter (o cadena de caracteres) y un numero provoca la concatenación de los dos valores en una cadena de caracteres como resultado.
+La evaluación de una expresión puede resultar en conversiones de tipo de valor. Estas son llamadas conversiones *implícitas* dado que ocurren automáticamente sin la intervención del programador. Por ejemplo, usar el operador `+` entre un carácter (o cadena de caracteres) y un numero provoca la concatenación de los dos valores en una cadena de caracteres como resultado.
 
 ```js
 const f = 100;
@@ -167,20 +165,20 @@ const f = 100;
 console.log("La variable f contiene el valor " + f);
 ```
 
-JavaScript es extremadamente tolerante en terminos de conversiones de tipo de valor. Aun así, en ocasiones la conversión no es posible. Si un valor no se puede convertir en un numero, obtendras el resultado `NaN` (No es un número o Not a Number en inglés).
+JavaScript es extremadamente tolerante en términos de conversiones de tipo de valor. Aun así, en ocasiones la conversión no es posible. Si un valor no se puede convertir en un número, obtendrás el resultado `NaN` (No es un número o Not a Number en inglés).
 
 ```js
 const g = "cinco" * 2;
 console.log(g); // Muestra NaN
 ```
 
-A veces querras convertir un valor en otro tipo. Esto se llama conversión *explicita*. JavaScript tiene los comandos `Number()` y `String()` que convierten el valor entre parentesis a un numero o a caracteres.
+A veces querrás convertir un valor en otro tipo. Esto se llama conversión *explicita*. JavaScript tiene los comandos `Number()` y `String()` que convierten el valor entre paréntesis a un número o a caracteres.
 
 ```js
 const h = "5";
 console.log(h + 1); // Concatenación: muestra los caracteres  "51"
 const i = Number("5");
-console.log(i + 1); // Suma numerica: muestra el numero 6
+console.log(i + 1); // Suma numérica: muestra el numero 6
 ```
 
 ## Interacciones del usuario
@@ -200,17 +198,17 @@ Durante la ejecución, una ventana de dialogo emerge, preguntando tu nombre.
 
 Este es el resultado del comando JavaScript `prompt("Introduce tu nombre:")`.
 
-Teclea tu nombre y da click en *OK*. Entonces recibiras un saludo personalizado.
+Teclea tu nombre y da clic en *OK*. Entonces recibirás un saludo personalizado.
 
 ![Resultado de ejecución](images/chapter02-05.png)
 
-El valor que ingresaste en la primera ventana de dialogo se ha almacenado en una cadena de caracteres en la variable `name`. Despues el comando JavaScript `alert()` desencadenó el despliegue de la segunda ventana, con el resultado de la concatenación de la cadena de caracteres `"Hola, "` con el valor de la variable `nombre`.
+El valor que ingresaste en la primera ventana de dialogo se ha almacenado en una cadena de caracteres en la variable `name`. Después el comando JavaScript `alert()` desencadenó el despliegue de la segunda ventana, con el resultado de la concatenación de la cadena de caracteres `"Hola, "` con el valor de la variable `nombre`.
 
 ### Presentar información
 
-Tanto `console.log()` (visto en el capitulo previo) y `alert()` pueden ser usados para mostrar información al usuario. A diferencia de `alert()`, `console.log()` no detiene la ejecución del programa y a menudo es una mejor opción.
+Tanto `console.log()` (visto en el capítulo previo) y `alert()` pueden ser usados para mostrar información al usuario. A diferencia de `alert()`, `console.log()` no detiene la ejecución del programa y a menudo es una mejor opción.
 
-`console.log()` tambien puede mostrar valores a la misma vez, separados por una coma.
+`console.log()` también puede mostrar valores a la misma vez, separados por una coma.
 
 ```js
 const temp1 = 36.9;
@@ -221,10 +219,10 @@ console.log(temp1, temp2, temp3); // Muestra "36.9 37.6 37.1"
 
 ### Insertar un numero
 
-Independientemente de los datos ingresados, el comando `prompt()` siempre devuelve un valor tipo caracter o cadena de caracteres. Si este valor se utilizara en expresiones numericas, debe ser convertido a un numero con el comando `Number()`.
+Independientemente de los datos ingresados, el comando `prompt()` siempre devuelve un valor tipo carácter o cadena de caracteres. Si este valor se utilizara en expresiones numéricas, debe ser convertido a un número con el comando `Number()`.
 
 ```js
-const dato = prompt("Ingresa un numero:"); // el tipo de valor de dato es caracter o cadena de caracteres 
+const dato = prompt("Ingresa un numero:"); // el tipo de valor de dato es carácter o cadena de caracteres 
 const nm = Number(dato); // el tipo de valor de nm es número
 ```
 
@@ -238,9 +236,9 @@ En este ejemplo, la información introducida por el usuario es directamente conv
 
 ## Nombrar variables
 
-Para cerrar este capitulo, examinemos el nombramiento de variables. A la computadora no le importan los nombres de las variables. Puedes nombrar tus variables usando el clasico ejemplo de una sola letra (`a`, `b`, `c`...) o escoger nombres absurdos como `burrito` o `gatitospequeños90210`.
+Para cerrar este capítulo, examinemos el nombramiento de variables. A la computadora no le importan los nombres de las variables. Puedes nombrar tus variables usando el clásico ejemplo de una sola letra (`a`, `b`, `c`...) o escoger nombres absurdos como `burrito` o `gatitospequeños90210`.
 
-No obstante, nombrar bien las variables puede hacer a tu codigo mucho mas facil de leer. Revisa estos dos ejemplos:
+No obstante, nombrar bien las variables puede hacer a tu código mucho más fácil de leer. Revisa estos dos ejemplos:
 
 ```js
 const a = 5.5;
@@ -256,17 +254,17 @@ const perimetro = 2 * pi * radio;
 console.log(perimetro);
 ```
 
-Funcionan de la misma forma, pero la segunda versión es mucho mas facil de entender.
+Funcionan de la misma forma, pero la segunda versión es mucho más fácil de entender.
 
-Nombrar cosas es una parte importante del trabajo de un programador. Consulta el apendice para algunos consejos utiles.
+Nombrar cosas es una parte importante del trabajo de un programador. Consulta el apéndice para algunos consejos útiles.
 
 ## ¡Hora de programar!
 
-Desarrolla el habito de elegir nombres de variables adecuados en todos los ejercicios, comenzando con estos.
+Desarrolla el hábito de elegir nombres de variables adecuados en todos los ejercicios, comenzando con estos.
 
 ### Hola mejorado
 
-Escribe un programa que le pregunte al usuario su nombre y apellido. Despues el programa los muestra en una sola linea.
+Escribe un programa que le pregunte al usuario su nombre y apellido. Después el programa los muestra en una sola línea.
 
 ### Valores finales
 
@@ -286,17 +284,17 @@ const g = b / a * a;
 console.log(a, b, c, d, e, f, g);
 ```
 
-Revisa tu predicción ejecutandolo.
+Revisa tu predicción ejecutándolo.
 
 ### Calculo de IVA
 
-Escribe un programa que le pide al usuario un precio neto. Despues de eso, calcula el precio final correspondiente usando una tasa del IVA del 20.6%.
+Escribe un programa que le pide al usuario un precio neto. Después de eso, calcula el precio final correspondiente usando una tasa del IVA del 20.6%.
 
 ### De grados Celsius a Fahrenheit 
 
-Escribe un programa que pida una temperatura en grados Celsius, despues la muestra en grados Fahrenheit.
+Escribe un programa que pida una temperatura en grados Celsius, después la muestra en grados Fahrenheit.
 
-> La conversión entre escals es dada por la formula: [°F] = [°C] x 9/5 + 32.
+> La conversión entre escalas es dada por la formula: [°F] = [°C] x 9/5 + 32.
 
 ### Intercambio de variables
 
@@ -306,12 +304,12 @@ Observa el siguiente programa.
 let numero1 = 5;
 let numero2 = 3;
 
-// POR HACER: escribe tu codigo aqui (¡y en ninguna otra parte!)
+// POR HACER: escribe tu código aquí (¡y en ninguna otra parte!)
 
 console.log(numero1); // Debe mostrar 3
 console.log(numero2); // Debe mostrar 5
 ```
 
-Añade el codigo necesario para intercambiar los valores de las variables `numero1` y `numero2`.
+Añade el código necesario para intercambiar los valores de las variables `numero1` y `numero2`.
 
-T> Este ejercicio tiene varias soluciones validas. Puedes utilizar mas de dos variables para resolverlo.
+T> Este ejercicio tiene varias soluciones validas. Puedes utilizar más de dos variables para resolverlo.
