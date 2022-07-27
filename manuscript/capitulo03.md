@@ -1,65 +1,65 @@
 # Agrega condiciones
 
-Hasta ahora, todo el codigo en nuestros programas se ha ejecutado cronologicamente. ¡Enriquezcamos nuestro codigo añadiendo añadiendo ejecución condicional!
+Hasta ahora, todo el código en nuestros programas se ha ejecutado cronológicamente. ¡Enriquezcamos nuestro código añadiendo ejecución condicional!
 
 ## TL;DR
 
-* La palabra clave `if` define una **declaración condicional**, tambien llamada un **test**. El bloque de codigo asociado solo se ejecuta si la **condición** es satisfecha (su valor es `verdadero`). Por lo tanto, una condición es una expresión cuya evaluación siempre produce un reultado booleano (`verdadero` o `falso`).
+* La palabra clave `if` define una **declaración condicional**, también llamada un **test**. El bloque de código asociado solo se ejecuta si la **condición** es satisfecha (su valor es `verdadero`). Por lo tanto, una condición es una expresión cuya evaluación siempre produce un resultado booleano (`verdadero` o `falso`).
 
 ```js
-if (condicion) {
-  // Codigo a ejecutar cuando la condición sea verdadera
+if (condición) {
+  // Código a ejecutar cuando la condición sea verdadera
 }
 ```
 
-* El bloque de codigo asociado a un `if` es delimitado por una llave de apertura y una de cierre. Para mejorar la visibilidad, sus declaraciones son generalmente **indentadas** (desplazadas a la derecha).
+* El bloque de código asociado a un `if` es delimitado por una llave de apertura y una de cierre. Para mejorar la visibilidad, sus declaraciones son generalmente **indentadas** (desplazadas a la derecha).
 
-* Los **operadores de comparación** `===`, `!==`, `<`, `<=`, `>` y `>=` son usados para comparar numeros dentro de una condición. Todos devuelven un resultado booleano.
+* Los **operadores de comparación** `===`, `!==`, `<`, `<=`, `>` y `>=` son usados para comparar números dentro de una condición. Todos devuelven un resultado booleano.
 
-* Una declaración `else` puede ser asociada a un `if` para expresar una **alternativa**. Dependiendo del valor de la condición, se ejecutara ya sea el bloque de codigo asociado al `if` o el asociado al `else`, pero nunca ambos. No hay limites para la profundidad del anidado de condiciones.
+* Una declaración `else` puede ser asociada a un `if` para expresar una **alternativa**. Dependiendo del valor de la condición, se ejecutará ya sea el bloque de código asociado al `if` o el asociado al `else`, pero nunca ambos. No hay límites para la profundidad del anidado de condiciones.
 
 ```js
-if (condicion) {
-  // Codigo a ejecutar cuando la condición sea verdadera
+if (condición) {
+  // Código a ejecutar cuando la condición sea verdadera
 }
 else {
-  // Codigo a ejecutar cuando la condición sea falsa
+  // Código a ejecutar cuando la condición sea falsa
 }
 ```
 
-* Pueden crearse condiciones complejas usando el **operadores logicos** `&&` ("y"), `||` ("o") y `!` ("no").
+* Pueden crearse condiciones complejas usando el **operadores lógicos** `&&` ("y"), `||` ("o") y `!` ("no").
 
-* La declaración `switch` es usada para iniciar la ejecución de un bloque de codigo entre varios, dependiendo del valor de una expresión.
+* La declaración `switch` es usada para iniciar la ejecución de un bloque de código entre varios, dependiendo del valor de una expresión.
 
 ```js
 switch (expresión) {
 case valor1:
-  // Codigo a ejecutar cuando la expresión coincida con el valor1
+  // Código a ejecutar cuando la expresión coincida con el valor1
   break;
 case valor2:
-  // Codigo a ejecutar cuando la expresión coincida con el valor2
+  // Código a ejecutar cuando la expresión coincida con el valor2
   break;
 ...
 default:
-  // Codigo a ejecutar cuando ningun caso coincide
+  // Código a ejecutar cuando ningún caso coincide
 }
 ```
 
 ## ¿Qué es una condición? 
 
-Supongamos que queremos escribir un programa que  le pida al usuario introducir un numero y despues muestre un mensaje si el numro es positivo. Aqui esta el algoritmo correspondiente.
+Supongamos que queremos escribir un programa que le pida al usuario introducir un número y después muestre un mensaje si el número es positivo. Aquí está el algoritmo correspondiente.
 
 ```text
 Introduce un número
-Si el numero es positivo
+Si el número es positivo
 	Muestra un mensaje
 ```
 
-El mensaje debe mostrarse solo si el numero es positivo; esto significa que esta "sujeto" a una **condición**.
+El mensaje debe mostrarse solo si el número es positivo; esto significa que esta "sujeto" a una **condición**.
 
 ### La declaración if
 
-Asi es como traduces el programa a JavaScript.
+Así es como traduces el programa a JavaScript.
 
 ```js
 const numero = Number(prompt("Introduce un número:"));
@@ -68,38 +68,38 @@ if (numero > 0) {
 }
 ```
 
-El comando `console.log(...)` es ejecutado unicamente *si* el número es positivo. ¡Prueba este programa para que lo veas!
+El comando `console.log(...)` es ejecutado únicamente *si* el número es positivo. ¡Prueba este programa para que lo veas!
 
 La sintaxis correcta es la siguiente:
 
 ```js
 if (condición) {
-  // Codigo a ejecutar cuando la condición sea verdadera
+  // Código a ejecutar cuando la condición sea verdadera
 }
 ```
 
-La llave de apertura y la de cierre definen el bloque de codigo asociado con una declaración `if`. Esta declaración representa un **test**. Se traduce en lo siguiente: "Si la condición es verdadera, entonces ejecuta las instrucciones contenidas en un bloque de codigo".
+La llave de apertura y la de cierre definen el bloque de código asociado con una declaración `if`. Esta declaración representa un **test**. Se traduce en lo siguiente: "Si la condición es verdadera, entonces ejecuta las instrucciones contenidas en un bloque de código".
 
-La condición siempre se coloca entre parentesis despues del `if`. Las declaraciones dentro del bloque de código asociado se mueven a la derecha. A esta practica se le llama **indentación** y ayuda a hacer tu codigo mas comprensible. A medida que tus programas crezcan en tamaño y complejidad, esto se volvera mas y mas importante. El tamaño de la indentación a menudo es de 2 o 4 espacios.
+La condición siempre se coloca entre paréntesis después del `if`. Las declaraciones dentro del bloque de código asociado se mueven a la derecha. A esta práctica se le llama **indentación** y ayuda a hacer tu código más comprensible. A medida que tus programas crezcan en tamaño y complejidad, esto se volverá más y más importante. El tamaño de la indentación a menudo es de 2 o 4 espacios.
 
-I> Cuando el bloque de codigo tiene una sola declaración, las llaves pueden omitirse. Como principiante, aun asi siempre deberias usar llaves cuando escribas tus primeras condiciones.  
+I> Cuando el bloque de código tiene una sola declaración, las llaves pueden omitirse. Como principiante, aun así siempre deberías usar llaves cuando escribas tus primeras condiciones.  
 
 ### Condiciones
 
-Una **condicion** es una expresión que evalua un valor ya sea verdadero o falso: a este se le llama valor booleano. Cuando el valor de una condición es verdadero, decimos que esta condición es satisfecha.
+Una **condición** es una expresión que evalúa un valor ya sea verdadero o falso: a este se le llama valor booleano. Cuando el valor de una condición es verdadero, decimos que esta condición es satisfecha.
 
-Ya hemos estudiado numero y cadenas de caracteres, dos tipos de datos en JavaScript. Los booleanos son otro tipo. Este tipo de dato solo tiene dos valores posibles: `verdadero` y `falso`.
+Ya hemos estudiado número y cadenas de caracteres, dos tipos de datos en JavaScript. Los booleanos son otro tipo. Este tipo de dato solo tiene dos valores posibles: `verdadero` y `falso`.
 
-Cualquier expresión que produzca un valor booleano (ya sea `verdadero` o `falso`) puede usarse como una condición en una declaración `if`. Si el valor de esta expresión es `verdadero`, el bloque de codigo asociado al mismo se ejecuta.
+Cualquier expresión que produzca un valor booleano (ya sea `verdadero` o `falso`) puede usarse como una condición en una declaración `if`. Si el valor de esta expresión es `verdadero`, el bloque de código asociado al mismo se ejecuta.
 
 ```js
 if (true) {
   // La condición para este if siempre es verdadero
-  // Este bloque de codigo siempre sera ejecutado
+  // Este bloque de código siempre será ejecutado
 }
 if (false) {
   // La condición para este if siempre es falso
-  // Este bloque de codigo nunca sera ejecutado
+  // Este bloque de código nunca será ejecutado
 }
 ```
 
@@ -114,11 +114,11 @@ Las expresiones booleanas pueden crearse usando los operadores comparativos most
 |`>`|Mayor que|
 |`>=`|Mayor que o igual a|
 
-En algunos otros lenguajes de programación, los operadores de igualdad y desigualdad son `==` and `!=`. También existen en JavaScript, pero es mas seguro usar `===` y `!==` ([mas detalles](https://developer.mozilla.org/es/docs/Web/JavaScript/Equality_comparisons_and_sameness)).
+En algunos otros lenguajes de programación, los operadores de igualdad y desigualdad son `==` and `!=`. También existen en JavaScript, pero es más seguro usar `===` y `!==` ([mas detalles](https://developer.mozilla.org/es/docs/Web/JavaScript/Equality_comparisons_and_sameness)).
 
-E> Es facil confundir los operadores de comparación como `===` (o `==`) con el operador de asignación `=`. Son muy, muy diferentes. ¡Ten cuidado!
+E> Es fácil confundir los operadores de comparación como `===` (o `==`) con el operador de asignación `=`. Son muy, muy diferentes. ¡Ten cuidado!
 
-Ahora modiquemos el codigo de ejemplo para reemplazar `>` por `>=` y cambiar el mensaje, despues pruebalo con el número 0.
+Ahora modifiquemos el código de ejemplo para reemplazar `>` por `>=` y cambiar el mensaje, después pruébalo con el número 0.
 
 ```js
 const numero = Number(prompt("Introduce un número:"));
@@ -131,11 +131,11 @@ Si la entrada del usuario es 0, el mensaje aparece en la consola, lo cual signif
 
 ## Condiciones alternativas
 
-A menudo querras que tu código se ejecute de una forma cuando algo sea verdadero y de otra forma cuando algo sea falso. 
+A menudo querrás que tu código se ejecute de una forma cuando algo sea verdadero y de otra forma cuando algo sea falso. 
 
 ### La declaración `else`
 
-Enriquezcamos nuestro ejemplo con mensajes diferentes dependiendo de si el numero es positivo o no.
+Enriquezcamos nuestro ejemplo con mensajes diferentes dependiendo de si el número es positivo o no.
 
 ```js
 const numero = Number(prompt("Introduce un número:"));
@@ -149,18 +149,18 @@ else {
 
 Prueba este código con un número positivo, número negativo, y cero, y ve viendo el resultado en la consola. El código se ejecuta de forma diferente dependiendo si la condición `(numero > 0)` es verdadera o falsa.
 
-La sintaxis para crear una alternativa es añadir la palabra clave `else` despues de un `if` inicial.
+La sintaxis para crear una alternativa es añadir la palabra clave `else` después de un `if` inicial.
 
 ```js
 if (condición) {
-  // Codigo a ejecutar cuando la condición es verdadera
+  // Código a ejecutar cuando la condición es verdadera
 }
 else {
-  // Codigo a ejecutar cuando la condición es falsa
+  // Código a ejecutar cuando la condición es falsa
 }
 ```
 
-Puedes traducir una declaración `if`/`else` de esta manera: "Si la condición es verdadera, entonces ejecuta este primer segmento de código; de lo contrario, ejecuta este siguiente segemento de código". Solo uno de los dos bloques de codigo sera ejecutado.
+Puedes traducir una declaración `if`/`else` de esta manera: "Si la condición es verdadera, entonces ejecuta este primer segmento de código; de lo contrario, ejecuta este siguiente segmento de código". Solo uno de los dos bloques de código será ejecutado.
 
 ### Anidar condiciones
 
@@ -184,14 +184,14 @@ if (numero > 0) {
 
 Vamos a descifrar esto. Si el bloque de código asociado al primer `else` se ejecuta, entonces el número tiene que ser estrictamente negativo o cero. Dentro de este bloque, una segunda declaración `if` checa si el número es negativo. Si no lo es, sabemos con seguridad que es cero.
 
-I> Cuando estás aprendiendo a escribir condiciones anidadas, deberias añadir comentarios descriptivos a cada condición, tal como en el ejemplo anterior.
+I> Cuando estás aprendiendo a escribir condiciones anidadas, deberías añadir comentarios descriptivos a cada condición, tal como en el ejemplo anterior.
 
 El flujo de ejecución del programa anterior puede ser expresado gráficamente usando un **diagrama de flujo**.
 
 
 ![Example flow diagram](images/chapter03-01.png)
 
-Este ejemplo muestra lo esencial de la indentación para comprender el flujo de un programa. No hay límite para la posible profundidad del anidado de condiciones, pero una cantidad excesiva  afectará la visibilidad del programa.
+Este ejemplo muestra lo esencial de la indentación para comprender el flujo de un programa. No hay límite para la posible profundidad del anidado de condiciones, pero una cantidad excesiva afectará la visibilidad del programa.
 
 Un caso particular ocurre cuando la única declaración en un bloque `else` es un `if`. En ese caso, puedes escribir este `else` en la misma línea que el `if` y sin llaves. He aquí una manera más concisa de escribir nuestro programa ejemplo.
 
@@ -211,9 +211,9 @@ if (numero > 0) {
 
 ### Operador "and"
 
-Supon que quieres checar si un número está entre 0 y 100. Básicamente estás checando si es "mayor que o igual a 0" y "menor que o igual a 100". Ambas subcondiciones deben ser satisfechas al mismo tiempo.
+Supón que quieres checar si un número está entre 0 y 100. Básicamente estás checando si es "mayor que o igual a 0" y "menor que o igual a 100". Ambas subcondiciones deben ser satisfechas al mismo tiempo.
 
-I> La expression `0 <= number <= 100` es correcta desde un punto de vista matemático pero no puede escribirse en JavaScript (ni en la mayoría de los demás lenguajes de programación).
+I> La expression `0 <= number <= 100` es correcta desde un punto de vista matemático, pero no puede escribirse en JavaScript (ni en la mayoría de los demás lenguajes de programación).
 
 Veamos cómo podrías traducir esa misma verificación dentro de JS.
 
@@ -223,7 +223,7 @@ if ((numero >= 0) && (numero <= 100)) {
 }
 ```
 
-I> Los paréntesis entre las subcondiciones no son obligatorios pero te recomiendo agregarlos de cualquier forma, para evitar fallas desagradables en algunos casos especiales. 
+I> Los paréntesis entre las subcondiciones no son obligatorios, pero te recomiendo agregarlos de cualquier forma, para evitar fallas desagradables en algunos casos especiales. 
 
 El operador `&&` ("lógico and") puede aplicarse a ambos tipos de valores booleanos. Solo será `true` el resultado de la declaración si ambas condiciones son verdaderas.
 
@@ -316,7 +316,7 @@ console.log(!true);  // false
 console.log(!false); // true
 ```
 
-## Multiple choices
+## Múltiples opciones
 
 Escribamos algo de código que le ayude a la gente a decidir qué vestir dependiendo del clima usando `if`/`else`.
 
@@ -458,4 +458,3 @@ Escribe un programa que pregunte por la hora bajo la forma de 3 datos (horas, mi
 > * 14h17m59s => 14h18m0s
 > * 6h59m59s => 7h0m0s
 > * 23h59m59s => 0h0m0s (medianoche)
-
