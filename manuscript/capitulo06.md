@@ -4,7 +4,7 @@ Este capítulo presentará los objetos y la forma en que son creados y usados en
 
 ## TL;DR
 
-* Un objeto javascript es una entidad que tiene propiedades. Cada propiedad es una dupla clave/valor. La clave es el nombre de la propiedad.
+* Un objeto JavaScript es una entidad que tiene propiedades. Cada propiedad es una dupla clave/valor. La clave es el nombre de la propiedad.
 
 * El valor de una propiedad puede ser un dato (número, carácter, etcétera) o una función. En el último caso la propiedad es denominada **método**. 
 
@@ -31,7 +31,7 @@ miObjeto.metodo1(...);           // Invocar a metodo1 en miObjeto
 
 * Dentro de un método, la palabra clave `this` representa el objeto en que es invocado el método.
 
-* El lenguaje javascript predefine muchos objetos útiles cómo `console` o `Math`.
+* El lenguaje JavaScript predefine muchos objetos útiles cómo `console` o `Math`.
 
 ## Introducción
 
@@ -43,9 +43,9 @@ Similarmente, un **objeto** en programación es una **entidad que tiene propieda
 
 ### ¿Qué tiene que ver esto con programar?
 
-La **programación orientada a objetos** (POO para abreviar) es una forma de escribir programas usando objetos. Cuando usas POO,  escribes, creas, y modificas objetos, y los objetos constituyen tu programa.
+La **programación orientada a objetos** (POO para abreviar) es una forma de escribir programas usando objetos. Cuando usas POO, escribes, creas, y modificas objetos, y los objetos constituyen tu programa.
 
-La POO cambia la forma en que un programa es escrito y organizado. Hasta ahora has estado escribiendo código basado en funciones, a veces denominado  [programación procedimental](https://es.wikipedia.org/wiki/Programaci%C3%B3n_por_procedimientos). Ahora descubramos cómo escribir código orientado a objetos.
+La POO cambia la forma en que un programa es escrito y organizado. Hasta ahora has estado escribiendo código basado en funciones, a veces denominado [programación procedimental](https://es.wikipedia.org/wiki/Programaci%C3%B3n_por_procedimientos). Ahora descubramos cómo escribir código orientado a objetos.
 
 ## JavaScript y objetos
 
@@ -67,7 +67,7 @@ Como se dijo antes, un objeto JavaScript puede ser creado simplemente establecie
 
 W> El punto y coma `;` después de la llave de cierre es opcional, pero de todos modos es más seguro añadirlo.
 
-El código anterior define una variable llamada `boligrafo` cuyo valor es un objeto: por lo tanto puedes decir que `boligrafo` es un objeto. Este objeto tiene tres propiedades: `tipo`, `color` y `marca`. Cada propiedad tiene un nombre y un valor y es seguido de una coma `,` (a excepción del último).
+El código anterior define una variable llamada `boligrafo` cuyo valor es un objeto: por lo tanto, puedes decir que `boligrafo` es un objeto. Este objeto tiene tres propiedades: `tipo`, `color` y `marca`. Cada propiedad tiene un nombre y un valor y es seguido de una coma `,` (a excepción del último).
 
 ### Acceder a las propiedades de un objeto
 
@@ -85,7 +85,7 @@ console.log(boligrafo.color); // "azul"
 console.log(boligrafo.marca); // "Bic"
 ```
 
-Acceder a una propiedad de un objeto es una **expresión** que produce un valor. Dicha expresión puede ser incluida en otras más complejas. Por ejemplo,  aquí está cómo mostrar las propiedades de nuestro bolígrafo en una declaración.
+Acceder a una propiedad de un objeto es una **expresión** que produce un valor. Dicha expresión puede ser incluida en otras más complejas. Por ejemplo, aquí está cómo mostrar las propiedades de nuestro bolígrafo en una declaración.
 
 ```js
 const boligrafo = {
