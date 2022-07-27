@@ -8,7 +8,7 @@ Este libro cubre mucho terreno. Estas son algunas conclusiones fundamentales.
 
 * JavaScript es un **lenguaje de programación** creado en 1995 para añadir interactividad a páginas web. Además de ser el lenguaje de la web, también ha penetrado muchos otros entornos: servidores, dispositivos móviles, objetos conectados, etc.
 
-* JavaScript ha sido estandarizado bajo el nombre de **ECMAScript** y es mejorado continuamente. Su última gran versión es **ES2015**, también conocida cómo ES6.
+* JavaScript ha sido estandarizado bajo el nombre de **ECMAScript** y es mejorado continuamente. Su última gran versión es **ES2015**, también conocida como ES6.
 
 * JavaScript es de **clasificado dinámico**: el tipo de variable se deduce del valor que almacena.
 
@@ -22,7 +22,7 @@ Este libro cubre mucho terreno. Estas son algunas conclusiones fundamentales.
 
 * La plataforma **Node.js**, creada en 2009 y construida sobre el motor V8 de Chrome, llevó a JavaScript fuera del navegador.
 
-* Node enfatiza la modularidad. Su registro de paquetes  **npm** es el ecosistema más grande de librerías de código abierto en el mundo.
+* Node enfatiza la modularidad. Su registro de paquetes **npm** es el ecosistema más grande de librerías de código abierto en el mundo.
 
 ## Trecho por recorrer
 
@@ -70,4 +70,4 @@ Cuando se enfrenta un problema, saber cómo encontrar las mejores respuestas es 
 
 Finalmente, puedes unirte a una comunidad de aprendizaje para compartir experiencias (buenas o malas) y construir relaciones. Hay grupos de usuarios de JavaScript en muchas ciudades del mundo, busca una en tu localidad. Si prefieres socializar en línea [freeCodeCamp](https://www.freecodecamp.org) de Quincy Larson cuenta con un amplio currículum incluyendo muchos proyectos y una comunidad atenta y amigable con los principiantes.
 
-Sea cuál sea la ruta que tomes, ¡te deseo un excelente viaje al maravilloso mundo de JavaScript!
+Sea cual sea la ruta que tomes, ¡te deseo un excelente viaje al maravilloso mundo de JavaScript!
