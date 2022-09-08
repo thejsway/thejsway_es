@@ -10,13 +10,13 @@ Comprender los fundamentos del desarrollo web es crucial para todo desarrollador
 
 * **HTTP** (HyperText Transfer Protocol; en español, Protocolo de Transferencia Hipertextual) es el protocolo que permite a dos máquinas comunicarse entre sí en la web. Su versión protegida es **HTTPS**.
 
-* HTTP  se basa en comandos de texto. El **método** HTTP define el tipo de solicitud. Los principales métodos HTTP son `GET` para acceder a un recurso y `POST` para insertar alguna información en el servidor.
+* HTTP se basa en comandos de texto. El **método** HTTP define el tipo de solicitud. Los principales métodos HTTP son `GET` para acceder a un recurso y `POST` para insertar alguna información en el servidor.
 
 * Una respuesta HTTP contiene un **código de estado** indicando el resultado de la solicitud: 200 si es exitoso, 404 para un recurso no encontrado, etc.
 
 * Los recursos web son localizados únicamente por su **URL** (Uniform resource locator; en español, localizador uniforme de recursos). Una URL es un texto con forma de `http://www.misitioweb.com/rutademirecurso/mirecurso`.
 
-* En un escenario tradicional de desarrollo web, las acciones del usuario en una página generan una recarga total después de una solicitud sincrónica al servidor. Otro modelo de desarrollo web apodado **AJAX**  (Asynchronous JavaScript and XML; en español, JavaScript  y XML asíncronos) usa JavaScript y solicitudes HTTP asíncronas para obtener información cuando se necesite y actualizar solo los fragmentos deseados de la página. Esto permite la creación de **aplicaciones web** buscando ofrecer la experiencia de usuario de una aplicación nativa.
+* En un escenario tradicional de desarrollo web, las acciones del usuario en una página generan una recarga total después de una solicitud sincrónica al servidor. Otro modelo de desarrollo web apodado **AJAX** (Asynchronous JavaScript and XML; en español, JavaScript y XML asíncronos) usa JavaScript y solicitudes HTTP asíncronas para obtener información cuando se necesite y actualizar solo los fragmentos deseados de la página. Esto permite la creación de **aplicaciones web** buscando ofrecer la experiencia de usuario de una aplicación nativa.
 
 * Las solicitudes AJAX de dominio múltiple solo son posibles si el servidor ha sido configurado para aceptarlas al activar el **intercambio de recursos de origen múltiple** (CORS, del inglés cross-origin resource sharing).
 
@@ -55,7 +55,7 @@ Para entenderse entre sí, los clientes y servidores web usan un protocolo en co
 
 ## HTTP, el protocolo web 
 
-HTTP, significa **Protocolo de Transferencia Hipertextual** del inglés HyperText Transfer Protocol, es la fundación técnica de la World Wide Web. Es un **protocolo**, un lenguaje que le permite a dos maquinas comunicarse entre sí.
+HTTP, significa **Protocolo de Transferencia Hipertextual** del inglés HyperText Transfer Protocol, es la fundación técnica de la World Wide Web. Es un **protocolo**, un lenguaje que le permite a dos máquinas comunicarse entre sí.
 
 > HTTPS es la versión protegida de HTTP.
 
@@ -85,7 +85,7 @@ La línea más importante es la primera. Está contiene:
 
 Las otras líneas de texto son llamadas **campos de encabezado**. Dan más información acerca de la solicitud del cliente: nombre del servidor (`Host`), tipo de contenido aceptado (`Accept`), detalles del programa del cliente (`User-Agent`). Hay muchos otros posibles campos de encabezado.
 
-Los principales métodos HTTP son `GET` para acceder a un recurso y  `POST` para enviar alguna información al servidor. Existen otros, tales cómo `HEAD`, `PUT` o `DELETE`.
+Los principales métodos HTTP son `GET` para acceder a un recurso y `POST` para enviar alguna información al servidor. Existen otros, tales como `HEAD`, `PUT` o `DELETE`.
 
 ### Anatomía de una respuesta HTTP
 
@@ -107,7 +107,7 @@ Content-Type: text/html
 </html>
 ```
 
-La primera línea contiene el **estado** de la respuesta: un número de tres dígitos indicando el resultado de la solicitud. Las otras líneas son campos de encabezado (`Date` fecha, `Content-Type` tipo de conenido, etc.) proporcionando información adicional sobre la respuesta.
+La primera línea contiene el **estado** de la respuesta: un número de tres dígitos indicando el resultado de la solicitud. Las otras líneas son campos de encabezado (`Date` fecha, `Content-Type` tipo de contenido, etc.) proporcionando información adicional sobre la respuesta.
 
 Una respuesta HTTP también podría incluir información. En este ejemplo, contiene el código HTML de la página web correspondiente al recurso solicitado.
 
@@ -137,7 +137,7 @@ Esta dirección puede dividirse en varias subpartes:
 * `www.nombredelsitio.com` es el **nombre del dominio** del sitio web.
 * `/ruta/del/recurso` es la ruta al recurso solicitado.
 
-Una dirección cómo está es llamada URL (del inglés Uniform Resource Locator),  o **localizador uniforme de recursos**. Una URL únicamente describe un recurso web y la forma de solicitarlo.
+Una dirección cómo está es llamada URL (del inglés Uniform Resource Locator), o **localizador uniforme de recursos**. Una URL únicamente describe un recurso web y la forma de solicitarlo.
 
 ## De los sitios web a las aplicaciones web
 
@@ -153,15 +153,15 @@ Otro modelo de desarrollo web pretende evitar la transmisión de una página web
 
 Aunque más desafiante, este modelo de desarrollo web puede llevar a cargas reducidas de recursos, una interactividad mejorada y a una experiencia de usuario casi a la par de las aplicaciones nativas.
 
-El conjunto de tecnologías que permiten la creación de aplicaciones web es llamado convencionalmente **AJAX** (del inglés Asynchronous JavaScript and XML, *JavaScript  y XML asíncronos*). Una invocación AJAX es una solicitud HTTP asíncrona hecha para obtener o enviar información de/a un servidor.
+El conjunto de tecnologías que permiten la creación de aplicaciones web es llamado convencionalmente **AJAX** (del inglés Asynchronous JavaScript and XML, *JavaScript y XML asíncronos*). Una invocación AJAX es una solicitud HTTP asíncrona hecha para obtener o enviar información de/a un servidor.
 
 ### Solicitudes síncronas contra asíncronas
 
-En un intercambio **sincrono** el solicitante espera hasta que obtiene la información necesitada. Una llamada telefónica es un ejemplo de un intercambio síncrono.
+En un intercambio **síncrono** el solicitante espera hasta que obtiene la información necesitada. Una llamada telefónica es un ejemplo de un intercambio síncrono.
 
 En cambio, el solicitante en un intercambio **asíncrono** puede hacer cualquier otra cosa mientras espera que se complete su solicitud. El correo electrónico es un ejemplo de un intercambio asíncrono.
 
-El modelo de desarrollo web tradicional usa solicitudes sincronas: el cliente web es bloqueado mientras espera que el servidor complete su solicitud. El modelo AJAX usa solicitudes asíncronas: la información es obtenida cuando se necesita en segundo plano.
+El modelo de desarrollo web tradicional usa solicitudes síncronas: el cliente web es bloqueado mientras espera que el servidor complete su solicitud. El modelo AJAX usa solicitudes asíncronas: la información es obtenida cuando se necesita en segundo plano.
 
 ### Solicitudes de dominio múltiple
 
@@ -198,4 +198,4 @@ JSON (del inglés JavaScript Object Notation), o **escritura de objetos JavaScri
 
 Un documento JSON es un conjunto de pares nombre/valor. Los nombres siempre van entre comillas dobles `""`. Los valores pueden ser números, cadenas de caracteres, booleanos, matrices u objetos.
 
-Muchos lenguajes de programación tiene soporte nativo para  el formato JSON… ¡Incluyendo a JavaScript, claro!
+Muchos lenguajes de programación tienen soporte nativo para el formato JSON… ¡Incluyendo a JavaScript, claro!
