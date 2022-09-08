@@ -23,7 +23,7 @@ fetch("http://url-de-mi-api")
   });
 ```
 
-Un número cada vez mayor de servicios son presentados a través de APIs web. Algunas son abiertas, otras requieren la **autentificación** del cliente, por ejemplo con una **clave de acceso**.
+Un número cada vez mayor de servicios son presentados a través de APIs web. Algunas son abiertas, otras requieren la **autentificación** del cliente, con una **clave de acceso**, por ejemplo.
 
 ## Presentación de APIs web
 
@@ -101,7 +101,7 @@ Este es el contenido web resultante.
 
 Las APIs web pueden clasificarse en dos categorías:
 
-* APIs abiertas que no necesitan ningúna autentificación para ser usadas.
+* APIs abiertas que no necesitan ninguna autentificación para ser usadas.
 * APIs que requieren la autentificación del consumidor a través de varios métodos.
 
 ### APIs abiertas
@@ -110,7 +110,7 @@ Estás APIs son libres para usarse por cualquiera, de cualquier manera. Para pre
 
 Muchas instituciones públicas como la [policía británica](https://data.police.uk/docs/) o el [gobierno francés](https://www.data.gouv.fr/) publican información para los ciudadanos usando APIs abiertas.
 
-También hay muchas pequeñas APIs divertidas ahí afuera. Por ejemplo la [API Punk](https://punkapi.com) te deja buscar dentro de un catálogo inmenso de cervezas. Así es cómo puedes renovar tu afición a la bebida recibiendo una al azar desde esta API.
+También hay muchas pequeñas APIs divertidas ahí afuera. Por ejemplo, la [API Punk](https://punkapi.com) te deja buscar dentro de un catálogo inmenso de cervezas. Así es cómo puedes renovar tu afición a la bebida recibiendo una al azar desde esta API.
 
 ```html
 <button id="grabButton">Toma una cerveza</button>
@@ -157,9 +157,9 @@ Otra clase de APIs requieren que el cliente se autentifique cuando accede al ser
 
 > Por supuesto, las APIs basadas en autentificación a menudo también tienen límites de velocidad.
 
-No hay un estándar universal con respecto a las claves de acceso. Cada servicio es libre de usar su propio formato personalizado. El cliente debe proporcionar su clave de acceso cuando accede a la API, generalmente agregandola al final de la URL de la API.
+No hay un estándar universal con respecto a las claves de acceso. Cada servicio es libre de usar su propio formato personalizado. El cliente debe proporcionar su clave de acceso cuando accede a la API, generalmente agregándola al final de la URL de la API.
 
-Un prerequisito para usar cualquier API web basada en clave es generarse una clave de acceso para este servicio en particular.
+Un prerrequisito para usar cualquier API web basada en clave es generarse una clave de acceso para este servicio en particular.
 
 Pongamos esto en práctica para obtener información acerca del clima actual en tu área. Para hacerlo, puedes simplemente mirar por la ventana, pero está más chido ;) si en cambio usas un servicio basado en la web como [OpenWeather](https://openweathermap.org).
 
@@ -275,6 +275,6 @@ Aquí está el código HTML inicial.
 <div id="infos"></div>
 ```
 
-Escribe el código JavaScript asociado para que se genere automáticamente una lista de enlaces de los primeros diez identificadores de planetas. Al hacer clic en el enlace del planeta se muestra información sobre el.
+Escribe el código JavaScript asociado para que se genere automáticamente una lista de enlaces de los primeros diez identificadores de planetas. Al hacer clic en el enlace del planeta se muestra información sobre él.
 
 ![Resultado esperado](images/chapter22-08.png)
