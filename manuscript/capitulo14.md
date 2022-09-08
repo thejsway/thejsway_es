@@ -71,7 +71,7 @@ Esta técnica es bastante rara y propensa a errores. El código es difícil de l
 
 ### Seleccionar elementos según la etiqueta HTML
 
-Todos los elementos DOM tienen un método llamado `getElementsByTagName()`. Este devuelve, en forma de objeto  [NodeList](https://developer.mozilla.org/es/docs/Web/API/NodeList), una lista de elementos que tienen el nombre de la etiqueta que fue pasado como parámetro. La búsqueda pasa por todos los sub elementos del nodo en el que fue invocado el método -- no solo en sus hijos directos.
+Todos los elementos DOM tienen un método llamado `getElementsByTagName()`. Este devuelve, en forma de objeto [NodeList](https://developer.mozilla.org/es/docs/Web/API/NodeList), una lista de elementos que tienen el nombre de la etiqueta que fue pasado como parámetro. La búsqueda pasa por todos los sub elementos del nodo en el que fue invocado el método -- no solo en sus hijos directos.
 
 
 Con el método `getElementsByTagName()` seleccionar el primer elemento `h2` se vuelve bastante fácil:
@@ -132,7 +132,7 @@ Por ejemplo, digamos que quieres tomar todos los elementos `<li>` de maravillas 
 console.log(document.getElementById("antiguas").getElementsByClassName("existe").length); // 1
 ```
 
-No obstante esta sintaxis es un poco anticuada. Aprendamos dos métodos nuevos que hacen más fácil encontrar elementos.
+No obstante, esta sintaxis es un poco anticuada. Aprendamos dos métodos nuevos que hacen más fácil encontrar elementos.
 
 El primero es `querySelectorAll()`, con el cual puedes usar selectores CSS para identificar elementos.
 
@@ -315,7 +315,7 @@ Escribe un programa JavaScript que contenga una función `infoEnlace()` y que mu
 * El número total de enlaces.
 * El target del primer enlace y del último.
 
-Esta función debe trabajar e incluso si no hay un link presentes.
+Esta función debe trabajar incluso si no hay enlaces.
 
 ![Resultado esperado](images/chapter14-03.png)
 
