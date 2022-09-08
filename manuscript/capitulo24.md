@@ -16,7 +16,7 @@ En este capítulo, descubrirás cómo crear aplicaciones JavaScript fuera del na
 
 * Las versiones de los paquetes son definidas usando el formato de **control de versiones semántico**: una cadena de tres dígitos en forma de `MAJOR.MINOR.PATCH`. Este formato facilita la gestión de **dependencias** entre paquetes.
 
-* [npm](https://www.npmjs.com) ( administrador de paquetes Node) es el administrador predeterminado de paquetes para el ecosistema Node. Consiste en un cliente de línea de comandos y un registro en línea de los paquetes públicos a los que se puede acceder mediante el cliente. Este registro es el ecosistema más grande de librerías de código abierto en el mundo.
+* [npm](https://www.npmjs.com) (administrador de paquetes Node) es el administrador predeterminado de paquetes para el ecosistema Node. Consiste en un cliente de línea de comandos y un registro en línea de los paquetes públicos a los que se puede acceder mediante el cliente. Este registro es el ecosistema más grande de librerías de código abierto en el mundo.
 
 * Los principales comandos npm son `npm install` (para instalar todas las dependencias de un paquete o agregar una nueva) y `npm update` (para actualizar todos los paquetes e instalar los faltantes de acuerdo con `package.json`).
 
@@ -48,7 +48,7 @@ El programa Node más simple posible es el siguiente.
 console.log("Hola desde Node!");
 ```
 
-Cómo puedes ver, el comando `console.log()` también está disponible en Node. Igual que en un navegador web, devuelve el valor pasado como parámetro en la consola. Suponiendo que este código está guardado dentro de un archivo llamado `hello.js`, así es como se ejecuta a través de una terminal node Node.
+Cómo puedes ver, el comando `console.log()` también está disponible en Node. Igual que en un navegador web, devuelve el valor pasado como parámetro en la consola. Suponiendo que este código está guardado dentro de un archivo llamado `hello.js`, así es como se ejecuta a través de Node en una terminal.
 
 ```console
 node hello.js
@@ -62,14 +62,14 @@ Un estudio a fondo de la plataforma Node está fuera del alcance de este libro. 
 
 ### Beneficios de la modularidad
 
-La idea general detrás de los módulos es bastante clara y similar a la que está detrás de las funciones. En lugar de escribir todo el código en un solo lugar, y por lo tanto crear una aplicación monolítica, con frecuencia es mejor dividir las funcionalidades en partes más pequeñas y libremente asociadas. Cada parte debe enfocarse en una tarea específica, haciendola mucho más fácil de comprender y reusar. El comportamiento general de la aplicación es el resultado de la interacción entre estos elementos constitutivos.
+La idea general detrás de los módulos es bastante clara y similar a la que está detrás de las funciones. En lugar de escribir todo el código en un solo lugar, y por lo tanto crear una aplicación monolítica, con frecuencia es mejor dividir las funcionalidades en partes más pequeñas y libremente asociadas. Cada parte debe enfocarse en una tarea específica, haciéndola mucho más fácil de comprender y reusar. El comportamiento general de la aplicación es el resultado de la interacción entre estos elementos constitutivos.
 
 
 Estas partes más pequeñas a veces son denominadas como componentes en otros entornos. En Node son llamados **módulos** y pueden presentarse bajo formas diferentes. La definición general de un módulo es: cualquier cosa que pueda ser cargada usando la función `require()` de Node. La plataforma Node.js se ajusta al formato de módulos [CommonJS](http://requirejs.org/docs/commonjs.html).
 
 ### Crear un módulo
 
-La forma más simple de un módulo es un archivo JavaScript individual, que contiene comandos especiales para **exportar** fragmentos específicos de código. El resto del código es **privado** en el módulo y no será visible fuera de el.
+La forma más simple de un módulo es un archivo JavaScript individual, que contiene comandos especiales para **exportar** fragmentos específicos de código. El resto del código es **privado** en el módulo y no será visible fuera de él.
 
 Por ejemplo, el módulo `greetings.js` podría contener el siguiente código.
 
@@ -249,7 +249,7 @@ Estas son las reglas para definir el número de versión:
 
 * La primerísima versión debe ser `1.0.0`.
 * Las correcciones de errores y cambios menores deben incrementar el dígito PARCHE (`PATCH`).
-* Nuevas características añadidas de una manera retrocompatible deben incrementar el dígito SECUNDARIO (`MINOR`).
+* Nuevas características añadidas de una manera retro compatible deben incrementar el dígito SECUNDARIO (`MINOR`).
 * Modificaciones incompatibles deben incrementar el dígito FUNDAMENTAL (`MAJOR`).
 
 Estas reglas estrictas existen para facilitar la gestión de **dependencias** entre paquetes.
@@ -286,7 +286,7 @@ Para instalar todas las dependencias de un paquete, escribes el siguiente comand
 npm install
 ```
 
-Esto leera el archivo `package.json`, buscará los paquetes que se ajustan a los intervalos de versión declarados en el campo `dependencies`, los descarga e instala (y sus propias dependencias) en la subcarpeta `node_modules/`.
+Esto leerá el archivo `package.json`, buscará los paquetes que se ajustan a los intervalos de versión declarados en el campo `dependencies`, los descarga e instala (y sus propias dependencias) en la subcarpeta `node_modules/`.
 
 ### Agregar una nueva dependencia
 
@@ -308,7 +308,7 @@ Este comando obtendrá un paquete específico del registro, lo descargara en la 
 
 ### Usar una dependencia
 
-Una vez que los paquetes externos han sido instalados en  `node_modules/`, la aplicación puede cargarlos como módulos con la función `require()`.
+Una vez que los paquetes externos han sido instalados en `node_modules/`, la aplicación puede cargarlos como módulos con la función `require()`.
 
 Por ejemplo, el registro npm tiene un paquete **semver** que se encarga del control de versiones semántico. Suponiendo que este paquete ha sido instalado como una dependencia, puede ser usado para realizar revisiones manuales del intervalo de versiones.
 
@@ -340,7 +340,7 @@ Revisa la [documentación npm](https://docs.npmjs.com/how-npm-works/packages) pa
 
 ### Otra vez círculos
 
-Crea un módulo `circulo.js` que exporte dos funciones `circumferencia()` y `area()`, cada una tomando el radio del círculo como parámetro.
+Crea un módulo `circulo.js` que exporte dos funciones `circunferencia()` y `area()`, cada una tomando el radio del círculo como parámetro.
 
 Carga este módulo en un archivo `index.js` y prueba las dos funciones.
 
