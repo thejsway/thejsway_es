@@ -4,7 +4,7 @@ Para hacer una página web interactiva tienes que responder a las acciones del u
 
 ## TL;DR
 
-* Puedes hacer una página web interactiva escribiendo código javascript ligado a **eventos** dentro del navegador.
+* Puedes hacer una página web interactiva escribiendo código JavaScript ligado a **eventos** dentro del navegador.
 
 * Pueden ser manejados numerosos tipos de eventos. Cada tipo de evento está asociado con un objeto `Event` que contiene propiedades que proporcionan información acerca del evento.
 
@@ -43,7 +43,7 @@ const mostrarMensaje = () => {
 
 // Acceder al botón
 const elementoBoton = document.getElementById("miBoton");
-//  Detectar el evento "click"
+// Detectar el evento "click"
 elementoBoton.addEventListener("click", mostrarMensaje);
 ```
 |
@@ -197,7 +197,7 @@ El orden de aparición de los eventos relacionados con el ratón es: `mousedown`
 
 ### Carga de página
 
-Dependiendo de qué tan compleja sea, puede tomar algo de tiempo para que página web sea enteramente cargada por el navegador. Puedes añadir un detector de eventos en el evento `load` producido por el objeto `window` (que representa la ventana del navegador) para saber cuando esto sucede. Esto evita situaciones problemáticas donde JavaScript interactúa con páginas que no están completamente cargadas.
+Dependiendo de qué tan compleja sea, puede tomar algo de tiempo para que una página web sea enteramente cargada por el navegador. Puedes añadir un detector de eventos en el evento `load` producido por el objeto `window` (que representa la ventana del navegador) para saber cuándo sucede esto. Esto evita situaciones problemáticas donde JavaScript interactúa con páginas que no están completamente cargadas.
 
 El siguiente código muestra un mensaje en la consola una vez que la página está totalmente cargada.
 
@@ -210,7 +210,7 @@ window.addEventListener("load", e => {
 
 ### Cierre de página
 
-A veces quieres reaccionar al cierre de una página. El cierre sucede cuando el usuario cierra la pestaña que muestra la página o navega hacía otra página en esta pestaña. Un ejemplo de uso frecuente consiste en mostrar un diálogo de confirmación al usuario. El control del cierre de una página es realizada agregando un controlador al evento `beforeunload` en el objeto `window`.
+A veces quieres reaccionar al cierre de una página. El cierre sucede cuando el usuario cierra la pestaña que muestra la página o navega hacía otra página en esta pestaña. Un ejemplo de uso frecuente consiste en mostrar un diálogo de confirmación al usuario. El control del cierre de una página es realizado agregando un controlador al evento `beforeunload` en el objeto `window`.
 
 ```js
 // Controlar cierre de página
@@ -369,7 +369,7 @@ const preguntas = [
   },
   {
     enunciado:
-      "¿Que es lo que se repite una vez cada minuto, dos veces cada momento y nunca en cien años?",
+      "¿Qué es lo que se repite una vez cada minuto, dos veces cada momento y nunca en cien años?",
     respuesta: "La letra M."
   }
 ];
