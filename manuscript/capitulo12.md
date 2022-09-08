@@ -4,13 +4,13 @@ Este capítulo breve resumen lo que necesitas saber acerca de la web y las pági
 
 ## TL;DR
 
-* La [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) (o **Web**) es un espacio de información construido sobre  [Internet](https://es.wikipedia.org/wiki/Internet). Los recursos web son accesibles a través de su [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme), y pueden contener [hiperenlaces](https://en.wikipedia.org/wiki/Hyperlink) a otros recursos.
+* La [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) (o **Web**) es un espacio de información construido sobre [Internet](https://es.wikipedia.org/wiki/Internet). Los recursos web son accesibles a través de su [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme), y pueden contener [hiperenlaces](https://en.wikipedia.org/wiki/Hyperlink) a otros recursos.
 
 * Una página web es un documento apropiado para la web. Crear páginas web generalmente involucra tres tecnologías: [HTML](https://es.wikipedia.org/wiki/HTML)para estructurar el contenido,  [CSS](https://es.wikipedia.org/wiki/CSS) para definir su presentación y JavaScript para añadir interactividad. 
 
 * Un documento HTML está hecho de texto y elementos estructurales llamados **etiquetas** que describen el contenido de la página, tales como: párrafos, encabezados, hiperenlaces, imágenes, etc.
 
-* CSS usa selectores para declarar a qué elementos HTML se les aplica un estilo. Los elementos pueden ser seleccionados por el nombre de la etiqueta (`h1`), clase (`.terminado`) o un identificador (`#grosero`).
+* CSS usa selectores para declarar a qué elementos HTML se les aplica un estilo. Los elementos pueden ser seleccionados por el nombre de la etiqueta (`h1`), clase (`.listo`) o un identificador (`#groseria`).
 
 * Un documento HTML puede incluir una hoja de estilos CSS con la etiqueta `<link>` y un archivo JavaScript con la etiqueta `<script>`.
 
@@ -19,7 +19,7 @@ Este capítulo breve resumen lo que necesitas saber acerca de la web y las pági
 <html>
 
 <head>
-    <!-- Información de la página: título, conjunto de caracteres, etc -->
+    <!-- Información de la página: título, conjunto de caracteres, etc. -->
 
     <!-- Enlace a una hoja de estilo CSS -->
     <link href="ruta/al/archivo.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@ Este capítulo breve resumen lo que necesitas saber acerca de la web y las pági
 
 ## Internet y la Web
 
-Como problablemente sabes, la [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) (o **Web** para abreviar) es un espacio de información en continúa expansión construido sobre  [Internet](https://es.wikipedia.org/wiki/Internet). Los recursos web son accesibles a través de su dirección, denominada  [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme), y pueden contener [hiperenlaces](https://en.wikipedia.org/wiki/Hyperlink) a otros recursos. Juntos, todos estos recursos interconectados forman un enorme entramado semejante a una telaraña.
+Como probablemente sabes, la [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) (o **Web** para abreviar) es un espacio de información en continua expansión construido sobre [Internet](https://es.wikipedia.org/wiki/Internet). Los recursos web son accesibles a través de su dirección, denominada [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme), y pueden contener [hiperenlaces](https://en.wikipedia.org/wiki/Hyperlink) a otros recursos. Juntos, todos estos recursos interconectados forman un enorme entramado semejante a una telaraña.
 
 Los documentos apropiados para la web son llamados **páginas web**. Son agrupados en **sitios web** y visitados a través de un tipo especial de programa llamado [navegador](https://es.wikipedia.org/wiki/Navegador_web).
 
@@ -52,7 +52,7 @@ Hay tres tecnologías principales para crear páginas web: HTML, CSS y JavaScrip
 HTML, siglas en inglés de [HyperText Markup Language](https://es.wikipedia.org/wiki/HTML), 
 es el formato de las páginas web. Un documento HTML está hecho de texto y elementos estructurales llamados **etiquetas**. Las etiquetas se usan para describir el contenido de la página, tales como: párrafos, encabezados, hiperenlaces, imágenes, etc.
 
-Aquí hay un ejemplo de una página web sencilla, geralmente almacenada como un archivo `.html`.
+Aquí hay un ejemplo de una página web sencilla, generalmente almacenada como un archivo `.html`.
 
 
 ```html
@@ -87,7 +87,7 @@ CSS, o [hoja de estilo en cascada](https://es.wikipedia.org/wiki/CSS), es un len
 
 CSS usa selectores para declarar a qué elementos se aplica un estilo. Muchas estrategias de selección son posibles, especialmente:
 
-* Todos los elemento de determinado nombre de etiqueta.
+* Todos los elementos de determinado nombre de etiqueta.
 * Elementos correspondientes a determinada **clase** (sintaxis del selector: `.miClase`).
 * El elemento correspondiente a un determinado **identificador** único (sintaxis del selector: `#MiId`).
 
