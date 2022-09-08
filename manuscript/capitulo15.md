@@ -163,7 +163,7 @@ document.getElementById("lenguajes").appendChild(elementoPython); // Inserta el 
 
 ### Agregar un nodo de texto
 
-En lugar de usar la propiedad `textContent` para definir el contenido textual del elemento nuevo, puedes crear un nodo de texto con el método  `createTextNode()`. Después este no puede ser añadido al elemento nuevo con  `appendChild()`.
+En lugar de usar la propiedad `textContent` para definir el contenido textual del elemento nuevo, puedes crear un nodo de texto con el método `createTextNode()`. Después este no puede ser añadido al elemento nuevo con `appendChild()`.
 
 El código siguiente demuestra esta posibilidad insertando el lenguaje Ruby al final de la lista.
 
@@ -317,7 +317,7 @@ console.log(elementosParrafos[2].style.color); // Muestra una cadena de caracter
 
 ![Resultado de ejecución](images/chapter15-15.png)
 
-¿Porqué no se muestra el color (azul) del tercer párrafo? 
+¿Por qué no se muestra el color (azul) del tercer párrafo? 
 
 Porque la propiedad `style` usada en este código solo representa el atributo `style` del elemento. Usando esta propiedad, no puedes acceder a las declaraciones de estilo definidas en otro lugar, por ejemplo en una hoja de estilos. Esto explica porque el estilo del tercer párrafo, definido externamente, no se muestra aquí.
 
