@@ -90,11 +90,11 @@ Comencemos con un formulario sencillo que le permite a los usuarios registrarse 
 
 ![Resultado de visualización](images/chapter17-01.png)
 
-Este ejemplo contiene múltiples áreas de entrada: de texto, casillas, botones de selección, una lista desplegable así como botones para enviar y cancelar. Aprenderemos cómo manejar cada uno de estos elementos con JavaScript.
+Este ejemplo contiene múltiples áreas de entrada: de texto, casillas, botones de selección, una lista desplegable, así como botones para enviar y cancelar. Aprenderemos cómo manejar cada uno de estos elementos con JavaScript.
 
 > Quizás hayas notado que la etiqueta `<form>` no tiene los atributos habituales `action` and `method`. Estos atributos te permiten definir la fuente del servidor cuando el formulario es enviado por el usuario. Dado que nuestro formulario solo será controlado por JavaScript en el navegador, no son necesarios.
 
-###  Áreas de texto
+### Áreas de texto
 
 #### Acceder a valores introducidos
 
@@ -120,7 +120,7 @@ elementoNombreUsuario.value = "NombreDeUsuarioChido";
 
 #### Controlar el enfoque
 
-Cuando una zona de texto es seleccionada, se vuelve el área enfocada del formulario. Quizá has notado que los bordes del campo se vuelven azules u otros efectos cuando estás accediendo a una área de entrada en particular. Esto te ayuda a saber dónde estás en el formulario. Un usuario haciendo click en un campo de texto (o presionando la tecla Tab hacia este) da comienzo a un evento `focus`. Adicionalmente un evento `focus` desencadena un evento `blur`  en el campo que tenía el enfoque previamente.
+Cuando una zona de texto es seleccionada, se vuelve el área enfocada del formulario. Quizá has notado que los bordes del campo se vuelven azules u otros efectos cuando estás accediendo a un área de entrada en particular. Esto te ayuda a saber dónde estás en el formulario. Un usuario haciendo click en un campo de texto (o presionando la tecla Tab hacia este) da comienzo a un evento `focus`. Adicionalmente un evento `focus` desencadena un evento `blur` en el campo que tenía el enfoque previamente.
 
 Puedes usar estos eventos para mostrarle consejos al usuario relacionados con el campo de texto actual, como en el siguiente ejemplo:
 
@@ -180,7 +180,7 @@ document.getElementById("confirmacion").addEventListener("change", e => {
 
 #### Botones de selección
 
-Los botones de selección permiten a los usuarios hacer una elección entre múltiples posibilidades. Puedes crear botones de selección con etiquetas `<input type="radio">`, que tienen el mismo atributo `name` y diferentes atributos  `value`. 
+Los botones de selección permiten a los usuarios hacer una elección entre múltiples posibilidades. Puedes crear botones de selección con etiquetas `<input type="radio">`, que tienen el mismo atributo `name` y diferentes atributos `value`. 
 
 Este es el fragmento del formulario de ejemplo que permite al usuario elegir entre tres botones de selección, cada uno representando una opción de subscripción.
 
@@ -319,7 +319,7 @@ formElement.addEventListener("submit", e => {
 
 ## Validación de formulario
 
-Checar la información introducida por los usuarios antes de que sea enviada al servidor es uno de los principales usos de JavaScript en los formularios web.  Usando validación de formularios, puedes mejorar la experiencia del usuario alertandolo inmediatamente sobre problemas con su información. Esto también es una forma eficiente de prevenir solicitudes innecesarias al servidor con información errónea.
+Checar la información introducida por los usuarios antes de que sea enviada al servidor es uno de los principales usos de JavaScript en los formularios web.  Usando validación de formularios, puedes mejorar la experiencia del usuario alertándolo inmediatamente sobre problemas con su información. Esto también es una forma eficiente de prevenir solicitudes innecesarias al servidor con información errónea.
 
 La validación puede suceder de varias formas:
 
@@ -380,7 +380,7 @@ document.getElementById("correoElectronico").addEventListener("blur", e => {
 
 Las validaciones previas eran bastante primitivas: muchas cadenas de caracteres que contienen un `@` no son direcciones de correo válidas. Para realizar revisiones más avanzadas, puedes usar una herramienta poderosa: **expresiones regulares**.
 
-Una expresión regular define un **patrón** con el cual las cadenas de caracteres se comparan, buscando coincidencias. Muchos lenguajes de programación las soportan. Una adición poderosa al cinturón de herramientas de un programador, no obstante puede tomar algo de tiempo sentirse cómodo con ellas. Lo que sigue solo es una introducción al vasto territorio de las expresiones regulares.
+Una expresión regular define un **patrón** con el cual las cadenas de caracteres se comparan, buscando coincidencias. Muchos lenguajes de programación las soportan. Una adición poderosa al cinturón de herramientas de un programador, no obstante, puede tomar algo de tiempo sentirse cómodo con ellas. Lo que sigue solo es una introducción al vasto territorio de las expresiones regulares.
 
 Comencemos intentando crear una expresión regular que revise la presencia de un signo `@` dentro de una cadena de caracteres. Aquí está el código JavaScript asociado.
 
@@ -396,16 +396,16 @@ Una expresión regular JavaScript es definida poniendo su patrón entre un par d
 
 La siguiente tabla presenta algunas de las numerosas posibilidades ofrecidas por las expresiones regulares.
 
-| Patrón | Coincide si | Coincide  | No coincide |
+| Patrón | Coincide si | Coincide | No coincide |
 |---|---|---|---|
 | `abc` | La cadena contiene `"abc"` | `"abc"`, `"abcdef"`, `"123abc456"` | `"abdc"`, `"1bca"`, `"adbc"`, `"ABC"` |
 | `[abc]` | La cadena contiene ya sea `"a"`, `"b"` o `"c"` | `"abc"`, `"daef"`, `"bbb"`, `"12c34"` | `"def"`, `"xyz"`, `"123456"`, `"BBB"` |
 | `[a-z]` | La cadena contiene una letra minúscula | `"abc"`, `"12f43"`, `"_r_"` | `"123"`, `"ABC"`, `"_-_"` |
 | `[0-9]` or `\d` | La cadena contiene una cifra | `"123"`, `"ab4c"`, `"a56"` | `"abc"` |
-| `a.c` | La cadena contiene una `"a"`, seguida de cualquier carácter, seguido por una `"c"`  | `"abc"`, `"acc"`, `"12a.c34"` | `"ac"`, `"abbc"`, `"ABC"` |
+| `a.c` | La cadena contiene una `"a"`, seguida de cualquier carácter, seguido por una `"c"` | `"abc"`, `"acc"`, `"12a.c34"` | `"ac"`, `"abbc"`, `"ABC"` |
 | `a\.c` | La cadena contiene `"a.c"` | `"a.c"`, `"a.cdef"`, `"12a.c34"` | `"ac"`, `"abc"` |
 | `a.+c` | La cadena contiene una `"a"`, seguida de al menos un carácter, seguido por una `"c"` | `"abc"`, `"abbc"`, `"12a$ùc34"` | `"ac"`, `"bbc"` |
-| `a.*c` | La cadena contiene una `"a"`, seguida de cero o más caracteres, seguidos por una `"c"`  | `"abc"`, `"abbc"`, `"ac"` | `"ABC"`, `"bbc"` |
+| `a.*c` | La cadena contiene una `"a"`, seguida de cero o más caracteres, seguidos por una `"c"` | `"abc"`, `"abbc"`, `"ac"` | `"ABC"`, `"bbc"` |
 
 Observar estos ejemplos nos lleva a las siguientes reglas:
 
@@ -415,9 +415,9 @@ Observar estos ejemplos nos lleva a las siguientes reglas:
 
 * Los patrones `[0-9]` y `\d` son esencialmente idénticos y coinciden con un dígito en una cadena de caracteres.
 
-* El signo  `.` reemplaza un solo carácter. 
+* El signo `.` reemplaza un solo carácter. 
 
-* El signo  `\` (*diagonal invertida*) indica que el siguiente carácter debe ser buscado como tal. Por ejemplo, `\.` es usado para coincidir con el signo `.` en sí mismo.
+* El signo `\` (*diagonal invertida*) indica que el siguiente carácter debe ser buscado como tal. Por ejemplo, `\.` es usado para coincidir con el signo `.` en sí mismo.
 
 * El signo `+` corresponde a una o varias instancias de la expresión precedente.
 
@@ -431,7 +431,7 @@ Q> Antes de seguir leyendo, puedes descifrar este patrón para comprender ¿Cuá
 
 Bien, aquí está la respuesta. Este patrón coincide con una cadena de caracteres que:
 
-* Empieza con uno o varios caracteres  (`.+`).
+* Empieza con uno o varios caracteres (`.+`).
 * Después, contiene el signo `@` (`@`).
 * Después, contiene uno o varios caracteres (`.+`).
 * Después, contiene el signo `.` (`\.`).
