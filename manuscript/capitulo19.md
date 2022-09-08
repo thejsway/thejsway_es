@@ -13,7 +13,7 @@ Este proyecto toma como base el programa de noticias sociales que creaste previa
 * Un enlace es definido por su título, su URL y su autor (remitente).
 * Si la URL de un nuevo enlace no empieza con `"http://"` o `"https://"`, se le agrega `"http://"` automáticamente al inicio.
 * La página web muestra una lista de al menos tres enlaces ya existentes.
-* Existe un botón para que el usuario envié un enlace nuevo. Cuando se hace click en este, aparece un formulario antes de la lista de enlaces para introducir las nuevas propiedades del enlace (autor, título y URL).
+* Existe un botón para que el usuario envié un enlace nuevo. Cuando se hace clic en este, aparece un formulario antes de la lista de enlaces para introducir las nuevas propiedades del enlace (autor, título y URL).
 * En este formulario, todos los campos del enlace son obligatorios.
 * Cuando el enlace nuevo es validado por el usuario, se muestra al inicio de la lista de enlaces, reemplazando el formulario. Un mensaje indica el logro de la operación, luego desaparece después de dos segundos.
 
