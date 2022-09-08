@@ -12,7 +12,7 @@ Este capítulo te ayudará a descubrir cómo se muestra una página web en un na
 
 * La variable `document` proporciona acceso a la raíz del árbol del DOM y corresponde al elemento `<html>` en el mismo HTML.
 
-* Los objetos del DOM tienen **propiedades** y **métodos** que puedes manipular con JavaScript. Por ejemplo, `nodeType` devuelve el tipo de nodo, `childNodes`  contiene una colección de nodos secundarios, y `parentNode` devuelve el nodo primario.
+* Los objetos del DOM tienen **propiedades** y **métodos** que puedes manipular con JavaScript. Por ejemplo, `nodeType` devuelve el tipo de nodo, `childNodes` contiene una colección de nodos secundarios, y `parentNode` devuelve el nodo primario.
 
 ## Introducción al DOM
 
@@ -50,7 +50,7 @@ A la representación estructurada de una página web se le llama **DOM**, abrevi
 
 ## Estructura de una página web
 
-Una página web es un conjunto de etiquetas anidadas. Puedes representar una página web de una forma jerárquica llamada **arbol**. El elemento `<html>` configura tu documento como HTML y contiene dos sub elementos, `<head>` y `<body>`, que a su vez contienen varios sub elementos.
+Una página web es un conjunto de etiquetas anidadas. Puedes representar una página web de una forma jerárquica llamada **árbol**. El elemento `<html>` configura tu documento como HTML y contiene dos sub elementos, `<head>` y `<body>`, que a su vez contienen varios sub elementos.
 
 Este es el árbol correspondiente a nuestra página HTML de ejemplo.
 
@@ -58,7 +58,7 @@ Este es el árbol correspondiente a nuestra página HTML de ejemplo.
 
 Cada entidad en el árbol es llamada **nodo**. Hay dos tipos de nodos:
 
-* Aquellos (aquí en azul) que corresponden a las etiquetas HTML como `<body>` o `<p>`. A estos nodos se les llama **nodos de elementos** y pueden tener sub nodos,  llamados **nodos secundarios** o hijos.
+* Aquellos (aquí en azul) que corresponden a las etiquetas HTML como `<body>` o `<p>`. A estos nodos se les llama **nodos de elementos** y pueden tener sub nodos, llamados **nodos secundarios** o hijos.
 
 * Esos (en rojo) que corresponden al contenido textual de la página. A esos nodos se les llama **nodos textuales** y no tienen hijos.
 
@@ -110,7 +110,7 @@ console.log(document.body.childNodes[0]);
 
 Q> Espera… ¿porque el primer hijo del nodo no es `h1`, dado que es el primer elemento en el HTML de body?
 
-Eso es porque los espacios entre etiquetas y los saltos de línea en código HTML son considerados nodos de texto por el navegador. Por lo tanto el nodo `h1` es el *segundo* nodo hijo de body. Verifiquemos eso:
+Eso es porque los espacios entre etiquetas y los saltos de línea en código HTML son considerados nodos de texto por el navegador. Por lo tanto, el nodo `h1` es el *segundo* nodo hijo de body. Verifiquemos eso:
 
 ```js
 // Acceso al segundo hijo del nodo body
