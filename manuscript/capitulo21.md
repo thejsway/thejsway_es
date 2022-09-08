@@ -23,11 +23,11 @@ fetch(url)
 
 * Javascript trata con contenido JSON con los métodos `JSON.parse()` (para transformar un texto JSON en un objeto) y `JSON.stringify()` (para hacer lo contrario).
 
-* El resultado de una invocación a `fetch()` es un objeto HTTP  `Response`. Sus métodos  `text()` y `json()` son usados para leer contenido como texto plano o información JSON. Estos dos métodos devuelven una promesa que resuelve ya sea como una cadena de caracteres o como JSON.
+* El resultado de una invocación a `fetch()` es un objeto HTTP  `Response`. Sus métodos `text()` y `json()` son usados para leer contenido como texto plano o información JSON. Estos dos métodos devuelven una promesa que resuelve ya sea como una cadena de caracteres o como JSON.
 
 ## Crear solicitudes HTTP asíncronas en JavaScript
 
-En el capítulo anterior, examinamos las solicitudes síncronas contra las asíncronas. Puesto que las solicitudes síncronas bloquean el proceso que hace la invocación hasta que el resultado es recibido. Únicamente deberían usarse solicitudes HTTP asíncronas cuando se construye una aplicación web. Sin embargo, el código asincrono puede ser complicado de escribir y comprender, dado que las declaraciones no sé ejecutarán de una manera lineal y secuencial como en las operaciones sincronas.
+En el capítulo anterior, examinamos las solicitudes síncronas contra las asíncronas. Puesto que las solicitudes síncronas bloquean el proceso que hace la invocación hasta que el resultado es recibido. Únicamente deberían usarse solicitudes HTTP asíncronas cuando se construye una aplicación web. Sin embargo, el código asíncrono puede ser complicado de escribir y comprender, dado que las declaraciones no sé ejecutarán de una manera lineal y secuencial como en las operaciones síncronas.
 
 ### El método `fetch()`
 
@@ -55,7 +55,7 @@ Cuando el método `fetch()` es ejecutado, inmediatamente devuelve una **promesa*
 * *completada*: significa que la operación se completó satisfactoriamente.
 * *rechazada*: significa que la operación falló.
 
-Una promesa JavaScript es un objeto con métodos  `then()` y `catch()`. `then()` es invocado cuando la promesa es **completada**. Toma el resultado de la operación como parámetro. En cambio, `catch()` es invocado cuando la promesa es **rechazada**.
+Una promesa JavaScript es un objeto con métodos `then()` y `catch()`. `then()` es invocado cuando la promesa es **completada**. Toma el resultado de la operación como parámetro. En cambio, `catch()` es invocado cuando la promesa es **rechazada**.
 
 Lo bueno de las promesas es que pueden ser encadenadas juntas. Así es cómo podrías realizar una serie de operaciones asíncronas en JavaScript.
 
@@ -264,6 +264,6 @@ Comienza con el siguiente código HTML.
 </table>
 ```
 
-Escribe el código javascript que llena la tabla con los detalles sobre las pinturas.
+Escribe el código JavaScript que llena la tabla con los detalles sobre las pinturas.
 
 ![Resultado esperado](images/chapter21-07.png)
