@@ -4,7 +4,7 @@ Ahora sabes, cómo obtener información de servidores web o APIs. Este capítulo
 
 ## TL;DR
 
-* Puedes enviar información a un servidor web a través de una invocación AJAX traduciendola a una solicitud HTTP `POST` usando el método `fetch()`.
+* Puedes enviar información a un servidor web a través de una invocación AJAX traduciéndola a una solicitud HTTP `POST` usando el método `fetch()`.
 
 * Para enviar información de formularios HTML o pares clave/valor, usas el objeto `FormData`.
 
@@ -114,7 +114,7 @@ document.querySelector("form").addEventListener("submit", e => {
 });
 ```
 
-El detector de eventos comienza deshabilitando el comportamiento predeterminado de envío del formulario, el cual es enviar una solicitud HTTP `POST` sincrona al servidor. En cambio, se crea un objeto `FormData` con el formulario en sí mismo (la expresión `e.target`) como parámetro. Todos los campos del formulario son agregados automáticamente como pares clave/valor en este objeto.
+El detector de eventos comienza deshabilitando el comportamiento predeterminado de envío del formulario, el cual es enviar una solicitud HTTP `POST` síncrona al servidor. En cambio, se crea un objeto `FormData` con el formulario en sí mismo (la expresión `e.target`) como parámetro. Todos los campos del formulario son agregados automáticamente como pares clave/valor en este objeto.
 
 Una vez que los campos del formulario son encapsulados en el objeto `FormData`, el método `fetch()` visto previamente es usado para enviar una solicitud asíncrona a la URL `https://thejsway-server.herokuapp.com/animals`. El segundo parámetro de la invocación a `fetch()` establece el método HTTP como `POST` y añade la información del formulario dentro del cuerpo de la solicitud.
 
