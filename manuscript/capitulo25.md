@@ -20,7 +20,7 @@ Es hora de poner tu conocimiento de Node.js en práctica y crear un servidor web
 
 ## Usar un framework 
 
-En los capítulos anteriores vimos que  Node.js es una plataforma para construir aplicaciones JavaScript fuera del navegador. Como tal, Node es muy apropiado para crear **servidores web** en JavaScript.
+En los capítulos anteriores vimos que Node.js es una plataforma para construir aplicaciones JavaScript fuera del navegador. Como tal, Node es muy apropiado para crear **servidores web** en JavaScript.
 
 > Como recordatorio un servidor web es una máquina construida especialmente para publicar recursos en la web.
 
@@ -104,7 +104,7 @@ app.get("/", (request, response) => {
 });
 ```
 
-Cuundo se hace una solicitud HTTP a la URL ruta, la función de respuesta asociada se ejecuta. Esta función toma como parámetros objetos que representan la solicitud y respuesta URL. Aquí, el cuerpo de la función envía una respuesta de texto con el contenido `"¡Hola desde Express!"`.
+Cuando se hace una solicitud HTTP a la URL ruta, la función de respuesta asociada se ejecuta. Esta función toma como parámetros objetos que representan la solicitud y respuesta URL. Aquí, el cuerpo de la función envía una respuesta de texto con el contenido `"¡Hola desde Express!"`.
 
 ### Escuchar solicitudes
 
@@ -180,13 +180,13 @@ Cuando accedas a la ruta `"/api/articles"` (<http://localhost:3000/api/articles>
 
 ## Aceptar información
 
-Hasta este momento, tu servidor web ofrece un servicio de *solo lectura* publica información pero no acepta ninguna… ¡hasta ahora!
+Hasta este momento, tu servidor web ofrece un servicio de *solo lectura* publica información, pero no acepta ninguna… ¡hasta ahora!
 
 Como viste en un capítulo anterior, la información enviada a un servidor web puede ser ya sea información de formulario o información JSON.
 
 ### Gestionar información de formularios
 
-La información de un formulario viene encapsulada dentro de la solicitud HTTP `POST` enviada por el cliente al servidor. La primera tarea del servidor es extraer esta información de la solicitud. La forma más sencilla de hacer esto es usar un paquete npm especializado, como [multer](https://www.npmjs.com/package/multer). Instalalo con el comando `npm install multer` o directamente en las dependencias de tu aplicación.
+La información de un formulario viene encapsulada dentro de la solicitud HTTP `POST` enviada por el cliente al servidor. La primera tarea del servidor es extraer esta información de la solicitud. La forma más sencilla de hacer esto es usar un paquete npm especializado, como [multer](https://www.npmjs.com/package/multer). Instálalo con el comando `npm install multer` o directamente en las dependencias de tu aplicación.
 
 ```json
 "dependencies": {
@@ -222,7 +222,7 @@ Los valores de las variables `nombre` y `voto` son extraídos del cuerpo de la s
 
 ### Gestionar información JSON 
 
-El manejo de información JSON entrante requiere interpretarla a partir de la solicitud `POST` recibida. Usar un paquete npm como [body-parser](https://www.npmjs.com/package/body-parser) es la solución más sencilla. Instalalo con el comando `npm install body-parser` o directamente en las dependencias de tu aplicación.
+El manejo de información JSON entrante requiere interpretarla a partir de la solicitud `POST` recibida. Usar un paquete npm como [body-parser](https://www.npmjs.com/package/body-parser) es la solución más sencilla. Instálalo con el comando `npm install body-parser` o directamente en las dependencias de tu aplicación.
 
 ```json
 "dependencies": {
@@ -278,7 +278,7 @@ app.get("/hello", (request, response) => {
 
 Sin embargo, las cosas se nos saldrían rápidamente de las manos a medida que la complejidad de la página web crezca. Una mejor solución es definir el contenido HTML en un archivo externo almacenado en una subcarpeta especifica, y devolver ese archivo como resultado de la solicitud.
 
-Por ejemplo, crea una subcarpeta llamada `views` y adentro  un archivo llamado `saludo.html`. Inserta el siguiente contenido en el archivo HTML. 
+Por ejemplo, crea una subcarpeta llamada `views` y adentro un archivo llamado `saludo.html`. Inserta el siguiente contenido en el archivo HTML. 
 
 ```html
 <!doctype html>
@@ -312,7 +312,7 @@ Al apuntar al dirigir tu navegador hacia la URL `"/hello"` (<http://localhost:30
 
 La mayoría de las páginas web necesitarán cargar recursos del lado del cliente tales como imágenes, archivos CSS y JavaScript. Una práctica común es poner estos recursos en una carpeta especifica.
 
-Por ejemplo crea la subcarpeta `public` y adentro el archivo JavaScript `hello.js` con el siguiente contenido.
+Por ejemplo, crea la subcarpeta `public` y adentro el archivo JavaScript `hello.js` con el siguiente contenido.
 
 ```js
 // Actualiza el elemento DOM "contenido"
@@ -340,7 +340,7 @@ Al acceder a la URL `"/hello"` se te muestra un resultado ligeramente distinto. 
 
 ![Resultado de ejecución](images/chapter25-05.png)
 
-En este ejemplo, JavaScript fue usado tanto en la programación del lado del servidor (back-end) como del lado del cliente (front-end). Esta es una de sus fortalezas centrales: sabiendo únicamente un lenguaje de programación te da la facultad de crear aplicaciones **web completas**. ¿Está muy chido no?
+En este ejemplo, JavaScript fue usado tanto en la programación del lado del servidor (back-end) como del lado del cliente (front-end). Esta es una de sus fortalezas centrales: sabiendo únicamente un lenguaje de programación te da la facultad de crear **aplicaciones web** completas. ¿Está muy chido no?
 
 ## ¡Hora de programar!
 
