@@ -12,9 +12,9 @@ Este proyecto se basa en el programa de noticias sociales y páginas web que cre
 * Si la URL de un enlace nuevo no empieza con "http://" o "https://", se le agrega "http://" automáticamente al inicio.
 * La aplicación web muestra una lista de al menos tres enlaces ya existentes, obtenidos del servidor a través de una solicitud AJAX.
 * Existe un botón para que el usuario envié un enlace nuevo. Cuando se hace clic en este, aparece un formulario debajo de la lista de enlaces para introducir las propiedades del enlace nuevo (autor, título y URL).
-* En este formulario, todos los campos del enlace son oligatorios.
+* En este formulario, todos los campos del enlace son obligatorios.
 
-* Cuando el enlace nuevo es validado por el usuario, es enviado al servidor como datos de formulario. Si la operación es exitosa, el servidor devuelve el enlace nuevo como datos JSON. El enlace nuevo es añadido al inicio de la lista de enñaces, sustituyendo al formulario. Un mensaje indica el logro de la operación, después desaparece luego de dos segundos.
+* Cuando el enlace nuevo es validado por el usuario, es enviado al servidor como datos de formulario. Si la operación es exitosa, el servidor devuelve el enlace nuevo como datos JSON. El enlace nuevo es añadido al inicio de la lista de enlaces, sustituyendo al formulario. Un mensaje indica el logro de la operación, después desaparece luego de dos segundos.
 
 ## Normas técnicas
 
