@@ -37,7 +37,7 @@ const elementoContador = document.getElementById("contador");
 setInterval(reducirContador, 1000);
 ```
 
-[Haz clic aquí] (https://codepen.io/bpesquet/pen/RVWLeY?editors=1010) para verlo en acción.  Funciona como esperabamos… bueno algo así: el contador nunca se detiene. Arreglaremos esto un poco más tarde.
+[Haz clic aquí] (https://codepen.io/bpesquet/pen/RVWLeY?editors=1010) para verlo en acción.  Funciona como esperábamos… bueno algo así: el contador nunca se detiene. Arreglaremos esto un poco más tarde.
 
 ### Iniciar una acción repetitiva
 
@@ -259,7 +259,7 @@ La función `cancelAnimationFrame()` detiene la animación y toma el identificad
 cancelarAnimacionMarco(identificadorAnimacion);
 ```
 
-###  Una alternativa: animaciones CSS
+### Una alternativa: animaciones CSS
 
 Acabas de descubrir las diferentes posibilidades que ofrece JavaScript para animar páginas web. Solo considera que hay otra alternativa: CSS.
 
