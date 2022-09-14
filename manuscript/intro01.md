@@ -1,6 +1,6 @@
 # Acerca de este libro
 
-Primero lo primero: gracias por haber elegido este libro. Espero que leerlo sea tanto benéfico como placentero para ti
+Primero lo primero: gracias por haber elegido este libro. Espero que leerlo sea tanto benéfico como placentero para ti.
 
 ## Para quién es este libro
 
@@ -10,9 +10,9 @@ Sin embargo, este libro también puede ser útil para personas que tienen algo d
 
 ## Sinopsis
 
-Este libro está dividido en tres partes principales. La primera enseña los fundamentos de la programación con JavaScript. La segunda explica cómo usar JavaScript para crear páginas web interactivas. La tercera se encarga del desarrollo de aplicaciones web tanto del lado del cliente como del servidor. Cada parte depende de las anteriores, pero no hay otro requisito previo de lectura.
+Este libro está dividido en tres partes principales. La primera enseña los fundamentos de la programación con JavaScript. La segunda explica cómo usar JavaScript para crear páginas web interactivas. La tercera se encarga del desarrollo de aplicaciones web tanto del lado del cliente como del servidor. Cada parte depende de las anteriores, pero no hay otro requisito previo para su lectura.
 
-Cada capítulo comienza con un párrafo **TL;DR** que lo resume, así que sí ya conoces el contenido de un capítulo tendrás la posibilidad de saltártelo.
+Cada capítulo comienza con un párrafo **TL;DR** (del inglés: too long; didn't read) que lo resume, así que sí ya conoces el contenido de un capítulo tendrás la posibilidad de saltártelo.
 
 Al final de cada capítulo, una serie de ejercicios cortos y focalizados te harán poner en práctica tus habilidades recién adquiridas. Cada parte termina con un proyecto que te guía en la creación de una aplicación web de noticias sociales.
 
