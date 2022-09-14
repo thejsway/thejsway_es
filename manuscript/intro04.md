@@ -6,7 +6,7 @@ Este libro está destinado a una versión reciente del lenguaje JavaScript. Más
 
 Un **navegador** es el programa que usas para visitar páginas web y usar aplicaciones web. Revisa esta [tabla de compatibilidad](https://kangax.github.io/compat-table/es6/) para más detalles sobre el soporte de ES2015 entre los navegadores.
 
-La mejor apuesta es elegir ya sea Google Chrome o Mozilla Firefox, dos navegadores “imperecederos” (que se actualizan automáticamente) con un excelente soporte de ES2015 en sus versiones recientes. En otros navegadores compatibles se incluyen Opera y Microsoft Edge (el navegador predeterminado de Windows 10). En cambio, todas las versiones de Internet Explorer tendrán problemas con código ES2015, mantente alejado de estas.
+La mejor apuesta es elegir ya sea Google Chrome o Mozilla Firefox, dos navegadores “imperecederos” (que se actualizan automáticamente) con un excelente soporte de ES2015 en sus versiones recientes. Entre otros navegadores compatibles se incluyen Opera y Microsoft Edge (el navegador predeterminado de Windows 10). En cambio, todas las versiones de Internet Explorer tendrán problemas con código ES2015, mantente alejado de estas.
 
 ## Solución A: escribir código en línea
 
@@ -23,11 +23,11 @@ Para seguir el hilo de estos capítulos, necesitarás un entorno de programació
 Sí eliges usar CodePen, realmente deberías comenzar visitando [Welcome to CodePen](https://codepen.io/hello/). Te introduce a la plataforma de una forma muy amigable y te proporciona todo lo que necesitas para iniciar.
 
 
-Adicionalmente hay algunos artículos útiles en la documentación de CodePen sobre [auto completado](https://blog.codepen.io/documentation/editor/autocomplete/), la [consola](https://blog.codepen.io/documentation/editor/console/), [ autoguardado de proyecto](https://blog.codepen.io/documentation/editor/autosave/), [atajos de teclado](https://blog.codepen.io/documentation/editor/key-bindings/) y [actualización automática](https://blog.codepen.io/documentation/editor/auto-updating-previews/). Aunque no es obligatorio, dominar CodePen te hará mucho más productivo mientras estudias este libro.
+Adicionalmente hay algunos artículos útiles en la documentación de CodePen sobre el [auto completado](https://blog.codepen.io/documentation/editor/autocomplete/), [consola](https://blog.codepen.io/documentation/editor/console/), [ autoguardado de proyecto](https://blog.codepen.io/documentation/editor/autosave/), [atajos de teclado](https://blog.codepen.io/documentation/editor/key-bindings/) y [actualización automática](https://blog.codepen.io/documentation/editor/auto-updating-previews/). Aunque no es obligatorio, dominar CodePen te hará mucho más productivo mientras estudias este libro.
 
 T> Te recomiendo activar el autoguardado y desactivar la actualización automática para todos tus Pens (nombre que asigna la plataforma CodePen a tus proyectos) relacionados con el libro. A menudo será necesario visualizar la consola de CodePen para ver los resultados producidos por el código.
 
-Deberías usar un Pen (no necesariamente guardado) para probar cada ejemplo de código que contiene este libro. También deberías dedicar un Pen específico y guardado para cada ejercicio y proyecto que examinarás.
+Deberías usar un Pen (no necesariamente guardado) para probar cada ejemplo de código que contiene este libro. También deberías dedicar un Pen específico y guardado para cada ejercicio y proyecto que inspeccionarás.
 
 > Por cuestiones de rendimiento, la consola de CodePen no siempre muestra la misma cantidad de información que la consola "real" del navegador.
 
@@ -49,10 +49,10 @@ Los siguientes pasos te ayudarán a escribir código eficazmente en tu equipo.
 
 En el fondo, programar es escribir código como texto en una serie de archivos. Para programar realmente, necesitarás un editor de código en tu equipo. Aquí hay algunos de ellos:
 
-* [Visual Studio Code](https://code.visualstudio.com/) (my editor of choice).
-* [Brackets](http://brackets.io/).
-* [Atom](https://atom.io/).
-* [Sublime Text](https://www.sublimetext.com/).
+* [Visual Studio Code](https://code.visualstudio.com/) (mi editor predilecto)
+* [Brackets](http://brackets.io/)
+* [Atom](https://atom.io/)
+* [Sublime Text](https://www.sublimetext.com/)
 
 ### Instala Node.js y npm
 
@@ -62,7 +62,7 @@ Para configurar Node en tu equipo local, descarga la última versión [aquí](ht
 
 > Algunos ejemplos en este libro necesitan Node 8 o una versión posterior.
 
-La forma más fácil de probar que node está instalado es ejecutar el comando `node --version` en tu terminal/línea de comandos, y ver que devuelve una cadena de caracteres con la versión.
+La forma más fácil de probar que node está instalado es ejecutar el comando `node --version` en tu terminal/línea de comandos, y ver si devuelve una cadena de caracteres con la versión.
 
 ```console
 node --version
@@ -125,7 +125,7 @@ Después, abre el archivo HTML en tu navegador para ejecutar el código JavaScri
 
 #### Del capítulo 24 en adelante
 
-En estos capítulos, crearas aplicaciones Node.js para ejecutar tu código JavaScript. Cada aplicación Node debe estar en su propia carpeta y es descrita por un archivo `package.json` ubicado en la raíz de esta carpeta. Podrían usarse subdirectorios para almacenar archivos específicos:
+En estos capítulos, crearas aplicaciones Node.js para ejecutar tu código JavaScript. Cada aplicación Node debe estar en su propia carpeta y es descrita por un archivo `package.json` ubicado en la raíz de esta carpeta. Se pueden usar subdirectorios para almacenar archivos específicos:
 
 * `node_modules` (creada automáticamente) para dependencias externas.
 * `public` para los recursos del cliente cargados por el navegador, como archivos CSS y JavaScript.
