@@ -88,7 +88,7 @@ Sigue las instrucciones proporcionadas en su documentación para configurarlas.
 
 Es importante establecer tu carpeta principal y estructura de archivos antes de realmente empezar a escribir código. De esa forma, tu proyecto estará organizado, y estarás partiendo con buenos hábitos de programación.
 
-Crea una carpeta en tu unidad de almacenamiento dedicada a escribir código siguiendo este libro. El nombre de la carpeta no importa, `elmodojs-codigo` funcionará bien. Todos los archivos locales que crees posteriormente deberían estar almacenados en subcarpetas de esta carpeta raíz. La solución más lógica es crear una subcarpeta para cada capítulo del libro.
+Crea una carpeta en tu unidad de almacenamiento dedicada a escribir código siguiendo este libro. El nombre de la carpeta no importa, `elmodoJS-codigo` funcionará bien. Todos los archivos locales que crees posteriormente deberían estar almacenados en subcarpetas de esta carpeta raíz. La solución más lógica es crear una subcarpeta para cada capítulo del libro.
 
 Puedes ya sea descargar una [estructura de carpetas predefinida](https://raw.githubusercontent.com/bpesquet/thejsway/master/resources/code-skeleton.zip) o seguir los siguientes párrafos para crear está estructura de carpetas manualmente.
 
