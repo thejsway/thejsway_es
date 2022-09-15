@@ -2,7 +2,7 @@
 
 Estas son las reglas de programación y principios usados a lo largo del libro.
 
-> Este capítulo es por naturaleza subjetivo y obstinado. Siéntete libre de hacer sus propias elecciones.
+> Este capítulo es por naturaleza subjetivo y obstinado. Siéntete libre de hacer tus propias elecciones.
 
 ## Nombrado
 
@@ -10,13 +10,13 @@ Nombrar cosas correctamente contribuye en gran medida a hacer el código más li
 
 ### Elige nombres significativos
 
-La regla más importante es darle a cada elemento (variable función clase etc.) un nombre específico que refleje su rol. Una variable que contiene el valor del radio de un círculo debería ser llamado `radio` en lugar de `num` o `miVal`.
+La regla más importante es darle a cada elemento (variable, función, clase, etc.) un nombre específico que refleje su rol. Una variable que contiene el valor del radio de un círculo debería ser llamado `radio` en lugar de `num` o `miVal`.
 
 Las abreviaciones deben estar limitadas a elementos efímeros, como los contadores de bucles.
 
 ### No uses palabras reservadas
 
-Cada palabra clave de JavaScript es un nombre reservado. No deberían ser usadas como nombres de variables. Aquí está la [lista de palabras reservadas en JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Keywords).
+Cada palabra clave de JavaScript es un nombre reservado. No deberían ser usadas como nombres de variables. Aquí está la [lista de palabras reservadas en JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Lexical_grammar#palabras_clave).
 
 ### Sigue una convención de nomenclatura
 
@@ -31,7 +31,7 @@ Adicionalmente, este libro usa las siguientes reglas de nomenclatura:
 * Para ser consecuentes con otros lenguajes de programación, los nombres de clases comienzan con una letra **mayúscula**: `Usuario` en lugar de `usuario`.
 
 * Puesto que podrían contener múltiples elementos, las matrices son nombradas en **plural** o se les agrega el prefijo `lista`: `peliculas` o `listaPeliculas`, pero no `pelicula`.
-* Para distinguirlos de otras variables, a los elementos DOM se les agrega el prefijo `element` (o `elementos` para variables de tipo matriz): `elementoDiv` en lugar de simplemente `div`.
+* Para distinguirlos de otras variables, a los elementos DOM se les agrega el prefijo `elemento` (o `elementos` para variables de tipo matriz): `elementoDiv` en lugar de simplemente `div`.
 
 W> Como muchos otros lenguajes, JavaScript distingue entre mayúsculas y minúsculas. Por ejemplo, `miVariable` y `mivariable` son dos nombres de variable diferentes. ¡Ten cuidado!
 
@@ -47,7 +47,7 @@ Puesto que JavaScript es un lenguaje de clasificación dinámica, varios errores
 
 Por suerte, herramientas especializadas llamadas **linters** pueden verificar el cumplimiento de las reglas en tu código durante la edición y advertir sobre defectos potenciales. Los linters aumentan considerablemente la productividad del desarrollador, permitiendo arreglar muchas fallas antes de que sucedan.
 
-Este libro usa [ESLint](http://eslint.org) para inspeccionar el código. ESLint es una herramienta muy flexible y puedes personalizarla a tus necesidades específicas. Han surgido diversos conjuntos de reglas de ESLint, en particular uno basada en la [guía de estilos de AirBnb](https://github.com/airbnb/javascript).
+Este libro usa [ESLint](http://eslint.org) para inspeccionar el código. ESLint es una herramienta muy flexible y puedes personalizarla a tus necesidades específicas. Han surgido diversos conjuntos de reglas de ESLint, en particular uno basado en la [guía de estilos de AirBnb](https://github.com/airbnb/javascript).
 
 > Bien vale la pena leer esta obstinada guía de estilos. 
 
