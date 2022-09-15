@@ -10,7 +10,7 @@
 
 * El lenguaje JavaScript usa el tipo **numérico** para representar un valor numérico (con o sin decimales) y el tipo **cadena** para representar texto.
 
-* Un valor de tipo cadena se encierra por un par de comillas simples (`'...'`) o un par de comillas dobles (`"..."`).
+* Un valor de tipo cadena se encierra con un par de comillas simples (`'...'`) o un par de comillas dobles (`"..."`).
 
 * Las operaciones aritméticas entre números están a cargo de los operadores  `+`, `-`, `*` y `/`. Aplicados a dos cadenas, el operador + las une. Está operación se denomina **concatenación**.
 
@@ -40,9 +40,9 @@ Cada lenguaje de cómputo tiene sus propios valores y tipos de valores. Veamos d
 
 ### Número
 
-Un **número** es un valor numérico (gracias Capitan Obvio). ¡Pero vayamos más allá de eso! Como en matemáticas, puedes usar números enteros tales como 0, 1, 2, 3, etc., o números con decimales para una mayor exactitud.
+Un **número** es un valor numérico (gracias Capitan SuperObvio). ¡Pero vayamos más allá de eso! Como en matemáticas, puedes usar números enteros tales como 0, 1, 2, 3, etc., o números con decimales para una mayor exactitud.
 
-Los números son usados principalmente para contar. Las principales operaciones que verás estén resumidas en la siguiente tabla. Todas ellas producen un resultado numérico.
+Los números son usados principalmente para contar. Las principales operaciones que verás están resumidas en la siguiente tabla. Todas ellas producen un resultado numérico.
 
 |Operador|Rol|
 |---------|----|
@@ -67,13 +67,13 @@ No puedes sumar o restar valores de tipo cadena como lo harías con números. Si
 
 ## Estructura de un programa
 
-Ya definimos un programa de computación como una lista de comandos diciéndole a la computadora qué hacer. estas órdenes son escritas como archivos de texto y conforman lo que se llama el "código fuente" de un programa. Las líneas de texto en un archivo de código fuente son llamadas **líneas de código**.
+Ya definimos un programa de computación como una lista de comandos diciéndole a la computadora qué hacer. Estas órdenes son escritas como archivos de texto y conforman lo que se llama el "código fuente" de un programa. Las líneas de texto en un archivo de código fuente son llamadas **líneas de código**.
 
 El código fuente podría incluir líneas vacías: estás serán ignoradas cuando el programa se ejecute.
 
 ### Declaraciones
 
-cada instrucción dentro de un programa es llamada una **declaración**. Una declaración en JavaScript generalmente termina con un **punto y coma** (aunque no es estrictamente obligatorio). Tu programa estará conformado de varias de estas declaraciones.
+Cada instrucción dentro de un programa es llamada una **declaración**. Una declaración en JavaScript generalmente termina con un **punto y coma** (aunque no es estrictamente obligatorio). Tu programa estará conformado de varias de estas declaraciones.
 
 I> Generalmente sólo escribes una declaración por línea.
 
@@ -127,7 +127,7 @@ varias líneas
 
 // Un comentario de una línea
 ```
-Los comentarios son una gran fuente de información acerca del propósito o estructura de un programa. Agregar comentarios a secciones complicadas o críticas es un buen hábito que ¡deberías desarrollar ahora mismo!
+Los comentarios son una gran fuente de información acerca del propósito o estructura de un programa. Agregar comentarios a secciones complicadas o críticas es un buen hábito ¡que deberías desarrollar ahora mismo!
 
 ## ¡Hora de programar!
 
