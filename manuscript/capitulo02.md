@@ -1,24 +1,24 @@
 # Juega con variables
 
-Sabes cómo usar JavaScript para mostrar valores. Sin embargo, para que un programa sea realmente útil, debe ser capaz de almacenar datos, como información introducida por un usuario. Vamos a comprobarlo.
+Sabes cómo usar JavaScript para mostrar valores. Sin embargo, para que un programa sea realmente útil, debe ser capaz de almacenar datos, como información introducida por un usuario. Vamos a revisar eso.
 
 ## TL;DR
 
-* Una *variable* es un área de almacenamiento de información. Cada variable tiene un *nombre, un **valor* y un*tipo. En JavaScript el tipo de variable es deducido del valor almacenado en el mismo: JavaScript es un lenguaje de **clasificación dinámica*.
+* Una **variable** es un área de almacenamiento de información. Cada variable tiene un **nombre**, un **valor** y un **tipo**. En JavaScript el tipo de variable es deducido del valor almacenado en el mismo: JavaScript es un lenguaje de **clasificación dinámica**.
 
-* Una variable se declara usando la palabra clave `let` seguida del nombre de la variable. Para declarar una *constante* (una variable cuyo valor inicial nunca cambiará), es mejor usar la palabra clave `const`.
+* Una variable se declara usando la palabra clave `let` seguida del nombre de la variable. Para declarar una **constante** (una variable cuyo valor inicial nunca cambiará), es mejor usar la palabra clave `const`.
 
-* Para darle un valor a una variable, usamos el *operador de asignación* `=`. Para variables numéricas, el operador `+=` puede aumentar un valor y el operador `++` puede *incrementarlo*. 
+* Para darle un valor a una variable, usamos el **operador de asignación** `=`. Para variables numéricas, el operador `+=` puede sumarle a un valor y el operador `++` puede **incrementarlo**. 
 
-* El *alcance* de una variable es la parte del programa donde la variable es visible. Las variables declaradas con `let` or `const` son de *alcance limitado. Un **bloque de código* es una porción de un programa delimitada por un par de llaves, una de apertura y una de cierre `{ ... }`.
+* El **alcance** de una variable es la parte del programa donde la variable es visible. Las variables declaradas con `let` o `const` son de **alcance limitado**. Un **bloque de código** es una porción de un programa delimitada por un par de llaves, una de apertura y una de cierre `{ ... }`.
 
-* Una *expresión* es un fragmento de código que combina variables, valores y operadores. Evaluar una expresión produce un valor, el cual pertenece a una categoría.
+* Una **expresión** es un fragmento de código que combina variables, valores y operadores. Evaluar una expresión produce un valor, el cual pertenece a una clasificación.
 
-* Las expresiones pueden incluirse en cadenas de caracteres delimitadas por un par de comillas invertidas (\`). Dicha cadena es denominada *plantilla literal*.
+* Las expresiones pueden incluirse en cadenas de caracteres delimitadas por un par de comillas invertidas (\`). Dichas cadenas se denominan **plantilla literal**.
 
-* *Cambio de tipo de variable* podría suceder de forma implícita durante la evaluación de una expresión, o explícitamente cuando se usan los comandos `Number()` y `String()`, para obtener un número o carácter respectivamente.
+* Los **cambios de tipo de variable** podrían suceder de forma implícita durante la evaluación de una expresión, o explícitamente cuando se usan los comandos `Number()` y `String()`, para obtener un número o carácter respectivamente.
 
-* Los comandos `prompt()` y `alert()` se ocupan de la entrada y visualización de información mediante cuadros de diálogo.
+* Los comandos `prompt()` y `alert()` se ocupan de la introducción y visualización de información mediante cuadros de diálogo.
 
 * El nombrado de las variables es esencial para la claridad de un programa. Seguir una convención para el nombrado como [camelCase](https://en.wikipedia.org/wiki/Camel_case) es una buena práctica.
 
@@ -26,23 +26,23 @@ Sabes cómo usar JavaScript para mostrar valores. Sin embargo, para que un progr
 
 ### Rol de una variable
 
-Un programa de computadora alacena datos usando variables. Una *variable* es un área de almacenamiento de información. ¡Podemos imaginarlo como una caja en la cual puedes poner y almacenar cosas!
+Un programa de computadora almacena datos usando variables. Una **variable** es un área de almacenamiento de información. ¡Podemos imaginarla como una caja en la cual puedes poner y almacenar cosas!
 
 ### Propiedades de una variable
 
 Una variable tiene tres propiedades principales:
 
-* Su *nombre* que lo identifica. El nombre de una variable puede contener letras mayúsculas y minúsculas, números (no en la primera posición) y caracteres como signo de dólares (`$`) o un guion bajo (`_`).
-* Su *valor*, which is the data stored in the variable.
-* Su *tipo*, que determina el rol y acciones disponibles para la variable.
+* Su **nombre** que lo identifica. El nombre de una variable puede contener letras mayúsculas y minúsculas, números (no en la primera posición) y caracteres como signo de dólares (`$`) o un guion bajo (`_`).
+* Su **valor**, que es la información almacenada en la variable.
+* Su **tipo**, que determina el rol y acciones disponibles para la variable.
 
-I> No tienes que definir un tipo de variable explícitamente en JavaScript. Su tipo es deducido del valor almacenado en la variable y podría cambiar mientras el problema se ejecuta. Es por eso que decimos que JavaScript es un lenguaje de *clasificación dinámica. Otros lenguajes, como C o Java, requieren que los tipos de variables siempre sean definidos. Esto se denomina **clasificación estática*.
+I> No tienes que definir un tipo de variable explícitamente en JavaScript. Su tipo es deducido del valor almacenado en la variable y podría cambiar mientras el programa se ejecuta. Es por eso que decimos que JavaScript es un lenguaje de **clasificación dinámica**. Otros lenguajes, como C o Java, requieren que los tipos de variables siempre sean definidos. Esto se denomina **clasificación estática**.
 
 ### Declarar una variable
 
-Antes de que puedas almacenar información en una variable, ¡tienes que crearla! A esto se le llama declarar una variable. *Declarar* una variable significa que la computadora reserva memoria en la cual almacenar la variable. Luego entonces el programa puede leer o escribir datos en esta área de memoria al manipular la variable.
+Antes de que puedas almacenar información en una variable, ¡tienes que crearla! A esto se le llama declarar una variable. **Declarar** una variable significa que la computadora reserva memoria en la cual almacenar la variable. Luego entonces el programa puede leer o escribir datos en esta área de memoria al manipular la variable.
 
-Aquí hay un código de ejemplo que declara una variable y muestra sus contenidos:
+Aquí hay un código de ejemplo que declara una variable y muestra su contenido:
 
 ```js
 let a;
@@ -61,22 +61,23 @@ Observa que el resultado es `undefined`. Este es un tipo especial de valor en Ja
 
 ### Asignar valores a variables
 
-Mientras un programa se está ejecutando el valor almacenado en una variable puede cambiar. Para darle un nuevo valor a una variable, usa el operador `=` llamado *operador de asignación*.
+Mientras un programa se está ejecutando, el valor almacenado en una variable puede cambiar. Para darle un nuevo valor a una variable, usa el operador `=` llamado **operador de asignación**.
 
-Checa el siguiente ejemplo:
+Revisa el siguiente ejemplo:
 
 ```js
 let a;
+a = 3.14;
 console.log(a);
 ```
 
 ![Execution result](images/chapter02-02.png)
 
-Modificamos la variable asignándole un valor. `a = 3.14` se lee como " a recibe el valor 3.14".
+Modificamos la variable asignándole un valor. `a = 3.14` se lee como "a recibe el valor 3.14".
 
-E> ¡Ten cuidado de no confundir al operador de asignación con igualdad matemática! Pronto verás cómo expresar igualdad en JavaScript.
+E> ¡Ten cuidado de no confundir al operador de asignación con el de igualdad matemática! Pronto verás cómo expresar igualdad en JavaScript.
 
-También puedes combinar declarar una variable y asignarle un valor en una línea. Solo recuerda que, dentro de esta línea, estás haciendo dos cosas diferentes a la vez:
+También puedes combinar la declaración de una variable y la asignación de un valor en una línea. Solo recuerda que, dentro de esta línea, estás haciendo dos cosas diferentes a la vez:
 
 ```js
 let a = 3.14;
@@ -85,7 +86,7 @@ console.log(a);
 
 ### Declarar una variable constante
 
-Sí el valor inicial de una variable no cambiará jamás durante la ejecución del resto del programa, está variable es llamada una *constante*. Esta constancia puede ser aplicada usando la palabra clave `const` en lugar de `let` para declararla. Así, el programa es más expresivo y posteriores intentos para modificar la variable pueden ser detectados como errores.
+Sí el valor inicial de una variable no cambiará jamás durante la ejecución del resto del programa, está variable es llamada **constante**. Esta constancia puede ser aplicada usando la palabra clave `const` en lugar de `let` para declararla. Así, el programa es más expresivo y posteriores intentos de modificación de la variable pueden ser detectados como errores.
 
 ```js
 const a = 3.14; // El valor de a no puede ser modificado
@@ -96,7 +97,7 @@ a = 6.28;       // ¡Imposible!
 
 ### Incrementar una variable numérica
 
-También puedes aumentar el valor de un número con `+=` y `++`. Este último es llamado *operador de incremento*, dado que permite el incremento (un incremento de 1) del valor de una variable.
+También puedes aumentar el valor de un número con `+=` y `++`. Este último es llamado **operador de incremento**, dado que permite el incremento (un incremento de 1) del valor de una variable.
 
 En el siguiente ejemplo, cada una de las líneas 2 y 3 incrementan el valor de la variable b en 1.
 
@@ -109,7 +110,7 @@ console.log(b); // Muestra 2
 
 ### Alcance de una variable
 
-El *alcance* de una variable es la parte del programa donde la variable es visible y usable. Las variables declaradas con `let` o `const` son de *alcance limitado: su visibilidad es limitada al bloque donde son declaradas (y en cada sub-bloque, si los hubiere). En JavaScript y varios otros lenguajes de programación, un **bloque de código* es una porción de un programa delimitada por una de llave de apertura y otra de cierre. Por defecto, un programa JavaScript forma un bloque de código.  
+El **alcance** de una variable es la parte del programa donde la variable es visible y usable. Las variables declaradas con `let` o `const` son de **alcance limitado**: su visibilidad es limitada al bloque donde son declaradas (y en cada sub-bloque, si los hubiere). En JavaScript y varios otros lenguajes de programación, un **bloque de código** es una porción de un programa delimitada por una de llave de apertura y otra de cierre. Por defecto, un programa JavaScript forma un bloque de código.  
 
 
 ```js
@@ -119,12 +120,12 @@ let num1 = 0;
   const num2 = 0;
 }
 console.log(num1); // Bien: num1 es declarado en el bloque actual
-console.log(num2); // Error! num2 no es visible aquí
+console.log(num2); // ¡Error! num2 no es visible aquí
 ```
 
 ## Expresiones
 
-Una *expresión* es un fragmento de código que produce un valor. Una expresión es creada combinando variables, valores y operadores. Cada expresión tiene un valor y por lo tanto un tipo de valor. El calcular el valor de una expresión se denomina *evaluación*. Durante la evaluación, las variables son reemplazadas por sus valores.
+Una **expresión** es un fragmento de código que produce un valor. Una expresión es creada combinando variables, valores y operadores. Cada expresión tiene un valor y por lo tanto un tipo de valor. Al cálculo del valor de una expresión se le denomina **evaluación**. Durante la evaluación, las variables son reemplazadas por sus valores.
 
 ```js
 // 3 es una expresión cuyo valor es 3 
@@ -136,14 +137,14 @@ d = d + 1; // d ahora contiene el valor 4
 console.log(d); // muestra 4
 ```
 
-La prioridad de operadores dentro de una expresión es la misma que en las matemáticas. Sin embargo, una expresión puede incluir *paréntesis* que modifiquen estas prioridades.
+La prioridad de operadores dentro de una expresión es la misma que en las matemáticas. Sin embargo, una expresión puede incluir **paréntesis** que modifiquen estas prioridades.
 
 ```js
 let e = 3 + 2 * 4; // e contiene 11 (3 + 8)
 e = (3 + 2) * 4;   // e contiene 20 (5 * 4)
 ```
 
-Es posible incluir expresiones en una cadena usando *comillas invertidas* (\`) para delimitar la cadena de caracteres. A dicha cadena se le llama *patrón literal*. Dentro de un patrón literal, las expresiones se identifican con la sintaxis `${expresión}`.
+Es posible incluir expresiones en una cadena usando **comillas invertidas** (\`) para delimitar la cadena de caracteres. A dicha cadena se le llama **plantilla literal**. Dentro de una plantilla literal, las expresiones se identifican con la sintaxis `${expresión}`.
 
 Esto es usado frecuentemente para crear cadenas de caracteres que contienen valores de algunas variables. 
 
@@ -157,7 +158,7 @@ console.log(`${x} + ${y} = ${x + y}`); // Muestra "3 + 7 = 10"
 
 ## Conversiones de tipo de valor
 
-La evaluación de una expresión puede resultar en conversiones de tipo de valor. Estas son llamadas conversiones *implícitas* dado que ocurren automáticamente sin la intervención del programador. Por ejemplo, usar el operador `+` entre un carácter (o cadena de caracteres) y un numero provoca la concatenación de los dos valores en una cadena de caracteres como resultado.
+La evaluación de una expresión puede resultar en conversiones de tipo de valor. Estas son llamadas conversiones **implícitas** dado que ocurren automáticamente sin la intervención del programador. Por ejemplo, usar el operador `+` entre un carácter (o cadena de caracteres) y un numero provoca la concatenación de los dos valores en un resultado de cadena de caracteres.
 
 ```js
 const f = 100;
@@ -172,7 +173,7 @@ const g = "cinco" * 2;
 console.log(g); // Muestra NaN
 ```
 
-A veces querrás convertir un valor en otro tipo. Esto se llama conversión *explicita*. JavaScript tiene los comandos `Number()` y `String()` que convierten el valor entre paréntesis a un número o a caracteres.
+A veces querrás convertir un valor en otro tipo. Esto se llama conversión **explicita**. JavaScript tiene los comandos `Number()` y `String()` que convierten el valor entre paréntesis a un número o a caracteres.
 
 ```js
 const h = "5";
@@ -198,17 +199,17 @@ Durante la ejecución, una ventana de dialogo emerge, preguntando tu nombre.
 
 Este es el resultado del comando JavaScript `prompt("Introduce tu nombre:")`.
 
-Teclea tu nombre y da clic en *OK*. Entonces recibirás un saludo personalizado.
+Teclea tu nombre y da clic en **OK**. Entonces recibirás un saludo personalizado.
 
 ![Resultado de ejecución](images/chapter02-05.png)
 
-El valor que ingresaste en la primera ventana de dialogo se ha almacenado en una cadena de caracteres en la variable `name`. Después el comando JavaScript `alert()` desencadenó el despliegue de la segunda ventana, con el resultado de la concatenación de la cadena de caracteres `"Hola, "` con el valor de la variable `nombre`.
+El valor que ingresaste en la primera ventana de dialogo se ha almacenado en una cadena de caracteres en la variable `name`. Después el comando JavaScript `alert()` desencadenó el despliegue de la segunda ventana, con el resultado de la concatenación de la cadena de caracteres `"Hola, "` y el valor de la variable `nombre`.
 
 ### Presentar información
 
 Tanto `console.log()` (visto en el capítulo previo) y `alert()` pueden ser usados para mostrar información al usuario. A diferencia de `alert()`, `console.log()` no detiene la ejecución del programa y a menudo es una mejor opción.
 
-`console.log()` también puede mostrar valores a la misma vez, separados por una coma.
+`console.log()` también puede mostrar varios valores a la misma vez, separados por una coma.
 
 ```js
 const temp1 = 36.9;
@@ -219,7 +220,7 @@ console.log(temp1, temp2, temp3); // Muestra "36.9 37.6 37.1"
 
 ### Insertar un numero
 
-Independientemente de los datos ingresados, el comando `prompt()` siempre devuelve un valor tipo carácter o cadena de caracteres. Si este valor se utilizara en expresiones numéricas, debe ser convertido a un número con el comando `Number()`.
+Independientemente de los datos ingresados, el comando `prompt()` siempre devuelve un valor de tipo carácter o cadena de caracteres. Si este valor se utilizara en expresiones numéricas, debe ser convertido a un número con el comando `Number()`.
 
 ```js
 const dato = prompt("Ingresa un numero:"); // el tipo de valor de dato es carácter o cadena de caracteres 
@@ -238,7 +239,7 @@ En este ejemplo, la información introducida por el usuario es directamente conv
 
 Para cerrar este capítulo, examinemos el nombramiento de variables. A la computadora no le importan los nombres de las variables. Puedes nombrar tus variables usando el clásico ejemplo de una sola letra (`a`, `b`, `c`...) o escoger nombres absurdos como `burrito` o `gatitospequeños90210`.
 
-No obstante, nombrar bien las variables puede hacer a tu código mucho más fácil de leer. Revisa estos dos ejemplos:
+No obstante, nombrar bien las variables puede hacer que tu código sea mucho más fácil de leer. Revisa estos dos ejemplos:
 
 ```js
 const a = 5.5;
@@ -288,7 +289,7 @@ Revisa tu predicción ejecutándolo.
 
 ### Calculo de IVA
 
-Escribe un programa que le pide al usuario un precio neto. Después de eso, calcula el precio final correspondiente usando una tasa del IVA del 20.6%.
+Escribe un programa que le pide al usuario un precio neto. Después de eso, que calcule el precio final correspondiente usando una tasa del IVA del 20.6%.
 
 ### De grados Celsius a Fahrenheit 
 
