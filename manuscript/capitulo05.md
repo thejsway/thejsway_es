@@ -88,13 +88,13 @@ Inicio
 Fin
 ```
 
-La primera versión detalla todas las acciones individuales que integran el proceso de preparación. La segunda desglosa la receta en **etapas más generales** e introduce conceptos que pueden ser reusados para otros platillos también cómo *coser*, *saltear*, *añadir* y *enrollar*.
+La primera versión detalla todas las acciones individuales que integran el proceso de preparación. La segunda desglosa la receta en **etapas más generales** e introduce conceptos que pueden ser reusados también para otros platillos como *coser*, *saltear*, *añadir* y *enrollar*.
 
-Nuestros programas hasta ahora han invitado al primer ejemplo, pero es tiempo de empezar a modularizar nuestro código en subetapas para que podamos reusar fragmentos y piezas cuando sea necesario. En JavaScript, ¡estás subetapas son llamadas **funciones**!
+Nuestros programas hasta ahora han imitado al primer ejemplo, pero es tiempo de empezar a modularizar nuestro código en subetapas para que podamos reusar fragmentos y piezas cuando sea necesario. En JavaScript, ¡estás subetapas son llamadas **funciones**!
 
 ## Descubriendo las funciones
 
-Una **función** son un grupo de declaraciones que realizan una tarea en particular.
+Una **función** es un grupo de declaraciones que realizan una tarea en particular.
 
 Aquí está un ejemplo básico de una función.
 
@@ -108,7 +108,7 @@ diHola();
 console.log("Fin del programa");
 ```
 
-![Execution result](images/chapter05-01.png)
+![Resultado de ejecución](images/chapter05-01.png)
 
 Examinemos lo que acaba de suceder.
 
@@ -133,11 +133,11 @@ function miFuncion () {
 }
 ```
 
-La declaración de una función es realizada usando la palabra clave de JavaScript `función`, seguida del nombre de la función y un par de paréntesis. Las declaraciones que componen la función constituyen el **cuerpo** de la función. Estás declaraciones son encerradas entre llaves e indentadas.
+La declaración de una función es realizada usando la palabra clave de JavaScript `function`, seguida del nombre de la función y un par de paréntesis. Las declaraciones que componen la función constituyen el **cuerpo** de la función. Estás declaraciones son encerradas entre llaves e indentadas.
 
 ### Invocar una función
 
-Las funciones deben ser invocadas para que se ejecuten de hecho. Aquí está la segunda parte de nuestro programa ejemplo.
+Las funciones deben ser invocadas para que realmente se ejecuten. Aquí está la segunda parte de nuestro programa ejemplo.
 
 ```js
 console.log("Inicio del programa");
@@ -157,11 +157,11 @@ miFuncion(); // Invocación a miFuncion
 
 Invocar una función desencadena la ejecución de las acciones listadas ahí dentro (el código en su cuerpo). Cuando esto termina, la ejecución se reanuda en el lugar donde la invocación fue hecha.
 
-![Function call mechanism](images/chapter05-02.png)
+![Mecanismo para invocar una función](images/chapter05-02.png)
 
 ### Utilidad de las funciones
 
-Un problema complejo es generalmente más manejable cuando se divide en subproblemas más simples. Los programas informáticos no son la excepción a esta regla. Escritos como una combinación de varias funciones cortas y precisas, un programa será más fácil de entender y de actualizar que uno monolítico. Como un beneficio adicional, ¡algunas funciones pueden ser re usadas en otros programas!
+Un problema complejo es generalmente más manejable cuando se divide en subproblemas más simples. Los programas informáticos no son la excepción a esta regla. Escritos como una combinación de varias funciones cortas y precisas, un programa será más fácil de entender y de actualizar que uno monolítico. Como un beneficio adicional, ¡algunas funciones pueden ser reusadas en otros programas!
 
 Crear funciones también puede ser una solución al problema de [duplicación de código](https://es.wikipedia.org/wiki/C%C3%B3digo_duplicado); en lugar de estar duplicado en varios lugares, un fragmento de código puede ser centralizado en una función y ser invocado desde cualquier lugar cuando se necesite.
 
@@ -277,19 +277,15 @@ function diHola(nombre) {
   return mensaje;
 }
 
-console.log(diHola("Roberto")); // "¡Hola, Roberto!"
-console.log(diHola("Luis"));   // "¡Hola, Luis!"
+console.log(diHola("Baptiste")); // "¡Hola, Baptiste!"
+console.log(diHola("Thomas"));   // "¡Hola, Thomas!"
 ```
 
 La declaración de la función `diHola()` ahora contiene un parámetro llamado `nombre`.
 
-En este ejemplo la primera invocación a `diHola()` es realizada con el argumento `"Roberto"` y la segunda con el argumento `"Luis"`. En la primera invocación, el valor del parámetro `nombre` es `"Roberto"` y `"Luis"` en la segunda.
+En este ejemplo la primera invocación a `diHola()` es realizada con el argumento `"Baptiste"` y la segunda con el argumento `"Thomas"`. En la primera invocación, el valor del parámetro `nombre` es `"Baptiste"` y `"Thomas"` en la segunda.
 
 Aquí está la sintaxis general de la declaración de una función con parámetros. El número de parámetros no está limitado, pero más de tres o cuatro es raramente provechoso.
-
-Declaraciones usando
-
-El valor es establecido para
 
 ```js
 // Declara la función miFuncion con parámetros
@@ -312,10 +308,10 @@ function diHola(nombre) {
 }
 
 // Aquí, "nombre" es una variable usada como un argumento
-let nombre = "Roberto";
-console.log(diHola(nombre)); // "¡Hola, Roberto!"
-nombre = "Luis";
-console.log(diHola(nombre)); // "¡Hola, Luis!"
+let nombre = "Baptiste";
+console.log(diHola(nombre)); // "¡Hola, Baptiste!"
+nombre = "Thomas";
+console.log(diHola(nombre)); // "¡Hola, Thomas!"
 ```
 
 Cuando se invoca una función, respetar el número y orden de los parámetros ¡es fundamental! Revisa el siguiente ejemplo.
@@ -341,7 +337,7 @@ const hola = function(nombre) {
   return mensaje;
 };
 
-console.log(hola("Ricardo")); // "¡Hola, Ricardo!"
+console.log(hola("Richard")); // "¡Hola, Richard!"
 ```
 
 En este ejemplo la función es asignada a la variable `hola`. El valor de esta variable es una función. Invocamos la función usando esa variable. Este es un ejemplo de una **expresión de función**. Una expresión de función define una función como parte de una expresión más grande, típicamente una asignación de variable.
@@ -407,7 +403,7 @@ Las funciones son una parte esencial del conjunto de herramientas de JavaScript.
 
 Las funciones pueden incluir todo lo que se puede usar en un programa regular: variables, condiciones, bucles, etcétera. Las funciones pueden invocarse entre sí, dándole al programador una cantidad enorme de libertad para construir programas.
 
-Sin embargo, no todo merece estar en su propia función. Es mejor escribir unas breves y precisas, con el fin de limitar dependencias y mejorar la comprensión del programa.
+Sin embargo, no todo merece estar en su propia función. Es mejor escribir declaraciones breves y precisas, con el fin de limitar dependencias y mejorar la comprensión del programa.
 
 ### Aprovechar las funciones predefinidas de JavaScript 
 
@@ -432,17 +428,15 @@ El cuerpo de una función debe mantenerse simple, o de lo contrario dividirse en
 
 ### Nombrar bien las funciones y parámetros
 
-El nombrado de las funciones es igual de importante que el nombrado de variables. Debes elegir nombres que expresen claramente el propósito de la función y seguir una convención de nomenclatura. Consulte el apéndice para algunos consejos útiles.
+El nombrado de las funciones es igual de importante que el nombrado de variables. Debes elegir nombres que expresen claramente el propósito de la función y seguir una convención de nomenclatura. Consulta el apéndice para algunos consejos útiles.
 
 T> Si tienes dificultades para encontrar un buen nombre para una función, entonces quizás su propósito no sea tan claro y deberías preguntarte si esta función merece existir.
-
 
 ## Hora de programar
 
 ### Hola mejorado
 
 Completa el siguiente programa para que le pregunté al usuario por su nombre y apellidos, después muestre el resultado de la función `diHola()`.
-
 
 ```js
 // Di hola al usuario
@@ -513,8 +507,7 @@ Escribe un programa que contenga dos funciones para calcular la circunferencia y
 
 Aquí tienes algunas recomendaciones para resolver este ejercicio:
 
-
-* Las fórmulas para calcular la circunferencia y el área deben ser parte de tus recuerdos de la secundaria… o estar a un clic en Google de distancia :)
+* Las fórmulas para calcular la circunferencia y el área deben ser parte de tus recuerdos de la secundaria… o estar a un clic de distancia en Google :)
 * El valor del número π (Pi) es obtenido con `Math.PI` en JavaScript.
 * Quizás prefieras usar el [operador de exponenciación](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) `**` para realizar cálculos.
 
