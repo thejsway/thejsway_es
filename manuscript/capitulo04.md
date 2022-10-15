@@ -4,9 +4,9 @@ En este capítulo, veremos cómo ejecutar código de forma repetitiva.
 
 ## TL;DR
 
-* Loa **bucles** son usados para repetir una serie de declaraciones cada repetición es llamada una **iteración** el bloque de código asociado con un bucle es llamado su **cuerpo**.
+* Los **bucles** son usados para repetir una serie de declaraciones. Cada repetición es llamada **iteración**. El bloque de código asociado con un bucle es llamado su **cuerpo**.
 
-* El bucle `while` repite declaraciones *mientras* cierta condición es verdadera. El bucle `for` da la habilidad de controlar lo que sucede justo antes de que el bucle comience y después de que cada iteración del bucle se ha ejecutado. 
+* El bucle `while` repite declaraciones *mientras* cierta condición es verdadera. El bucle `for` ofrece el poder de controlar lo que sucede justo antes de que el bucle comience y después de que cada iteración del bucle se ha ejecutado. 
 
 ```js
 // Bucle While 
@@ -20,7 +20,7 @@ for (inicialización; condición; expresión final) {
 }
 ```
 
-* La variable asociada con la condición del bucle es llamada el **contador** del bucle y a menudo nombrada `i`.
+* La variable asociada con la condición del bucle es llamada el **contador** del bucle y a menudo nombrada como `i`.
 
 * ¡Cuidado! La condición de un bucle `while` tiene que convertirse en falsa en algún momento para evitar el riesgo de un **bucle infinito**. Asimismo, actualizar el contador de un bucle `for` dentro de su cuerpo es una mala idea.
 
@@ -28,7 +28,7 @@ Todos los bucles pueden escribirse con `while`, pero sí sabes de antemano cuán
 
 ## Introducción
 
-Si querías escribir código que mostrará números entre el 1 y el 5, podías hacerlo con lo que ya has aprendido:
+Si quisieras escribir código que mostrará números entre el 1 y el 5, podías hacerlo con lo que ya has aprendido:
 
 ```js
 console.log(1);
@@ -83,9 +83,9 @@ Antes de cada iteración del bucle, la condición entre paréntesis es evaluada 
 
 I> El cuerpo del bucle debe colocarse entre llaves, a menos que sea de una sola declaración. Por lo pronto, siempre usa llaves para tus bucles. 
 
-## Él bucle `for`
+## El bucle `for`
 
-A menudo necesitarás escribir bucles con condiciones que estén basadas en el valor de una variable actualizada en el cuerpo del bucle, como en nuestro ejemplo. JavaScript ofrece otro tipo de bucle para dar cuenta de esto: el bucle `for`. 
+A menudo necesitarás escribir bucles con condiciones que estén basadas en el valor de una variable que es actualizada en el cuerpo del bucle, como en nuestro ejemplo. JavaScript ofrece otro tipo de bucle para dar cuenta de esto: el bucle `for`. 
 
 ### Ejemplo
 
@@ -110,13 +110,13 @@ for (inicialización; condición; expresión final) {
 }
 ```
 
-Esta es un poco más complicada que la sintaxis del bucle`while`: 
+Esta es un poco más complicada que la sintaxis del bucle `while`: 
 
-* **Inicialización** solo sucede una vez, al primer inicio del código. con frecuencia es usado para establecer el valor inicial de la variable asociada a la condición del bucle.
+* La **inicialización** solo sucede una vez, la primera vez que el código inicia. Con frecuencia es usado para establecer el valor inicial de la variable asociada a la condición del bucle.
 
-* La **condición** es evaluada una vez antes cada que el bucle se ejecute. Sí es verdadero el código se ejecuta. Sí no, el código no se ejecuta.
+* La **condición** es evaluada una vez antes, cada vez que el bucle se ejecuta. Sí es verdadera el código se ejecuta. Sí no, el código no se ejecuta.
 
-* La **expresión final** es evaluada después cada que el bucle se ejecuta. Con frecuencia se usa para actualizar el valor de la variable asociada con la condición del bucle, como vimos en el ejemplo anterior.
+* La **expresión final** es evaluada después de que el bucle se ejecuta todas las veces. Con frecuencia se usa para actualizar el valor de la variable asociada con la condición del bucle, como vimos en el ejemplo anterior.
 
 ### El contador del bucle
 
@@ -145,7 +145,7 @@ while (numero <= 5) {
 
 Para protegerte de bucles infinitos, tienes que asegurarte de que la condición del bucle al final se volverá falsa. 
 
-### Manejar un contador de bucle `for`
+### Manipular un contador de bucle `for`
 
 Imagina que accidentalmente modificas el contador del bucle en el cuerpo del bucle, tal como en el ejemplo siguiente. 
 
@@ -181,9 +181,9 @@ Al final, elegir qué bucle usar depende del contexto. Todos los bucles pueden s
 
 Intenta programar cada ejercicio dos veces, una vez con un bucle `while` y la otra con un `for`, para que tú mismo veas cuál es el más apropiado.
 
-### Carrusel
+### Control de turnos
 
-Escribe un programa que ponga en marcha un carrusel de 10 turnos, mostrando el número de turno cada vez.
+Escribe un programa que ponga en marcha un gestor de 10 turnos, mostrando el número de turno cada vez.
 
 Cuando esté terminado, mejóralo para que el número de turnos sea proporcionado por el usuario.
 
@@ -217,7 +217,7 @@ Mejora el programa para que también muestre números impares. Mejóralo de nuev
 
 Escribe un programa que continúe pidiendo un número al usuario hasta que él número introducido sea menor que o igual a 100. 
 
-Cuando hayas terminado con la anterior, mejora el programa para que el número de finalización sea entre 50 y 100.
+Cuando hayas terminado con lo anterior, mejora el programa para que el número que ponga fin al programa este entre 50 y 100.
 
 ### Tabla de multiplicación
 
