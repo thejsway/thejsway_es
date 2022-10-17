@@ -31,7 +31,7 @@ miObjeto.metodo1(...);           // Invocar a metodo1 en miObjeto
 
 * Dentro de un método, la palabra clave `this` representa el objeto en que es invocado el método.
 
-* El lenguaje JavaScript predefine muchos objetos útiles cómo `console` o `Math`.
+* El lenguaje JavaScript predefine muchos objetos útiles como `console` o `Math`.
 
 ## Introducción
 
@@ -101,7 +101,7 @@ console.log(`Yo escribo con un bolígrafo ${boligrafo.marca} ${boligrafo.color} 
 
 ### Modificar un objeto
 
-Una vez que un objeto es creado, puedes cambiar el valor de sus propiedades con la sintaxis `miObjeto.miPropiedad= valorNuevo`.
+Una vez que un objeto es creado, puedes cambiar el valor de sus propiedades con la sintaxis `miObjeto.miPropiedad = valorNuevo`.
 
 ```js
 const boligrafo = {
@@ -143,9 +143,9 @@ En un juego de roles, cada personaje es definido por muchos atributos como fuerz
 
 En nuestro ejemplo más simple, un personaje tendrá tres atributos:
 
-* su nombre,
-* su salud (número de puntos de vida),
-* su fuerza.
+* nombre,
+* salud (número de puntos de vida),
+* fuerza.
 
 ### Un ejemplo sencillo 
 
@@ -314,7 +314,7 @@ Completa el siguiente programa agregando la definición del objeto `perro`.
 ```js
 // PENDIENTE: crear él objeto perro aquí
 
-console.log(`${perro.nombre} es un perro ${perro.especie} mide ${perro.size}`);
+console.log(`${perro.nombre} es un perro ${perro.especie} mide ${perro.medida}`);
 console.log(`¡Mira, un gato! ${perro.nombre} ladra: ${perro.ladrar()}`);
 ```
 
