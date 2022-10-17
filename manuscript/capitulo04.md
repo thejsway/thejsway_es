@@ -63,7 +63,7 @@ while (numero <= 5) {
 
 Igual que el anterior, este bloque de código muestra todos los números enteros entre el 1 y el 5.
 
-![Execution result](images/chapter04-02.png)
+![Resultado de ejecución](images/chapter04-02.png)
 
 ### Cómo funciona
 
@@ -158,7 +158,7 @@ for (let i = 1; i <= 5; i++) {
 
 Este programa produce el siguiente resultado.
 
-![Execution result](images/chapter04-03.png)
+![Resultado de ejecución](images/chapter04-03.png)
 
 Cada que el bucle se ejecuta, la variable contadora es incrementada *dos veces*: una vez en el cuerpo y una vez en la expresión final después de que el bucle se ejecuta. Cuando estás usando un bucle `for` casi siempre quieres omitir todo lo relacionado con el contador dentro del cuerpo de tu bucle. ¡Solo déjalo en esa primera línea!
 
