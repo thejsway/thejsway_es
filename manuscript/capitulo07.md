@@ -4,9 +4,9 @@ Este capítulo te introducirá a las <a href="https://es.wikipedia.org/wiki/Vect
 
 ## TL;DR
 
-* Una **matriz**representa una lista de elementos. Una matriz JavaScript es un objeto que tiene propiedades especiales cómo `length` para acceder a su tamaño (número de elementos). 
+* Una **matriz** representa una lista de elementos. Una matriz JavaScript es un objeto que tiene propiedades especiales cómo `length` para acceder a su tamaño (número de elementos). 
 
-* Puedes pensar en una matriz como una serie de cajas, cada una almacenando un valor específico y asociado con un número denominado su **posición**. El primer elemento de una matriz tendrá la posición número 0 - no 1.
+* Puedes pensar en una matriz como una serie de cajas, cada una almacenando un valor específico y asociado con un número denominado su **posición**. El primer elemento de una matriz tendrá la posición número 0, no 1.
 
 * Puedes acceder a un elemento en particular pasando su posición entre **corchetes** `[]`.
 
@@ -60,7 +60,7 @@ Esta vez, la información está centralizada en él objeto `peliculas`. Sin emba
 
 Necesitas una solución para almacenar elementos juntos ¡sin tener que nombrarlos individualmente!
 
-Afortunadamente, de hecho hay una solución: usa una matriz. Una **matriz** es un tipo de dato que puede almacenar un conjunto de elementos. 
+Afortunadamente, efectivamente existe una solución: usa una matriz. Una **matriz** es un tipo de dato que puede almacenar un conjunto de elementos. 
 
 ## Manipular matrices en JavaScript
 
@@ -86,7 +86,7 @@ T> Dado que una matriz podría contener múltiples elementos, es bueno nombrar l
 
 ### Obtener el tamaño de una matriz
 
-Al número de elementos almacenados en una matriz se le llama **tamaño**. Así es cómo se accede a el.
+Al número de elementos almacenados en una matriz se le llama **tamaño**. Así es como se accede a el.
 
 ```js
 const peliculas = ["The Wolf of Wall Street", "Zootopia", "Babysitting"];
@@ -129,7 +129,7 @@ console.log(peliculas[3]); // undefined: el último elemento está en la posici�
 
 ## Iterar en una matriz
 
-Hay varias formas en examinar una matriz elemento por elemento.
+Hay varias formas de examinar una matriz elemento por elemento.
 
 La primera es usar un bucle `for` como se discutió previamente.
 
