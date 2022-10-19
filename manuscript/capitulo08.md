@@ -27,13 +27,13 @@ Mucho del código que escribas implicará modificar cadenas de caracteres de tex
 
 ## Resumen de las cadenas de caracteres
 
-Recapitulemos lo que ya sabemos sobre las cadenas de caracteres un valor de tipo cadena:
+Recapitulemos lo que ya sabemos sobre las cadenas de caracteres:
 
 * Un valor de tipo cadena de caracteres representa texto.
 
-* En JavaScript, una cadena de caracteres se definida poniendo texto entre comillas simples (`'Soy una cadena de caracteres'`) o dobles (`"Soy una cadena de caracteres"`).
+* En JavaScript, una cadena de caracteres es definida poniendo texto entre comillas simples (`'Soy una cadena de caracteres'`) o dobles (`"Soy una cadena de caracteres"`).
 
-* Puedes utilizar caracteres especiales dentro de una cadena de caracteres introduciendo los con `\` ("diagonal invertida)" seguida de otro carácter. Por ejemplo, usa `\n` para agregar un salto de línea.
+* Puedes utilizar caracteres especiales dentro de una cadena de caracteres introduciendolos con `\` ("diagonal invertida)" seguida de otro carácter. Por ejemplo, usa `\n` para agregar un salto de línea.
 
 * El operador `+` concatena (combina o suma) dos o más caracteres.
 
@@ -55,7 +55,7 @@ Aunque los valores de las cadenas de texto son de tipo primitivo en JavaScript, 
 
 ## Convertir caracteres a mayúsculas o minúsculas
 
-Puedes convertir el texto de una cadena de caracteres a **minúsculas** invocando el método `toLowerCase()`. Alternativamente, puedes hacer lo mismo con `toUpperCase()` para convertir una cadena de caracteres a minúsculas.
+Puedes convertir el texto de una cadena de caracteres a **minúsculas** invocando el método `toLowerCase()`. Alternativamente, puedes hacer lo mismo con `toUpperCase()` para convertir una cadena de caracteres a mayúsculas.
 
 ```js
 const palabraOriginal = "Bora-Bora";
@@ -103,8 +103,6 @@ Sabes cómo identificar un carácter por su posición. Para acceder a él, usas 
 
 W> Tratar de acceder a un carácter más allá del tamaño de la cadena de caracteres produce el resultado `undefined`.
 
-W> Trying to access a string character beyond the string length produces an `undefined` result.
-
 ```js
 const deporte = "basquetbol";
 console.log(deporte[0]);  // primera "b"
@@ -137,7 +135,7 @@ for (let i = 0; i < miCadena.length; i++) {
 
 El contador del bucle `i` va desde cero (la posición del primer carácter de la cadena de caracteres) hasta el tamaño de la cadena de caracteres - 1 (posición del último carácter). Cuando el valor del contador es igual al tamaño de la cadena de caracteres, la expresión se vuelve falsa y el bucle finaliza.
 
-Entonces, el ejemplo anterior también puede ser escrito con un bucle `for` con un resultado idéntico.
+Entonces, el ejemplo también puede ser escrito con un bucle `for` con un resultado idéntico.
 
 ```js
 const nombre = "Sarah";
@@ -146,7 +144,7 @@ for (let i = 0; i < nombre.length; i++) {
 }
 ```
 
-Como para las matrices que se abordaron antes, una evolución reciente de JavaScript ha introducido otra opción para iterar en una cadena de caracteres: el bucle `for-of`. El ejemplo anterior también puede ser escrito asi:
+Igual que para las matrices que se abordaron antes, una evolución reciente de JavaScript ha introducido otra opción para iterar en una cadena de caracteres: el bucle `for-of`. El ejemplo anterior también puede ser escrito asi:
 
 ```js
 const nombre = "Sarah";
@@ -220,10 +218,10 @@ Mejora el programa anterior para que también muestre el número de vocales dent
 
 ### Palabra al revés
 
-Mejor el programa anterior para que muestre la palabra escrita al revés.
+Mejora el programa anterior para que muestre la palabra escrita al revés.
 
 ### Palíndromo
 
-Mejor al programa anterior para checar si la palabra es un palíndromo. Un palíndromo es una palabra u oración que se escribe de la misma forma ya sea derecho o al revés, ignorando signos de puntuación, mayúsculas y minúsculas y espacios.
+Mejora el programa anterior para verificar si la palabra es un palíndromo. Un palíndromo es una palabra u oración que se escribe de la misma forma ya sea derecho o al revés, ignorando signos de puntuación, mayúsculas y minúsculas y espacios.
 
 > `"radar"` debe ser detectada como un palíndromo, `"Radar"` también.
