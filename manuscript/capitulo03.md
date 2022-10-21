@@ -27,7 +27,7 @@ else {
 }
 ```
 
-* Pueden crearse condiciones complejas usando el **operadores lógicos** `&&` ("y"), `||` ("o") y `!` ("no").
+* Pueden crearse condiciones complejas usando los **operadores lógicos** `&&` ("y"), `||` ("o") y `!` ("no").
 
 * La declaración `switch` es usada para iniciar la ejecución de un bloque de código entre varios, dependiendo del valor de una expresión.
 
