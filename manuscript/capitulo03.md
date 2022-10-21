@@ -4,7 +4,7 @@ Hasta ahora, todo el código en nuestros programas se ha ejecutado cronológicam
 
 ## TL;DR
 
-* La palabra clave `if` define una **declaración condicional**, también llamada un **test**. El bloque de código asociado solo se ejecuta si la **condición** es satisfecha (su valor es `verdadero`). Por lo tanto, una condición es una expresión cuya evaluación siempre produce un resultado booleano (`verdadero` o `falso`).
+* La palabra clave `if` define una **declaración condicional**, también llamada **prueba**. El bloque de código asociado solo se ejecuta si la **condición** es satisfecha (si su valor es `verdadero`). Por lo tanto, una condición es una expresión cuya evaluación siempre produce un resultado booleano (`verdadero` o `falso`).
 
 ```js
 if (condición) {
@@ -78,7 +78,7 @@ if (condición) {
 }
 ```
 
-La llave de apertura y la de cierre definen el bloque de código asociado con una declaración `if`. Esta declaración representa un **test**. Se traduce en lo siguiente: "Si la condición es verdadera, entonces ejecuta las instrucciones contenidas en un bloque de código".
+La llave de apertura y la de cierre definen el bloque de código asociado con una declaración `if`. Esta declaración representa una **prueba**. Se traduce en lo siguiente: "Si la condición es verdadera, entonces ejecuta las instrucciones contenidas en el bloque de código".
 
 La condición siempre se coloca entre paréntesis después del `if`. Las declaraciones dentro del bloque de código asociado se mueven a la derecha. A esta práctica se le llama **indentación** y ayuda a hacer tu código más comprensible. A medida que tus programas crezcan en tamaño y complejidad, esto se volverá más y más importante. El tamaño de la indentación a menudo es de 2 o 4 espacios.
 
@@ -86,7 +86,7 @@ I> Cuando el bloque de código tiene una sola declaración, las llaves pueden om
 
 ### Condiciones
 
-Una **condición** es una expresión que evalúa un valor ya sea verdadero o falso: a este se le llama valor booleano. Cuando el valor de una condición es verdadero, decimos que esta condición es satisfecha.
+Una **condición** es una expresión que se evalúa ya sea como verdadero o falso: se le llama valor **booleano**. Cuando el valor de una condición es verdadero, decimos que esta condición es satisfecha.
 
 Ya hemos estudiado número y cadenas de caracteres, dos tipos de datos en JavaScript. Los booleanos son otro tipo. Este tipo de dato solo tiene dos valores posibles: `verdadero` y `falso`.
 
@@ -219,13 +219,13 @@ Veamos cómo podrías traducir esa misma verificación dentro de JS.
 
 ```js
 if ((numero >= 0) && (numero <= 100)) {
-  console.log(`${numero} está entre 0 y 100,  ambos incluidos`);
+  console.log(`${numero} está entre 0 y 100, ambos incluidos`);
 }
 ```
 
 I> Los paréntesis entre las subcondiciones no son obligatorios, pero te recomiendo agregarlos de cualquier forma, para evitar fallas desagradables en algunos casos especiales. 
 
-El operador `&&` ("lógico and") puede aplicarse a ambos tipos de valores booleanos. Solo será `true` el resultado de la declaración si ambas condiciones son verdaderas.
+El operador `&&` ("lógico and") puede aplicarse a ambos tipos de valores booleanos. El resultado de la declaración solo será `true` si ambas condiciones son verdaderas.
 
 ```js
 console.log(true && true);   // true
@@ -234,7 +234,7 @@ console.log(false && true);  // false
 console.log(false && false); // false
 ```
 
-El resultado previo es la **tabla truth** del operador `&&`.
+El resultado previo es la **tabla de la verdad** del operador `&&`.
 
 ### Operador "Or" 
 
@@ -248,7 +248,7 @@ if ((numero < 0) || (numero > 100)) {
 }
 ```
 
-El operador `||` ("lógico or") convierte las declaraciones en `true` si al menos una de las declaraciones es verdadera. Aquí está su tabla truth:
+El operador `||` ("lógico or") convierte las declaraciones en `true` si al menos una de las declaraciones es verdadera. Aquí está su tabla de la verdad:
 
 ```js
 console.log(true || true);   // true
@@ -321,15 +321,15 @@ console.log(!false); // true
 Escribamos algo de código que le ayude a la gente a decidir qué vestir dependiendo del clima usando `if`/`else`.
 
 ```js
-const clima = prompt("¿cómo está el clima?");
+const clima = prompt("¿Cómo está el clima?");
 if (clima === "caluroso") {
-  console.log("¡tiempo de playeras!");
+  console.log("¡Tiempo de playeras!");
 } else if (clima === "ventoso") {
-  console.log("Vida de rompevientos.");
+  console.log("Viva el rompevientos.");
 } else if (clima === "lluvioso") {
   console.log("¡Trae ese paraguas!");
 } else if (clima === "nevado") {
-  console.log("¡el invierno está llegando! ¡solo quédate adentro!");
+  console.log("¡El invierno está llegando! ¡Solo quédate en casa!");
 } else {
   console.log("Tipo de clima no válido.");
 }
@@ -338,19 +338,19 @@ if (clima === "caluroso") {
 Cuando un programa debe activar un bloque a partir de varias operaciones dependiendo del valor de una expresión, puedes escribirlo usando la declaración JavaScript `switch` para hacer lo mismo. 
 
 ```js
-const clima = prompt("¿cómo está el clima?");
+const clima = prompt("¿Cómo está el clima?");
 switch (clima) {
   case "caluroso":
-    console.log("¡tiempo de playeras!");
+    console.log("¡Tiempo de playeras!");
     break;
   case "ventoso":
-    console.log("Vida de rompevientos.");
+    console.log("Viva el rompevientos.");
     break;
   case "lluvioso":
     console.log("¡Trae ese paraguas!");
     break;
   case "nevado":
-    console.log("¡el invierno está llegando! ¡solo quédate adentro!!");
+    console.log("¡El invierno está llegando! ¡Solo quédate en casa!!");
     break;
   default:
     console.log("Tipo de clima no válido.");
@@ -417,30 +417,30 @@ Escribe un programa que acepte dos números, después compare sus valores y mues
 Échale un vistazo al siguiente programa.
 
 ```js
-let nb1 = Number(prompt("Ingresa nb1:"));
-let nb2 = Number(prompt("Ingresa nb2:"));
-let nb3 = Number(prompt("Ingresa nb3:"));
+let nro1 = Number(prompt("Ingresa nro1:"));
+let nro2 = Number(prompt("Ingresa nro2:"));
+let nro3 = Number(prompt("Ingresa nro3:"));
 
-if (nb1 > nb2) {
-  nb1 = nb3 * 2;
+if (nro1 > nro2) {
+  nro1 = nro3 * 2;
 } else {
-  nb1++;
-  if (nb2 > nb3) {
-    nb1 += nb3 * 3;
+  nro1++;
+  if (nro2 > nro3) {
+    nro1 += nro3 * 3;
   } else {
-    nb1 = 0;
-    nb3 = nb3 * 2 + nb2;
+    nro1 = 0;
+    nro3 = nro3 * 2 + nro2;
   }
 }
-console.log(nb1, nb2, nb3);
+console.log(nro1, nro2, nro3);
 ```
-Antes de ejecutarlo trata de adivinar los valores finales de las variables `nb1`, `nb2` y `nb3` dependiendo de sus valores iniciales. Completa la siguiente tabla. 
+Antes de ejecutarlo trata de adivinar los valores finales de las variables `nro1`, `nro2` y `nro3` dependiendo de sus valores iniciales. Completa la siguiente tabla. 
 
-|Valores iniciales    |`nb1` valor final |`nb2` valor final|`nb3` valor final|
+|Valores iniciales    |`nro1` valor final |`nro2` valor final|`nro3` valor final|
 |---------------------|------------------|-----------------|-----------------|
-|`nb1=nb2=nb3=4`      |                  |                 |                 |
-|`nb1=4,nb2=3,nb3=2`  |                  |                 |                 |
-|`nb1=2,nb2=4,nb3=0`  |                  |                 |                 |
+|`nro1=nro2=nro3=4`      |                  |                 |                 |
+|`nro1=4,nro2=3,nro3=2`  |                  |                 |                 |
+|`nro1=2,nro2=4,nro3=0`  |                  |                 |                 |
 
 
 Verifica tus predicciones ejecutando el programa.
