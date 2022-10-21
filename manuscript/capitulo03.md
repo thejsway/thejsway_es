@@ -88,7 +88,7 @@ I> Cuando el bloque de código tiene una sola declaración, las llaves pueden om
 
 Una **condición** es una expresión que se evalúa ya sea como verdadero o falso: se le llama valor **booleano**. Cuando el valor de una condición es verdadero, decimos que esta condición es satisfecha.
 
-Ya hemos estudiado número y cadenas de caracteres, dos tipos de datos en JavaScript. Los booleanos son otro tipo. Este tipo de dato solo tiene dos valores posibles: `verdadero` y `falso`.
+Ya hemos estudiado números y cadenas de caracteres, dos tipos de datos en JavaScript. Los booleanos son otro tipo. Este tipo de dato solo tiene dos valores posibles: `verdadero` y `falso`.
 
 Cualquier expresión que produzca un valor booleano (ya sea `verdadero` o `falso`) puede usarse como una condición en una declaración `if`. Si el valor de esta expresión es `verdadero`, el bloque de código asociado al mismo se ejecuta.
 
