@@ -132,7 +132,7 @@ Este ejemplo demuestra varios datos claves sobre las clases JavaScript:
 
 ### Usar una clase
 
-Una vez que la clase es definida, puedes usarla para crear objetos. Checa el resto del programa.
+Una vez que la clase es definida, puedes usarla para crear objetos. Observa el resto del programa.
 
 ```js
 const aurora = new Personaje("Aurora", 150, 25);
@@ -180,7 +180,7 @@ miObjeto.metodo1(/* ... */);
 
 ## Más allá de lo aparente: objetos y prototipos
 
-Si tienes experiencia previa en programación, es posible que ya te hayas topado con las clases y estés familiarizado con ellas. Pero como descubrirás pronto, las clases en JavaScript no son tanto como sus equivalentes en C++, Java o C#.
+Si tienes experiencia previa en programación, es posible que ya te hayas topado con clases y estés familiarizado con ellas. Pero como descubrirás pronto, las clases en JavaScript no son tanto como sus equivalentes en C++, Java o C#.
 
 ### El modelo orientado a objetos de JavaScript
 
@@ -192,13 +192,13 @@ Aquí hay un ejemplo (tomado de la excelente colección de libros de Kyle Simpso
 
 ```js
 const unObjeto = {
-  miProt: 2
+  miProp: 2
 };
 
 // Crear otroObjeto usando unObjeto como prototipo
 const otroObjeto = Object.create(unObjeto);
 
-console.log(otroObjeto.miProt); // 2
+console.log(otroObjeto.miProp); // 2
 ```
 
 En este ejemplo, la declaración JavaScript `Object.create()` es usada para crear el objeto `otroObjeto` con el objeto `unObjeto` como su prototipo.
@@ -208,13 +208,13 @@ En este ejemplo, la declaración JavaScript `Object.create()` es usada para crea
 const miObjeto = Object.create(miObjetoPrototipo);
 ```
 
-Cuando la declaración `otroObjeto.myProp` se ejecuta, la propiedad `miProt` de `unObjeto` es usada dado que `miProt` no existe en `otroObjeto`.
+Cuando la declaración `otroObjeto.myProp` se ejecuta, la propiedad `miProp` de `unObjeto` es usada dado que `miProp` no existe en `otroObjeto`.
 
-Si el prototipo de un objeto no tiene la propiedad deseada, entonces la búsqueda continúa el prototipo propio del objeto hasta llegar al final de la **cadena del prototipo**. Si el final de la cadena es alcanzado sin haber hallado la propiedad, el intento de acceso a la propiedad devuelve el valor `undefined`.
+Si el prototipo de un objeto no tiene la propiedad deseada, entonces la búsqueda continúa en el prototipo propio del objeto hasta llegar al final de la **cadena del prototipo**. Si el final de la cadena es alcanzado sin haber hallado la propiedad, el intento de acceso a la propiedad devuelve el valor `undefined`.
 
 ```js
 const unObjeto = {
-  miProt: 2
+  miProp: 2
 };
 
 // Crear otroObjeto usando unObjeto como prototipo
@@ -223,18 +223,18 @@ const otroObjeto = Object.create(unObjeto);
 // Crear otroObjetoMas usando otroObjeto como prototipo
 const otroObjetoMas = Object.create(otroObjeto);
 
-// miProt es encontrado en la cadena del prototipo de otroObjetoMas (en unObjeto)
-console.log(otroObjetoMas.miProt); // 2
+// miProp es encontrado en la cadena del prototipo de otroObjetoMas (en unObjeto)
+console.log(otroObjetoMas.miProp); // 2
 
 // miOtroProt no puede ser hallado en la cadena del prototipo de otroObjetoMas
-console.log(otroObjetoMas.miOtroProt); // undefined
+console.log(otroObjetoMas.miOtraProp); // undefined
 ```
 
 Este tipo de relación entre los objetos JavaScript es denominada **delegación**: un objeto delega parte de su operación a su prototipo.
 
 ### La verdadera naturaleza de las clases JavaScript
 
-En los lenguajes orientados a objetos *basados en clases* cómo C++, Java y C#, las clases son **planos** estáticos (plantillas). Cuando un objeto es creado, los métodos y propiedades de la clase son copiados en una nueva entidad, llamada **instancia**. Después de crear la instancia, el objeto recién creado no tiene ningún tipo de relación con su clase.
+En los lenguajes orientados a objetos *basados en clases* como C++, Java y C#, las clases son **planos** estáticos (plantillas). Cuando un objeto es creado, los métodos y propiedades de la clase son copiados en una nueva entidad, llamada **instancia**. Después de crear la instancia, el objeto recién creado no tiene ningún tipo de relación con su clase.
 
 El modelo orientado a objetos de JavaScript está basado en prototipos, **no** clases, para compartir propiedades y delegar comportamientos entre objetos. En JavaScript, una clase en sí misma es un objeto, no un plano estático. Al "crear una instancia" de una clase se crea un objeto nuevo vinculado a un objeto prototipo. Respecto al comportamiento de las clases, el lenguaje JavaScript es completamente diferente de C++, Java o C#, pero cercano a otros lenguajes orientados a objetos cómo Python, Ruby y Smalltalk.
 
@@ -315,7 +315,7 @@ El programa anterior es un pequeño ejemplo de **programación orientada a objet
 
 ## ¡Hora de programar!
 
-### Dogs
+### Perros
 
 Completa el siguiente programa agregando la definición de la clase `Perro`. 
 
@@ -338,7 +338,7 @@ console.log(`¡Mira, un gato! ${coco.nombre} ladra: ${coco.ladrar()}`);
 
 ### Inventario por personaje
 
-Mejora el ejemplo de jdr agregando un manejo de inventario por personaje de acuerdo con las siguientes reglas:
+Mejora el ejemplo de JDR agregando un manejo de inventario por personaje de acuerdo con las siguientes reglas:
 
 * El inventario de un personaje contiene una cantidad de oro y una cantidad de llaves.
 
