@@ -18,7 +18,7 @@ La programación orientada a objetos, aunque bastante popular, no es la única f
 
 ## Contexto: una lista de películas
 
-En este capítulo, comenzaremos con uno programa ejemplo y lo mejoraremos poco a poco, sin añadirle ninguna funcionalidad nueva. Esta importante tarea de programación se llama **refactorización**.
+En este capítulo, comenzaremos con un programa ejemplo y lo mejoraremos poco a poco, sin añadirle ninguna funcionalidad nueva. Esta importante tarea de programación se llama **refactorización**.
 
 Nuestro programa inicial es sobre películas recientes de Batman. La información se presenta en forma de una matriz de objetos, con cada objeto describiendo una película.
 
@@ -113,7 +113,7 @@ console.log(ratingPromedio);
 
 El programa anterior es un ejemplo de lo que se denomina **programación imperativa**.  En este paradigma, el programador da órdenes a la computadora a través de una serie de declaraciones que modifican el estado del programa. La programación imperativa se enfoca en describir **cómo** opera un programa.
 
-El concepto de estado es una importante. El **estado** de un programa es el valor de sus **variables globales** (variables accesibles en cualquier punto del código) en un momento dado. En nuestro ejemplo, las variables `listaPeliculas`, `titulos`, `listaPeliculasNolan`, `mejoresTitulos`, `ratingSuma` y `ratingPromedio` conforman el estado del programa. Cualquier asignación a alguna de estas variables es un cambio de estado, con frecuencia llamado **mutación**.
+El concepto de estado es uno importante. El **estado** de un programa es el valor de sus **variables globales** (variables accesibles en cualquier punto del código) en un momento dado. En nuestro ejemplo, las variables `listaPeliculas`, `titulos`, `listaPeliculasNolan`, `mejoresTitulos`, `ratingSuma` y `ratingPromedio` conforman el estado del programa. Cualquier asignación a alguna de estas variables es un cambio de estado, con frecuencia llamado **mutación**.
 
 En la programación imperativa, el estado puede ser modificado en cualquier punto del código fuente. Esto es práctico, pero también puede llevar a errores o fallos desagradables y problemas de mantenimiento. A medida que un programa crece en tamaño y complejidad, se vuelve más fácil para el programador mutar una parte del estado por error y más difícil de monitorear los cambios de estado.
 
@@ -204,7 +204,7 @@ Solo con introducir algunas funciones en un programa no es suficiente para cumpl
 Una **función pura** es una función que tiene las siguientes características:
 
 * Sus valores de retorno dependen únicamente de sus parámetros de entrada. 
-* No tiene efectos secundarios
+* No tiene efectos secundarios.
 
 Un **efecto secundario** es un cambio en el estado del programa o una interacción con el mundo externo. Acceder a una base de datos o una declaración `console.log()` son ejemplos de efectos secundarios.
 
@@ -268,7 +268,7 @@ El estado del programa (`listaPeliculas` y `listaPeliculasNolan`) no ha cambiado
 
 ## Operaciones con matrices
 
-La programación funcional es sobre escribir programas combinando funciones que expresen *qué* debe hacer el programa, en lugar de *cómo* hacerlo. JavaScript ofrece varios métodos relacionados con matrices que favorecen un estilo de programación funcional.
+La programación funcional se trata sobre escribir programas combinando funciones que expresen *qué* debe hacer el programa, en lugar de *cómo* hacerlo. JavaScript ofrece varios métodos relacionados con matrices que favorecen un estilo de programación funcional.
 
 ### El método `map()`
 
@@ -276,7 +276,7 @@ El método `map()` toma una matriz como parámetro y crea una nueva matriz con l
 
 Veamos a `map()` en acción.
 
-La función asociada multiplicar cada número de la matriz x 2
+La función asociada multiplica cada número de la matriz x 2
 
 ```js
 const numeros = [1, 5, 10, 15];
@@ -410,29 +410,28 @@ const ratingSuma = peliculas.map(pelicula => pelicula.ratingImdb).reduce((acum ,
 
 ## Funciones de orden superior
 
-A lo largo de este capítulo, hemos aprovechado el hecho de que las funciones JavaScript puedan ser transmitidas como cualquier otro valor. Decimos que las funciones son **ciudadanas de primera clase** en JavaScript, lo que significa que son tratadas igual que otros tipos de valor.
+A lo largo de este capítulo, hemos aprovechado el hecho de que las funciones JavaScript puedan ser pasadas como cualquier otro valor. Decimos que las funciones son **ciudadanas de primera clase** en JavaScript, lo que significa que son tratadas igual que otros tipos de valor.
 
 Gracias a su ciudadanía de primera clase, las funciones pueden ser combinadas, haciendo programas aún más expresivos y permitiendo un estilo de programación verdaderamente funcional. Una función que toma otra función como parámetro o devuelve otra función es denominada **función de orden superior**.
 
-Checa esta versión final de nuestro programa ejemplo.
-
+Revisa esta versión final de nuestro programa ejemplo.
 
 ```js
-const titulos = peliculas => pelicula.map(pelicula => pelicula.titulo);
+const titulos = peliculas => peliculas.map(pelicula => pelicula.titulo);
 const deNolan = pelicula => pelicula.director === "Christopher Nolan";
-const filter = (peliculas, func) => peliculas.filter(func);
+const filtro = (peliculas, func) => peliculas.filter(func);
 const buenRating = pelicula => pelicula.ratingImdb >= 7.5;
-const ratings = peliculas => peliculas.map(pelicula => movie.imdbRating);
+const ratings = peliculas => peliculas.map(pelicula => pelicula.ratingImdb);
 const promedio = matriz => matriz.reduce((suma, valor) => suma + valor, 0) / matriz.length;
 
 console.log(titulos(listaPeliculas));
-const listaPeliculasNolan = filter(listaPeliculas, deNolan);
+const listaPeliculasNolan = filtro(listaPeliculas, deNolan);
 console.log(listaPeliculasNolan.length);
-console.log(titulos(filter(listaPeliculas, buenRating)));
+console.log(titulos(filtro(listaPeliculas, buenRating)));
 console.log(promedio(ratings(listaPeliculasNolan)));
 ```
 
-Hemos definido funciones auxiliares que combinamos para lograr el comportamiento deseado. El código es conciso y autodescriptivo. Dado que toma la función de filtrado como un parámetro, nuestra propia función `filter()` es un ejemplo de una función de orden Superior
+Hemos definido funciones auxiliares que combinamos para lograr el comportamiento deseado. El código es conciso y autodescriptivo. Dado que toma la función de filtrado como un parámetro, nuestra propia función `filtro()` es un ejemplo de una función de orden Superior
 
 ## JavaScript: un lenguaje multiparadigma
 
