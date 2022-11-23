@@ -587,7 +587,7 @@ for (const estudiante of estudiantes) {
     }
     const calificacionPromedio = sumaCalificaciones / estudiante.calificaciones.length;
     resultadosEstudiantesFemeninas.push({
-      nombre: estudiante.name,
+      nombre: estudiante.nombre,
       promedio : calificacionPromedio
     });
   }
