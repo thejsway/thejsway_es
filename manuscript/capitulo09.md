@@ -263,7 +263,7 @@ class Personaje {
     if (this.salud > 0) {
       const daño = this.fuerza;
       console.log(
-        `${this.nombre} ataca ${target.nombre} y causa ${daño} puntos de daño`
+        `${this.nombre} ataca a ${target.nombre} y causa ${daño} puntos de daño`
       );
       target.salud -= daño;
       if (target.salud > 0) {
