@@ -267,7 +267,7 @@ class Personaje {
       );
       target.salud -= daño;
       if (target.salud > 0) {
-        console.log(`${target.nombre} le quedan ${target.salud} puntos de vida`);
+        console.log(`A ${target.nombre} le quedan ${target.salud} puntos de vida`);
       } else {
         target.salud = 0;
         const bonoEXP = 10;
