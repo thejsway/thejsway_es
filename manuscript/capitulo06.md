@@ -314,7 +314,7 @@ Completa el siguiente programa agregando la definición del objeto `perro`.
 ```js
 // PENDIENTE: crear él objeto perro aquí
 
-console.log(`${perro.nombre} es un perro ${perro.especie} mide ${perro.medida}`);
+console.log(`${perro.nombre} es un perro ${perro.raza} que mide ${perro.medida}`);
 console.log(`¡Mira, un gato! ${perro.nombre} ladra: ${perro.ladrar()}`);
 ```
 
