@@ -4,7 +4,7 @@ Ahora que has descubierto las bases de la programación, continuemos y construya
 
 ## Objetivo
 
-La meta de este proyecto es crear un programa simple de noticias sociales. Sus usuarios podrán mostrar una lista de enlaces y añadir otros nuevos.
+La meta de este proyecto es crear un programa sencillo de noticias sociales. Sus usuarios podrán mostrar una lista de enlaces y añadir otros nuevos.
 
 
 
@@ -12,7 +12,7 @@ La meta de este proyecto es crear un programa simple de noticias sociales. Sus u
 
 * Un enlace es definido por su título, su URL y su autor (remitente).
 * Si la URL de un nuevo enlace no empieza con `"http://"` o `"https://"`, se le agrega `"http://"` automáticamente al inicio.
-* Al arranque el programa muestra un menú de inicio con las posibles acciones en una ventana de alerta y le solicita al usuario su elección. Las posibles acciones son:
+* Al arranque, el programa muestra un menú de inicio con las posibles acciones en una ventana de alerta y le solicita al usuario su elección. Las posibles acciones son:
   * Mostrar la lista de enlaces.
   * agregar un enlace nuevo.
   * Eliminar un enlace existente. 
