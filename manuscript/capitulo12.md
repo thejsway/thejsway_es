@@ -1,16 +1,16 @@
 # ¿Qué es una página web?
 
-Este capítulo breve resumen lo que necesitas saber acerca de la web y las páginas web.
+Este breve capítulo resume lo que necesitas saber acerca de la web y las páginas web.
 
 ## TL;DR
 
 * La [World Wide Web](https://es.wikipedia.org/wiki/World_Wide_Web) (o **Web**) es un espacio de información construido sobre [Internet](https://es.wikipedia.org/wiki/Internet). Los recursos web son accesibles a través de su [URL](https://es.wikipedia.org/wiki/Localizador_de_recursos_uniforme), y pueden contener [hiperenlaces](https://en.wikipedia.org/wiki/Hyperlink) a otros recursos.
 
-* Una página web es un documento apropiado para la web. Crear páginas web generalmente involucra tres tecnologías: [HTML](https://es.wikipedia.org/wiki/HTML)para estructurar el contenido,  [CSS](https://es.wikipedia.org/wiki/CSS) para definir su presentación y JavaScript para añadir interactividad. 
+* Una página web es un documento apropiado para la web. Crear páginas web generalmente involucra tres tecnologías: [HTML](https://es.wikipedia.org/wiki/HTML) para estructurar el contenido,  [CSS](https://es.wikipedia.org/wiki/CSS) para definir su presentación y JavaScript para añadir interactividad. 
 
 * Un documento HTML está hecho de texto y elementos estructurales llamados **etiquetas** que describen el contenido de la página, tales como: párrafos, encabezados, hiperenlaces, imágenes, etc.
 
-* CSS usa selectores para declarar a qué elementos HTML se les aplica un estilo. Los elementos pueden ser seleccionados por el nombre de la etiqueta (`h1`), clase (`.listo`) o un identificador (`#groseria`).
+* CSS usa selectores para declarar a qué elementos HTML se les aplica un estilo. Los elementos pueden ser seleccionados por el nombre de la etiqueta (`h1`), clase (`.terminado`) o un identificador (`#groseria`).
 
 * Un documento HTML puede incluir una hoja de estilos CSS con la etiqueta `<link>` y un archivo JavaScript con la etiqueta `<script>`.
 
@@ -67,7 +67,7 @@ Aquí hay un ejemplo de una página web sencilla, generalmente almacenada como u
 <body>
     <h1>Mi página web</h1>
     <p>¡Hola! mi nombre es Baptiste.</p>
-    <p>Vivo en la gran ciudad de <a href="https://es.wikipedia.org/wiki/Burdeos">Bordeos</a>.</p>
+    <p>Vivo en la gran ciudad de <a href="https://es.wikipedia.org/wiki/Burdeos">Burdeos</a>.</p>
 </body>
 
 </html>
@@ -104,7 +104,7 @@ h1 {
   text-decoration: line-through;
 }
 
-/* El elemento que tiene el id "grosero" es mostrado en mayúsculas con un tipo de fuente especial */
+/* El elemento que tiene el id "groseria" es mostrado en mayúsculas con un tipo de fuente especial */
 #grosero {
   font-family: monospace;
   text-transform: uppercase;
