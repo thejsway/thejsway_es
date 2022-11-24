@@ -32,7 +32,7 @@ Tomemos esta simple página web como ejemplo. ¡Puedes agregar tu propia informa
 <body>
     <h1>Mi página web</h1>
     <p>¡Hola! mi nombre es Baptiste.</p>
-    <p>Vivo en la gran ciudad de <a href="https://es.wikipedia.org/wiki/Burdeos">Bordeos</a>.</p>
+    <p>Vivo en la gran ciudad de <a href="https://es.wikipedia.org/wiki/Burdeos">Burdeos</a>.</p>
 </body>
 
 </html>
@@ -58,9 +58,9 @@ Este es el árbol correspondiente a nuestra página HTML de ejemplo.
 
 Cada entidad en el árbol es llamada **nodo**. Hay dos tipos de nodos:
 
-* Aquellos (aquí en azul) que corresponden a las etiquetas HTML como `<body>` o `<p>`. A estos nodos se les llama **nodos de elementos** y pueden tener sub nodos, llamados **nodos secundarios** o hijos.
+* Aquellos que corresponden a las etiquetas HTML (aquí en azul) como `<body>` o `<p>`. A estos nodos se les llama **nodos de elementos** y pueden tener sub nodos, llamados **nodos secundarios** o hijos.
 
-* Esos (en rojo) que corresponden al contenido textual de la página. A esos nodos se les llama **nodos textuales** y no tienen hijos.
+* Esos que corresponden al contenido textual de la página (en rojo). A esos nodos se les llama **nodos textuales** y no tienen hijos.
 
 ## Comienza a usar el DOM en JavaScript
 
@@ -177,7 +177,7 @@ console.log(document.parentNode); // Mostrara null, dado que body no tiene nodo 
 Tú misión aquí es crear una función `mostrarHijo()` que muestre uno de los hijos de un nodo de tipo elemento del DOM. Está función toma como parámetros el nodo padre y la posición del nodo hijo. Casos de error como un nodo que no sea de tipo elemento o una posición que esté fuera de alcance deben ser considerados.
 
 Aquí está el código HTML correspondiente.
-Algún texto con un enlace
+
 ```html
 <h1>Un título</h1>
 <div>Algún texto con <a href="#">un enlace</a>.</div>
