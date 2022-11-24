@@ -94,7 +94,7 @@ Los elementos DOM también cuentan con un método llamado `getElementsByClassNam
 
 Es importante señalar que los objetos `NodeList` no son matrices JavaScript reales, así que no todas las operaciones de una matriz les son aplicables. Para convertir un objeto `NodeList` en una matriz usa el método `Array.from()`.
 
-Para seleccionar y mostrar todos los elementos del documento con la clase `"existe"`,puedes escribir el siguiente código.
+Para seleccionar y mostrar todos los elementos del documento con la clase `"existe"`, puedes escribir el siguiente código.
 
 ```js
 // Muestra todos los elementos que tienen la clase `"existe"`
@@ -119,7 +119,7 @@ console.log(document.getElementById("nuevas"));
 
 ![Resultado de ejecución](images/chapter14-09.png)
 
-E> Cuidado: a diferencia de otros, el método `getElementById()` no contiene ninguna `'s'` después de la palabra `"Element"`.
+E> Alerta: a diferencia de otros, el método `getElementById()` no contiene ninguna `'s'` después de la palabra `"Element"`.
 
 ### Seleccionar elementos mediante selectores CSS
 
@@ -150,7 +150,7 @@ console.log(document.querySelectorAll(".existe").length); // 8
 console.log(document.querySelectorAll("#antiguas > .existe").length); // 1
 ```
 
-> Checa en la [Red de desarrolladores de Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)el manual sobre los diferentes selectores CSS disponibles.
+> Checa en la [Red de desarrolladores de Mozilla](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors) el manual sobre los diferentes selectores CSS disponibles.
 
 El segundo método que usa selectores CSS se llama `querySelector()`. Trabaja igual que `querySelectorAll()` pero solo devuelve el primer elemento que coincide. Devuelve `null` si ningún elemento puede ser hallado.
 
@@ -167,7 +167,7 @@ Acabas de descubrir varias formas de seleccionar elementos del DOM. ¿Cómo esco
 
 Puesto que usan selectores CSS, `querySelectorAll()` y `querySelector()`  podrían cubrir todas tus necesidades, pero quizás se ejecuten más [lento](https://programmerclick.com/article/51151045135/) que los otros.
 
-He aquí las reglas generales que debe seguir.
+He aquí las reglas generales que deberías seguir.
 
 | Número de elementos a obtener | Criterio de selección | Método a usar |
 |---|---|---|
@@ -217,7 +217,7 @@ console.log(document.querySelector("a").getAttribute("href"));
 
 ![Resultado de ejecución](images/chapter14-11.png)
 
-Algunos atributos son directamente accesibles como propiedades. Esto es cierto para los atributos `id`, `href`, y `value`.
+Algunos atributos son directamente accesibles como propiedades. Esto es cierto para los atributos `id`, `href` y `value`.
 
 ```js
 // Muestra el atributo ID de la primera lista
@@ -293,7 +293,7 @@ console.log(contarElementos("p > .adjetivo")); // Debe mostrar 2
 He aquí la descripción de varios instrumentos musicales.
 
 ```html
-<h1>Some musical instruments</h1>
+<h1>Algunos instrumentos musicales</h1>
 <ul>
   <li id="clarinete" class="viento de madera">
     The <a href="https://es.wikipedia.org/wiki/Clarinete">clarinete</a>
